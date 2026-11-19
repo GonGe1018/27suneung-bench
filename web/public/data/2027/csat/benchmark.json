@@ -281,10 +281,11 @@
           "billedEstimate": 0.15806577
         },
         "korean-common": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 0.19918832,
-          "billedEstimate": 0.19918832
+          "answered": 34,
+          "correct": 19,
+          "cost": 0.36876039,
+          "billedEstimate": 0.36876039,
+          "effort": "high"
         },
         "korean-language": {
           "answered": 11,
