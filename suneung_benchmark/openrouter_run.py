@@ -73,7 +73,7 @@ def reservation(route, limit, image_count):
             + image_count * rate("image") + rate("request")) * Decimal("1.10")
 
 
-def generate(headers, model, effort, part, shared, metadata, limit, reserve, output, keys):
+def generate(headers, model, effort, part, shared, metadata, limit, reserve, output, keys, prior=None):
     path = output / model / f"{part.name}.json"
     path.parent.mkdir(parents=True, exist_ok=True)
     with run_budget.record_submission(path):
@@ -119,16 +119,61 @@ def generate(headers, model, effort, part, shared, metadata, limit, reserve, out
                       "output_tokens": usage.get("completion_tokens"),
                       "reasoning_tokens": (usage.get("completion_tokens_details") or {}).get("reasoning_tokens")},
         }
+        if prior is not None:
+            prior_cost = Decimal(str(prior["estimated_usd"]))
+            row["prior_attempt"] = prior
+            row["estimated_usd"] = float(prior_cost + Decimal(str(cost or 0)))
+            row["reservation_usd"] = str(prior_cost + reserve)
         csat.write_json(path, row)
     grade = csat.score_row(row, keys[part.name]).get("correct") if part.name in keys else None
     print(f"{model}/{part.name}: {status} HTTP={http} {len(answers)}/{part.question_count} "
           f"correct={grade} cost={row['estimated_usd']}", flush=True)
 
 
+
+def retry_unanswered(headers, model, name, exam, output, year, budget):
+    if model not in ROUTES:
+        raise ValueError("Unknown OpenRouter model")
+    parts = [part for part in csat.exam_parts() if part.name == name]
+    if len(parts) != 1:
+        raise ValueError("Unknown exam bundle")
+    part = parts[0]
+    with run_budget.locked_output(output / ".openrouter-retry"):
+        path = output / model / f"{name}.json"
+        prior = json.loads(path.read_text(encoding="utf-8"))
+        if (prior["status"] != "invalid_answers" or prior["answered"] or prior.get("prior_attempt")
+                or prior["estimated_usd"] is None or path.with_suffix(".pending").exists()):
+            raise ValueError("Manual retry requires a completed first attempt with no valid answers and recorded cost")
+        prepared, _ = prepare_exams(parts, exam, year)
+        shared, metadata = prepared[name]
+        route = endpoint(model)
+        limit = prior["max_tokens"]
+        if prior["input_sha256"] != metadata["input_sha256"] or limit > route["max_completion_tokens"]:
+            raise ValueError("The original input or token limit is unavailable")
+        reserve = reservation(route, limit, metadata["image_count"])
+        exposure = Decimal(0)
+        for model_id in ROUTES:
+            directory = output / model_id
+            records = {file.stem: file for file in directory.glob("*.pending")}
+            records.update({file.stem: file for file in directory.glob("*.json")})
+            for file in records.values():
+                if not file.stat().st_size:
+                    raise RuntimeError("A submission is being recorded")
+                row = json.loads(file.read_text(encoding="utf-8"))
+                cost = row.get("estimated_usd")
+                exposure += Decimal(str(row["reservation_usd"] if cost is None else cost))
+        if exposure + reserve > budget:
+            raise ValueError(f"Manual retry would exceed the OpenRouter budget of USD {budget:.2f}")
+        keys = csat.score_keys(exam, parts, allow_missing=True)
+        print(f"Submitting one manual retry for {model}/{name}; additional USD {reserve:.2f} reserved.", flush=True)
+        generate(headers, model, prior["effort"], part, shared, metadata, limit, reserve, output, keys, prior)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--budget-usd", type=run_budget.positive_usd, required=True)
     parser.add_argument("--key-stdin", action="store_true")
+    parser.add_argument("--retry", nargs=2, metavar=("MODEL", "BUNDLE"))
     args = parser.parse_args()
     key = sys.stdin.readline().strip() if args.key_stdin else os.environ.get("OPENROUTER_API_KEY")
     if not key and not args.key_stdin:
@@ -147,6 +192,9 @@ def main():
     plan = json.loads((base / "planned-models.json").read_text(encoding="utf-8"))
     exam = resolve_local_path(ROOT / config["exam_dir"])
     output = resolve_local_path(ROOT / config["output_dir"])
+    if args.retry:
+        retry_unanswered(headers, *args.retry, exam, output, config["exam_year"], budget)
+        return
     with run_budget.locked_output(output / ".openrouter"):
         parts = csat.exam_parts()
         prepared, _ = prepare_exams(parts, exam, config["exam_year"])

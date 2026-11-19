@@ -228,10 +228,10 @@
       ],
       "parts": {
         "korean-speech": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 0.021217294,
-          "billedEstimate": 0.021217294
+          "answered": 11,
+          "correct": 9,
+          "cost": 0.041748004,
+          "billedEstimate": 0.041748004
         },
         "korean-language": {
           "answered": 11,
