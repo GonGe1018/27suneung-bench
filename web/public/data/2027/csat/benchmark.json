@@ -574,6 +574,18 @@
           "correct": 14,
           "cost": 0.05453,
           "billedEstimate": 0.05453
+        },
+        "ethics-thought": {
+          "answered": 20,
+          "correct": 12,
+          "cost": 0.13008454,
+          "billedEstimate": 0.13008454
+        },
+        "korean-geography": {
+          "answered": 20,
+          "correct": 12,
+          "cost": 0.10884134,
+          "billedEstimate": 0.10884134
         }
       }
     },
@@ -658,6 +670,12 @@
           "correct": 43,
           "cost": 0.0223686,
           "billedEstimate": 0.0223686
+        },
+        "life-ethics": {
+          "answered": 20,
+          "correct": 11,
+          "cost": 0.017745,
+          "billedEstimate": 0.017745
         }
       }
     },
@@ -748,6 +766,18 @@
           "correct": 3,
           "cost": 0.00186388,
           "billedEstimate": 0.00186388
+        },
+        "korean-geography": {
+          "answered": 20,
+          "correct": 3,
+          "cost": 0.0035614,
+          "billedEstimate": 0.0035614
+        },
+        "life-ethics": {
+          "answered": 20,
+          "correct": 8,
+          "cost": 0.0031943,
+          "billedEstimate": 0.0031943
         }
       }
     },
@@ -896,6 +926,60 @@
           "correct": 5,
           "cost": 0.000928158,
           "billedEstimate": 0.000928158
+        },
+        "social-culture": {
+          "answered": 20,
+          "correct": 2,
+          "cost": 0.000928326,
+          "billedEstimate": 0.000928326
+        },
+        "physics-1": {
+          "answered": 20,
+          "correct": 2,
+          "cost": 0.000928326,
+          "billedEstimate": 0.000928326
+        },
+        "chemistry-1": {
+          "answered": 20,
+          "correct": 5,
+          "cost": 0.000928116,
+          "billedEstimate": 0.000928116
+        },
+        "biology-1": {
+          "answered": 20,
+          "correct": 2,
+          "cost": 0.000928116,
+          "billedEstimate": 0.000928116
+        },
+        "earth-science-1": {
+          "answered": 20,
+          "correct": 2,
+          "cost": 0.000928494,
+          "billedEstimate": 0.000928494
+        },
+        "physics-2": {
+          "answered": 20,
+          "correct": 2,
+          "cost": 0.00092841,
+          "billedEstimate": 0.00092841
+        },
+        "chemistry-2": {
+          "answered": 20,
+          "correct": 8,
+          "cost": 0.000928326,
+          "billedEstimate": 0.000928326
+        },
+        "biology-2": {
+          "answered": 20,
+          "correct": 3,
+          "cost": 0.000928242,
+          "billedEstimate": 0.000928242
+        },
+        "earth-science-2": {
+          "answered": 20,
+          "correct": 2,
+          "cost": 0.000928368,
+          "billedEstimate": 0.000928368
         }
       }
     },
@@ -1114,6 +1198,24 @@
           "correct": 45,
           "cost": 0.691914,
           "billedEstimate": 0.691914
+        },
+        "ethics-thought": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.715124,
+          "billedEstimate": 0.715124
+        },
+        "korean-geography": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.774824,
+          "billedEstimate": 0.774824
+        },
+        "life-ethics": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.666074,
+          "billedEstimate": 0.666074
         }
       }
     },
@@ -1198,6 +1300,18 @@
           "correct": 45,
           "cost": 0.1754385,
           "billedEstimate": 0.1754385
+        },
+        "ethics-thought": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.151011,
+          "billedEstimate": 0.151011
+        },
+        "life-ethics": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.1633085,
+          "billedEstimate": 0.1633085
         }
       }
     },
@@ -1372,8 +1486,8 @@
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 130,
-    "publishedBundles": 130
+    "scoredBundles": 149,
+    "publishedBundles": 149
   },
   "progress": {
     "korean": {
@@ -1397,19 +1511,19 @@
     "social": {
       "readyParts": 9,
       "totalParts": 9,
-      "scoredModels": 0,
+      "scoredModels": 1,
       "plannedModels": 8
     },
     "science1": {
       "readyParts": 4,
       "totalParts": 4,
-      "scoredModels": 0,
+      "scoredModels": 1,
       "plannedModels": 8
     },
     "science2": {
-      "readyParts": 1,
+      "readyParts": 4,
       "totalParts": 4,
-      "scoredModels": 0,
+      "scoredModels": 1,
       "plannedModels": 13
     }
   }
