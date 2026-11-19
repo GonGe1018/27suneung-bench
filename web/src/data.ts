@@ -20,6 +20,7 @@ export type Provider = string;
 type Part = { label: string; area: Area; count: number };
 type Score = {
   effort?: string;
+  coverage?: { kind: "multiple-choice"; count: number };
   answered: number;
   correct: number;
   cost: number | null;
@@ -61,6 +62,7 @@ export type Result = {
   answered: number;
   correct: number;
   count: number;
+  coverageNote?: string;
   cost: number | null;
   billed: number | null;
   accuracy: number | null;
@@ -106,7 +108,7 @@ export function measure(
     const score = model.parts[part];
     correct += score.correct;
     answered += score.answered;
-    count += data.parts[part].count;
+    count += score.coverage?.count ?? data.parts[part].count;
     cost = cost === null || score.cost === null ? null : cost + score.cost;
     billed =
       billed === null || score.billedEstimate === null
@@ -119,6 +121,9 @@ export function measure(
     correct,
     answered,
     count,
+    coverageNote: parts.some((part) => model.parts[part].coverage?.kind === "multiple-choice")
+      ? "객관식만"
+      : undefined,
     cost,
     billed,
     effort: [...new Set(parts.map((part) => model.parts[part].effort ?? model.effort))].join(" / "),
@@ -145,7 +150,7 @@ export function ranking(data: Dataset, parts: string[]) {
 }
 
 export const dollars = (v: number | null) =>
-  v === null ? "미집계" : "$" + v.toFixed(2);
+  v === null ? "미집계" : "$" + v.toFixed(v > 0 && v < 0.01 ? 4 : 2);
 export const percent = (v: number | null) =>
   v === null ? "미응답" : v.toFixed(2) + "%";
 const providerStyles: Record<

@@ -27,6 +27,7 @@ export function YearPicker({ year }: { year: number }) {
 
 const groups = {
   korean: "국어",
+  "korean-math": "국어·수학 객관식",
   all: "전체 영역",
   science2: "국영수와 과학탐구Ⅱ",
   core: "국영수",
@@ -222,8 +223,9 @@ export function ExamRoster({ data }: { data: Dataset }) {
             .filter(([, m]) => m.scope === scope)
             .sort(([, a], [, b]) => a.name.localeCompare(b.name));
           if (!group.length) return null;
-          const questionCount = group[0][1].expectedParts?.reduce(
-            (sum, key) => sum + data.parts[key].count,
+          const firstModel = group[0][1];
+          const questionCount = firstModel.expectedParts?.reduce(
+            (sum, key) => sum + (firstModel.parts[key]?.coverage?.count ?? data.parts[key].count),
             0,
           );
           return (

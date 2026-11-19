@@ -69,7 +69,8 @@ function MethodDialog({ close, year }: { close: () => void; year: number }) {
           <dd>
             시험지 페이지를 180 DPI 이미지로 변환해 25묶음으로 비교합니다. 같은
             묶음은 입력 해시로 대조합니다. 영어 듣기에는 공식 대본을 함께
-            제공합니다.
+            제공합니다.{" "}
+            {year === 2027 && "Jev 1.14에는 시험지 이미지의 긴 변을 1568px로 줄여 제공했습니다."}
           </dd>
           <dt>응시 범위</dt>
           <dd>
@@ -109,7 +110,7 @@ function CostBars({
   planned?: [string, Model][];
 }) {
   const sorted = planned
-    ? planned.map(([id, model]) => ({ id, model, cost: null }))
+    ? planned.map(([id, model]) => ({ id, model, cost: null, coverageNote: undefined }))
     : rows.filter((row) => row.cost !== null).sort((a, b) => a.cost! - b.cost!);
   const max = sorted.at(-1)?.cost ?? 1;
   return (
@@ -123,7 +124,7 @@ function CostBars({
       <ol className="cost-list">
         {sorted.map((r) => (
           <li key={r.id}>
-            <ModelName id={r.id} name={r.model.name} />
+            <ModelName id={r.id} name={r.model.name} note={r.coverageNote} />
             <div
               className={planned ? "bar-track pending-fill" : "bar-track"}
               aria-hidden="true"
@@ -303,7 +304,7 @@ function ResultsTable({
                   </td>
                   <td className="model-cell">
                     <div className="model-actions">
-                      <ModelName id={r.id} name={r.model.name} />
+                      <ModelName id={r.id} name={r.model.name} note={r.coverageNote} />
                       <button
                         className="model-button"
                         aria-label={r.model.name + " 상세 성적"}

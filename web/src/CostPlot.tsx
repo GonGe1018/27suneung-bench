@@ -65,6 +65,7 @@ function addLabels(
   const dots = rows.map((r) => ({
     icon: getModelIcon(r.model.name),
     name: r.model.name,
+    note: r.coverageNote,
     x: x(r.cost!),
     y: y(r.accuracy!),
   }));
@@ -73,8 +74,9 @@ function addLabels(
   measure.font = "600 12px SUIT, sans-serif";
   for (const p of dots) {
     const iconSpace = p.icon ? 16 : 0;
-    const w = Math.ceil(measure.measureText(p.name).width) + iconSpace;
-    const h = 16;
+    const nameWidth = Math.ceil(measure.measureText(p.name).width) + iconSpace;
+    const w = Math.max(nameWidth, p.note ? Math.ceil(measure.measureText(p.note).width) : 0);
+    const h = p.note ? 30 : 16;
     if (w > width - 52) continue;
     const options = [
       [0, -17],
@@ -89,8 +91,8 @@ function addLabels(
       const cy = p.y + dy;
       const box = { x: cx - w / 2 - 2, y: cy - h / 2, w: w + 4, h };
       if (
-        cy < 9 ||
-        cy > height - 34 ||
+        box.y < 1 ||
+        box.y + box.h > height - 26 ||
         boxes.some(
           (b) =>
             box.x < b.x + b.w &&
@@ -102,9 +104,11 @@ function addLabels(
         continue;
       const label = document.createElementNS(svgNS, "g");
       label.setAttribute("class", "plot-label");
+      const nameX = cx - nameWidth / 2 + iconSpace;
+      const nameY = p.note ? cy - 6 : cy;
       const t = document.createElementNS(svgNS, "text");
-      t.setAttribute("x", String(cx - w / 2 + iconSpace));
-      t.setAttribute("y", String(cy));
+      t.setAttribute("x", String(nameX));
+      t.setAttribute("y", String(nameY));
       t.setAttribute("text-anchor", "start");
       t.setAttribute("dominant-baseline", "central");
       t.setAttribute("font-size", "12");
@@ -114,8 +118,8 @@ function addLabels(
       if (p.icon) {
         const icon = document.createElementNS(svgNS, "image");
         icon.setAttribute("href", p.icon);
-        icon.setAttribute("x", String(cx - w / 2));
-        icon.setAttribute("y", String(cy - 6));
+        icon.setAttribute("x", String(nameX - iconSpace));
+        icon.setAttribute("y", String(nameY - 6));
         icon.setAttribute("width", "12");
         icon.setAttribute("height", "12");
         icon.setAttribute("aria-hidden", "true");
@@ -123,6 +127,16 @@ function addLabels(
         label.append(icon);
       }
       label.append(t);
+      if (p.note) {
+        const note = t.cloneNode() as SVGTextElement;
+        note.setAttribute("x", String(cx));
+        note.setAttribute("y", String(cy + 7));
+        note.setAttribute("text-anchor", "middle");
+        note.setAttribute("font-size", "10");
+        note.setAttribute("fill", "var(--muted)");
+        note.textContent = p.note;
+        label.append(note);
+      }
       svg.append(label);
       boxes.push(box);
       break;
@@ -239,6 +253,7 @@ function PlotCard({
               strokeWidth: 2,
               title: (r) =>
                 r.model.name +
+                (r.coverageNote ? "\n" + r.coverageNote : "") +
                 "\n" +
                 percent(r.accuracy) +
                 " · " +
@@ -277,7 +292,7 @@ function PlotCard({
       <div className="card-heading">
         <div>
           <h2 id={titleId}>비용과 정답률</h2>
-          <p>{expanded ? scope : "같은 문항을 푸는 데 든 모델별 추정 비용"}</p>
+          <p>{expanded ? scope : "선택한 범위의 모델별 추정 비용"}</p>
         </div>
         <div className="plot-actions">
           <button

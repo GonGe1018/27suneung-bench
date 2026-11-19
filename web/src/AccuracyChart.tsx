@@ -4,7 +4,7 @@ import { ModelName } from "./ModelName";
 import type { Theme } from "./theme";
 import "./accuracy.css";
 
-type AccuracyMark = Pick<Result, "id" | "model" | "accuracy"> & {
+type AccuracyMark = Pick<Result, "id" | "model" | "accuracy" | "coverageNote"> & {
   answered?: number;
   count?: number;
 };
@@ -45,7 +45,7 @@ export function AccuracyChart({
         </div>
         <div className="accuracy-scroll">
           <ol className="accuracy-series" role="list">
-            {marks.map(({ id, model, accuracy, answered, count }) => {
+            {marks.map(({ id, model, accuracy, answered, count, coverageNote }) => {
               const placeholder = accuracy === null;
               const style = {
                 "--score": (accuracy ?? 0) + "%",
@@ -59,7 +59,7 @@ export function AccuracyChart({
                   key={id}
                   style={style}
                 >
-                  <ModelName id={id} name={model.name} />
+                  <ModelName id={id} name={model.name} note={coverageNote} />
                   <div className="accuracy-track" aria-hidden="true">
                     <div className={placeholder ? "pending-fill" : "accuracy-bar"} />
                   </div>

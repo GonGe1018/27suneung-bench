@@ -691,6 +691,82 @@
         }
       }
     },
+    "jev-1.14": {
+      "name": "Jev 1.14",
+      "short": "Jev 1.14",
+      "provider": "TypeSafe",
+      "effort": "—",
+      "scope": "korean-math",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry"
+      ],
+      "parts": {
+        "korean-common": {
+          "answered": 34,
+          "correct": 18,
+          "cost": 0.0025557,
+          "billedEstimate": 0.0025557
+        },
+        "korean-speech": {
+          "answered": 11,
+          "correct": 0,
+          "cost": 0.000857976,
+          "billedEstimate": 0.000857976
+        },
+        "korean-language": {
+          "answered": 11,
+          "correct": 4,
+          "cost": 0.000857892,
+          "billedEstimate": 0.000857892
+        },
+        "math-common": {
+          "answered": 15,
+          "correct": 4,
+          "cost": 0.001647828,
+          "billedEstimate": 0.001647828,
+          "coverage": {
+            "kind": "multiple-choice",
+            "count": 15
+          }
+        },
+        "math-statistics": {
+          "answered": 6,
+          "correct": 2,
+          "cost": 0.000818622,
+          "billedEstimate": 0.000818622,
+          "coverage": {
+            "kind": "multiple-choice",
+            "count": 6
+          }
+        },
+        "math-calculus": {
+          "answered": 6,
+          "correct": 2,
+          "cost": 0.000818874,
+          "billedEstimate": 0.000818874,
+          "coverage": {
+            "kind": "multiple-choice",
+            "count": 6
+          }
+        },
+        "math-geometry": {
+          "answered": 6,
+          "correct": 2,
+          "cost": 0.00081858,
+          "billedEstimate": 0.00081858,
+          "coverage": {
+            "kind": "multiple-choice",
+            "count": 6
+          }
+        }
+      }
+    },
     "gemini-4-carbon": {
       "name": "Gemini 4 Carbon",
       "short": "Carbon",
@@ -1127,22 +1203,22 @@
     }
   },
   "completion": {
-    "plannedBundles": 251,
-    "scoredBundles": 98,
-    "publishedBundles": 98
+    "plannedBundles": 258,
+    "scoredBundles": 105,
+    "publishedBundles": 105
   },
   "progress": {
     "korean": {
       "readyParts": 3,
       "totalParts": 3,
-      "scoredModels": 14,
-      "plannedModels": 14
+      "scoredModels": 15,
+      "plannedModels": 15
     },
     "math": {
       "readyParts": 4,
       "totalParts": 4,
-      "scoredModels": 14,
-      "plannedModels": 14
+      "scoredModels": 15,
+      "plannedModels": 15
     },
     "english": {
       "readyParts": 0,

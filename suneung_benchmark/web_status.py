@@ -34,6 +34,8 @@ def summarize_progress(parts, models, ready_parts, scored):
 def part_in_scope(scope, area_name):
     if scope == "korean":
         return area_name == "korean"
+    if scope == "korean-math":
+        return area_name in {"korean", "math"}
     return (scope == "all" or area_name in {"korean", "math", "english"}
             or (scope == "science2" and area_name == "science2"))
 

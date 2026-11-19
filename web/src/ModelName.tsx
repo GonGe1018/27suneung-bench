@@ -42,6 +42,7 @@ const openRouterIds: Record<string, string> = {
   "deepseek-v4.1-flash-1017": "deepseek/deepseek-v4.1-flash-1017",
   "glm-5.3-flashx": "z-ai/glm-5.3-flashx",
   "muse-glimmer-30b": "meta/muse-glimmer-30b",
+  "jev-1.14": "typesafe/jev-1.14",
 };
 
 export function modelUrl(id: string, name: string) {
@@ -51,9 +52,9 @@ export function modelUrl(id: string, name: string) {
     : "https://openrouter.ai/models?q=" + encodeURIComponent(name);
 }
 
-type ModelNameProps = { id: string; name: string };
+type ModelNameProps = { id: string; name: string; note?: string };
 
-export function ModelName({ id, name }: ModelNameProps) {
+export function ModelName({ id, name, note }: ModelNameProps) {
   const icon = getModelIcon(name);
   return (
     <a
@@ -61,10 +62,13 @@ export function ModelName({ id, name }: ModelNameProps) {
       href={modelUrl(id, name)}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={name + " · OpenRouter (새 탭)"}
+      aria-label={name + (note ? " · " + note : "") + " · OpenRouter (새 탭)"}
     >
       {icon && <img className="model-icon" src={icon} alt="" width={18} height={18} />}
-      <span>{name}</span>
+      <span>
+        {name}
+        {note && <small className="model-name-note">{note}</small>}
+      </span>
     </a>
   );
 }
