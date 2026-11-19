@@ -301,11 +301,20 @@
       "short": "Qwen3.8 Flash-Next",
       "provider": "Qwen",
       "effort": "xhigh",
-      "scope": "korean",
+      "scope": "science2",
       "expectedParts": [
         "korean-common",
         "korean-speech",
-        "korean-language"
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry",
+        "english",
+        "physics-2",
+        "chemistry-2",
+        "biology-2",
+        "earth-science-2"
       ],
       "parts": {
         "korean-speech": {
@@ -782,7 +791,7 @@
     }
   },
   "completion": {
-    "plannedBundles": 242,
+    "plannedBundles": 251,
     "scoredBundles": 42,
     "publishedBundles": 42
   },
@@ -797,13 +806,13 @@
       "readyParts": 0,
       "totalParts": 4,
       "scoredModels": 0,
-      "plannedModels": 13
+      "plannedModels": 14
     },
     "english": {
       "readyParts": 0,
       "totalParts": 1,
       "scoredModels": 0,
-      "plannedModels": 13
+      "plannedModels": 14
     },
     "social": {
       "readyParts": 0,
@@ -821,7 +830,7 @@
       "readyParts": 0,
       "totalParts": 4,
       "scoredModels": 0,
-      "plannedModels": 11
+      "plannedModels": 12
     }
   }
 }

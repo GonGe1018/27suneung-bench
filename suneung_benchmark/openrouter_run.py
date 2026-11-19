@@ -183,7 +183,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--budget-usd", type=run_budget.positive_usd, required=True)
     parser.add_argument("--key-stdin", action="store_true")
-    parser.add_argument("--retry", nargs=2, metavar=("MODEL", "BUNDLE"))
+    selection = parser.add_mutually_exclusive_group()
+    selection.add_argument("--model", action="append", help="Restrict new requests to selected model IDs")
+    selection.add_argument("--retry", nargs=2, metavar=("MODEL", "BUNDLE"))
     parser.add_argument("--retry-effort", choices=("low", "medium", "high", "xhigh", "max"))
     args = parser.parse_args()
     if args.retry_effort and not args.retry:
@@ -208,18 +210,26 @@ def main():
     if args.retry:
         retry_unanswered(headers, *args.retry, exam, output, config["exam_year"], budget, args.retry_effort)
         return
+    plan = [entry for entry in plan if entry["id"] in ROUTES]
+    if args.model:
+        selected = set(args.model)
+        plan = [entry for entry in plan if entry["id"] in selected]
+        if {entry["id"] for entry in plan} != selected:
+            parser.error("--model must name a scheduled OpenRouter model")
+    if not plan:
+        return
+
     with run_budget.locked_output(output / ".openrouter"):
         parts = csat.exam_parts()
         prepared, _ = prepare_exams(parts, exam, config["exam_year"])
         keys = csat.score_keys(exam, parts, allow_missing=True)
-        with ThreadPoolExecutor(max_workers=len(ROUTES)) as pool:
-            info = dict(zip(ROUTES, pool.map(endpoint, ROUTES)))
+        model_ids = [entry["id"] for entry in plan]
+        with ThreadPoolExecutor(max_workers=len(model_ids)) as pool:
+            info = dict(zip(model_ids, pool.map(endpoint, model_ids)))
         jobs = []
         exposure = Decimal(0)
         for entry in plan:
             model = entry["id"]
-            if model not in ROUTES:
-                continue
             route = info[model]
             limit = min(262_144, route["max_completion_tokens"])
             for part in parts:

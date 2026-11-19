@@ -3,7 +3,7 @@
   {"id":"qwen4-max","name":"Qwen4 Max","provider":"Qwen","scope":"science2","effort":"xhigh"},
   {"id":"deepseek-v4.1-flash-1017","name":"DeepSeek V4.1 Flash 1017","provider":"DeepSeek","scope":"science2","effort":"max"},
   {"id":"glm-5.3-flashx","name":"GLM-5.3 FlashX","provider":"Z.ai","scope":"science2","effort":"max"},
-  {"id":"qwen3.8-flash-next","name":"Qwen3.8 Flash-Next","provider":"Qwen","scope":"korean","effort":"xhigh"},
+  {"id":"qwen3.8-flash-next","name":"Qwen3.8 Flash-Next","provider":"Qwen","scope":"science2","effort":"xhigh"},
   {"id":"qwen3.8-27b","name":"Qwen3.8-27B","provider":"Qwen","scope":"all","effort":"xhigh"},
   {"id":"muse-glimmer-30b","name":"Muse Glimmer 30B","provider":"Muse","scope":"all","effort":"xhigh"},
   {"id":"gemma-4-31b-it","name":"Gemma 4 31B IT","provider":"Google","scope":"all","effort":"thinking on"}
