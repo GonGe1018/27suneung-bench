@@ -1,0 +1,38 @@
+# 원본 시험지, 모델 응답, 실행 기록
+/exams/
+/results/
+/.runs/
+/.pi-auth/
+
+# 로컬 에이전트 설정
+/.agents/
+/AGENTS.md
+/.codex/
+/.claude/
+
+# 인증 정보
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+credentials.json
+secrets.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# 웹 의존성과 빌드
+node_modules/
+/web/dist/
+/web/.next/
+*.log
+
+# 운영체제
+.DS_Store
+Thumbs.db

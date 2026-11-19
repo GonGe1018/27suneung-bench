@@ -1,0 +1,546 @@
+{
+  "year": 2027,
+  "exam": "대학수학능력시험",
+  "state": "awaiting",
+  "parts": {
+    "korean-common": {
+      "label": "국어 공통",
+      "area": "korean",
+      "count": 34
+    },
+    "korean-speech": {
+      "label": "화법과 작문",
+      "area": "korean",
+      "count": 11
+    },
+    "korean-language": {
+      "label": "언어와 매체",
+      "area": "korean",
+      "count": 11
+    },
+    "math-common": {
+      "label": "수학 공통",
+      "area": "math",
+      "count": 22
+    },
+    "math-statistics": {
+      "label": "확률과 통계",
+      "area": "math",
+      "count": 8
+    },
+    "math-calculus": {
+      "label": "미적분",
+      "area": "math",
+      "count": 8
+    },
+    "math-geometry": {
+      "label": "기하",
+      "area": "math",
+      "count": 8
+    },
+    "english": {
+      "label": "영어",
+      "area": "english",
+      "count": 45
+    },
+    "life-ethics": {
+      "label": "생활과 윤리",
+      "area": "social",
+      "count": 20
+    },
+    "ethics-thought": {
+      "label": "윤리와 사상",
+      "area": "social",
+      "count": 20
+    },
+    "korean-geography": {
+      "label": "한국지리",
+      "area": "social",
+      "count": 20
+    },
+    "world-geography": {
+      "label": "세계지리",
+      "area": "social",
+      "count": 20
+    },
+    "east-asia-history": {
+      "label": "동아시아사",
+      "area": "social",
+      "count": 20
+    },
+    "world-history": {
+      "label": "세계사",
+      "area": "social",
+      "count": 20
+    },
+    "economics": {
+      "label": "경제",
+      "area": "social",
+      "count": 20
+    },
+    "politics-law": {
+      "label": "정치와 법",
+      "area": "social",
+      "count": 20
+    },
+    "social-culture": {
+      "label": "사회·문화",
+      "area": "social",
+      "count": 20
+    },
+    "physics-1": {
+      "label": "물리학Ⅰ",
+      "area": "science1",
+      "count": 20
+    },
+    "chemistry-1": {
+      "label": "화학Ⅰ",
+      "area": "science1",
+      "count": 20
+    },
+    "biology-1": {
+      "label": "생명과학Ⅰ",
+      "area": "science1",
+      "count": 20
+    },
+    "earth-science-1": {
+      "label": "지구과학Ⅰ",
+      "area": "science1",
+      "count": 20
+    },
+    "physics-2": {
+      "label": "물리학Ⅱ",
+      "area": "science2",
+      "count": 20
+    },
+    "chemistry-2": {
+      "label": "화학Ⅱ",
+      "area": "science2",
+      "count": 20
+    },
+    "biology-2": {
+      "label": "생명과학Ⅱ",
+      "area": "science2",
+      "count": 20
+    },
+    "earth-science-2": {
+      "label": "지구과학Ⅱ",
+      "area": "science2",
+      "count": 20
+    }
+  },
+  "models": {
+    "kimi-k3.1-pro": {
+      "name": "Kimi K3.1 Pro",
+      "short": "Kimi K3.1 Pro",
+      "provider": "Moonshot AI",
+      "effort": "max",
+      "scope": "science2",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry",
+        "english",
+        "physics-2",
+        "chemistry-2",
+        "biology-2",
+        "earth-science-2"
+      ],
+      "parts": {}
+    },
+    "qwen4-max": {
+      "name": "Qwen4 Max",
+      "short": "Qwen4 Max",
+      "provider": "Qwen",
+      "effort": "xhigh",
+      "scope": "science2",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry",
+        "english",
+        "physics-2",
+        "chemistry-2",
+        "biology-2",
+        "earth-science-2"
+      ],
+      "parts": {}
+    },
+    "deepseek-v4.1-flash-1017": {
+      "name": "DeepSeek V4.1 Flash 1017",
+      "short": "DeepSeek V4.1 Flash 1017",
+      "provider": "DeepSeek",
+      "effort": "max",
+      "scope": "science2",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry",
+        "english",
+        "physics-2",
+        "chemistry-2",
+        "biology-2",
+        "earth-science-2"
+      ],
+      "parts": {}
+    },
+    "glm-5.3": {
+      "name": "GLM-5.3",
+      "short": "GLM-5.3",
+      "provider": "Z.ai",
+      "effort": "max",
+      "scope": "science2",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry",
+        "english",
+        "physics-2",
+        "chemistry-2",
+        "biology-2",
+        "earth-science-2"
+      ],
+      "parts": {}
+    },
+    "qwen3.8-27b": {
+      "name": "Qwen3.8-27B",
+      "short": "Qwen3.8-27B",
+      "provider": "Qwen",
+      "effort": "xhigh",
+      "scope": "all",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry",
+        "english",
+        "life-ethics",
+        "ethics-thought",
+        "korean-geography",
+        "world-geography",
+        "east-asia-history",
+        "world-history",
+        "economics",
+        "politics-law",
+        "social-culture",
+        "physics-1",
+        "chemistry-1",
+        "biology-1",
+        "earth-science-1",
+        "physics-2",
+        "chemistry-2",
+        "biology-2",
+        "earth-science-2"
+      ],
+      "parts": {}
+    },
+    "muse-glimmer-30b": {
+      "name": "Muse Glimmer 30B",
+      "short": "Muse Glimmer 30B",
+      "provider": "Muse",
+      "effort": "xhigh",
+      "scope": "all",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry",
+        "english",
+        "life-ethics",
+        "ethics-thought",
+        "korean-geography",
+        "world-geography",
+        "east-asia-history",
+        "world-history",
+        "economics",
+        "politics-law",
+        "social-culture",
+        "physics-1",
+        "chemistry-1",
+        "biology-1",
+        "earth-science-1",
+        "physics-2",
+        "chemistry-2",
+        "biology-2",
+        "earth-science-2"
+      ],
+      "parts": {}
+    },
+    "gemma-4-31b-it": {
+      "name": "Gemma 4 31B IT",
+      "short": "Gemma 4 31B IT",
+      "provider": "Google",
+      "effort": "thinking on",
+      "scope": "all",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry",
+        "english",
+        "life-ethics",
+        "ethics-thought",
+        "korean-geography",
+        "world-geography",
+        "east-asia-history",
+        "world-history",
+        "economics",
+        "politics-law",
+        "social-culture",
+        "physics-1",
+        "chemistry-1",
+        "biology-1",
+        "earth-science-1",
+        "physics-2",
+        "chemistry-2",
+        "biology-2",
+        "earth-science-2"
+      ],
+      "parts": {}
+    },
+    "gemini-4-carbon": {
+      "name": "Gemini 4 Carbon",
+      "short": "Carbon",
+      "provider": "Google",
+      "effort": "high",
+      "scope": "core",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry",
+        "english"
+      ],
+      "parts": {}
+    },
+    "gemini-4-hydrogen": {
+      "name": "Gemini 4 Hydrogen",
+      "short": "Hydrogen",
+      "provider": "Google",
+      "effort": "xhigh",
+      "scope": "core",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry",
+        "english"
+      ],
+      "parts": {}
+    },
+    "gpt-6.2-astra": {
+      "name": "GPT-6.2 Astra",
+      "short": "Astra",
+      "provider": "OpenAI",
+      "effort": "max",
+      "scope": "all",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry",
+        "english",
+        "life-ethics",
+        "ethics-thought",
+        "korean-geography",
+        "world-geography",
+        "east-asia-history",
+        "world-history",
+        "economics",
+        "politics-law",
+        "social-culture",
+        "physics-1",
+        "chemistry-1",
+        "biology-1",
+        "earth-science-1",
+        "physics-2",
+        "chemistry-2",
+        "biology-2",
+        "earth-science-2"
+      ],
+      "parts": {}
+    },
+    "gpt-6.2-sol": {
+      "name": "GPT-6.2 Sol",
+      "short": "Sol",
+      "provider": "OpenAI",
+      "effort": "max",
+      "scope": "all",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry",
+        "english",
+        "life-ethics",
+        "ethics-thought",
+        "korean-geography",
+        "world-geography",
+        "east-asia-history",
+        "world-history",
+        "economics",
+        "politics-law",
+        "social-culture",
+        "physics-1",
+        "chemistry-1",
+        "biology-1",
+        "earth-science-1",
+        "physics-2",
+        "chemistry-2",
+        "biology-2",
+        "earth-science-2"
+      ],
+      "parts": {}
+    },
+    "claude-fable-5-2": {
+      "name": "Claude Fable 5.2",
+      "short": "Fable",
+      "provider": "Anthropic",
+      "effort": "max",
+      "scope": "all",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry",
+        "english",
+        "life-ethics",
+        "ethics-thought",
+        "korean-geography",
+        "world-geography",
+        "east-asia-history",
+        "world-history",
+        "economics",
+        "politics-law",
+        "social-culture",
+        "physics-1",
+        "chemistry-1",
+        "biology-1",
+        "earth-science-1",
+        "physics-2",
+        "chemistry-2",
+        "biology-2",
+        "earth-science-2"
+      ],
+      "parts": {}
+    },
+    "claude-opus-5-5": {
+      "name": "Claude Opus 5.5",
+      "short": "Opus",
+      "provider": "Anthropic",
+      "effort": "max",
+      "scope": "all",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language",
+        "math-common",
+        "math-statistics",
+        "math-calculus",
+        "math-geometry",
+        "english",
+        "life-ethics",
+        "ethics-thought",
+        "korean-geography",
+        "world-geography",
+        "east-asia-history",
+        "world-history",
+        "economics",
+        "politics-law",
+        "social-culture",
+        "physics-1",
+        "chemistry-1",
+        "biology-1",
+        "earth-science-1",
+        "physics-2",
+        "chemistry-2",
+        "biology-2",
+        "earth-science-2"
+      ],
+      "parts": {}
+    }
+  },
+  "completion": {
+    "plannedBundles": 239,
+    "scoredBundles": 0,
+    "publishedBundles": 0
+  },
+  "progress": {
+    "korean": {
+      "readyParts": 0,
+      "totalParts": 3,
+      "scoredModels": 0,
+      "plannedModels": 13
+    },
+    "math": {
+      "readyParts": 0,
+      "totalParts": 4,
+      "scoredModels": 0,
+      "plannedModels": 13
+    },
+    "english": {
+      "readyParts": 0,
+      "totalParts": 1,
+      "scoredModels": 0,
+      "plannedModels": 13
+    },
+    "social": {
+      "readyParts": 0,
+      "totalParts": 9,
+      "scoredModels": 0,
+      "plannedModels": 7
+    },
+    "science1": {
+      "readyParts": 0,
+      "totalParts": 4,
+      "scoredModels": 0,
+      "plannedModels": 7
+    },
+    "science2": {
+      "readyParts": 0,
+      "totalParts": 4,
+      "scoredModels": 0,
+      "plannedModels": 11
+    }
+  }
+}

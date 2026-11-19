@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#191b1e" />
+    <link rel="icon" type="image/png" href="%BASE_URL%favicon.png" />
+    <script>
+      // Apply the saved choice before the page paints.
+      try {
+        const saved = localStorage.getItem("csat-theme");
+        if (saved === "light" || saved === "dark") {
+          document.documentElement.dataset.theme = saved;
+        }
+      } catch {}
+    </script>
+    <meta
+      name="description"
+      content="같은 수능 시험지를 푼 언어 모델의 정답률과 응시 비용을 비교하세요."
+    />
+    <title>인간시대의끝이도래했다</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

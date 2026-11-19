@@ -1,0 +1,11 @@
+{
+  "exam_year": 2026,
+  "exam_dir": "exams/2026/csat",
+  "output_dir": "results/2026/csat/sonnet-terra-128k",
+  "generation_retries": 0,
+  "parallelism_per_provider": 8,
+  "models": [
+    {"model": "claude-sonnet-5-5", "provider": "anthropic", "effort": "max", "scope": "all", "max_output_tokens": 128000},
+    {"model": "gpt-6.1-terra", "provider": "openai", "effort": "max", "scope": "all", "max_output_tokens": 128000}
+  ]
+}

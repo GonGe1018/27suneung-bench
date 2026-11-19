@@ -1,0 +1,303 @@
+.status-panel {
+  padding: 18px 22px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-panel);
+}
+.status-panel.archive-notice {
+  padding-block: 12px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.status-overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+}
+.status-message {
+  font-size: clamp(16px, 2.1vw, 19px);
+  line-height: 1.5;
+  font-weight: 750;
+}
+.status-detail {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.exam-stages {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px 24px;
+  margin-top: 17px;
+  padding: 0;
+  list-style: none;
+}
+.exam-stages li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+  color: var(--muted);
+  font-size: 14px;
+  word-break: keep-all;
+}
+.exam-stage-label {
+  font-size: 14px;
+  font-weight: 700;
+}
+.exam-stages [aria-current="step"] .exam-stage-label {
+  color: var(--accent-ink);
+}
+.release-countdown,
+.stage-progress {
+  display: grid;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 1.45;
+}
+.release-countdown-value,
+.stage-progress-value {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 2px 8px;
+}
+.release-countdown strong,
+.stage-progress strong {
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1.15;
+}
+.release-countdown a {
+  width: fit-content;
+  color: var(--accent-ink);
+}
+.release-countdown a:hover {
+  text-decoration: underline;
+}
+.stage-progress progress {
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin-top: 2px;
+  overflow: hidden;
+  appearance: none;
+  border: 0;
+  border-radius: var(--radius-inset);
+  background: var(--track);
+}
+.stage-progress progress::-webkit-progress-bar {
+  background: var(--track);
+}
+.stage-progress progress::-webkit-progress-value {
+  background: var(--bar);
+}
+.stage-progress progress::-moz-progress-bar {
+  background: var(--bar);
+}
+.archive-link {
+  color: var(--accent-ink);
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+.archive-link:hover {
+  text-decoration: underline;
+}
+.roster {
+  margin-top: 36px;
+}
+.roster h2 {
+  margin: 0 0 20px;
+}
+.roster h2 small {
+  margin-left: 5px;
+  font-size: 15px;
+  color: var(--muted);
+  font-weight: 550;
+  letter-spacing: 0;
+}
+.roster-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+}
+.roster-group {
+  min-width: 0;
+  padding: 0 25px;
+}
+.roster-group:first-child {
+  padding-left: 0;
+}
+.roster-group:last-child {
+  padding-right: 0;
+}
+.roster-group + .roster-group {
+  border-left: 1px solid var(--line);
+}
+.roster-group header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+.roster-group h3 {
+  color: var(--accent-ink);
+  font-size: 17px;
+  font-weight: 720;
+  letter-spacing: -0.025em;
+}
+.roster-group header span {
+  color: var(--muted);
+  font-size: 14px;
+}
+.roster-group ul {
+  padding: 0;
+  margin: 16px 0 0;
+  list-style: none;
+}
+.roster-group li {
+  padding-block: 5px;
+  font-size: 16px;
+  line-height: 1.45;
+}
+.deferred {
+  color: var(--muted);
+}
+.deferred .model-cell {
+  white-space: normal;
+}
+.hint-wrap {
+  position: relative;
+  display: inline-block;
+}
+.hint-wrap button {
+  color: var(--muted);
+  padding: 5px 0;
+  font-size: 14px;
+}
+.hint-wrap [role="tooltip"] {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 100%;
+  background: var(--primary);
+  color: var(--on-primary);
+  border-radius: var(--radius-inset);
+  font-size: 13px;
+  padding: 6px 10px;
+  white-space: nowrap;
+}
+.hint-wrap .show {
+  display: block;
+}
+@media (max-width: 700px) {
+  .roster {
+    margin-top: 38px;
+  }
+  .roster-list {
+    display: block;
+    padding: 0 16px;
+  }
+  .roster-group,
+  .roster-group:first-child,
+  .roster-group:last-child {
+    padding: 19px 0;
+    display: grid;
+    grid-template-columns: minmax(83px, 0.9fr) minmax(0, 1.65fr);
+    gap: 10px;
+  }
+  .roster-group + .roster-group {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+  .roster-group header {
+    display: block;
+  }
+  .roster-group h3 {
+    font-size: 15px;
+  }
+  .roster-group header span {
+    display: block;
+    margin-top: 4px;
+  }
+  .roster-group ul {
+    margin: 0;
+  }
+  .roster-group li {
+    font-size: 15px;
+    padding: 0 0 7px;
+  }
+  .roster-group li:last-child {
+    padding-bottom: 0;
+  }
+  .status-panel {
+    padding: 14px 16px;
+  }
+  .archive-link {
+    font-size: 14px;
+  }
+}
+
+.exam-progress {
+  margin-top: 20px;
+}
+.exam-progress h2 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.exam-progress-list {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px 12px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.exam-progress-list li {
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  min-width: 0;
+  padding-block: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.exam-progress-list strong {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 700;
+}
+.exam-progress-list [data-active] {
+  color: var(--accent-ink);
+  font-weight: 650;
+}
+@media (max-width: 700px) {
+  .exam-progress-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .exam-stages {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .exam-stages li:first-child {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 370px) {
+  .exam-progress-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

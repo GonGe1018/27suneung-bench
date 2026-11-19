@@ -1,0 +1,40 @@
+name: Publish leaderboard
+on:
+  push:
+    branches: [main]
+    paths: ["web/**", ".github/workflows/pages.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm install --global pnpm@11.22.0
+      - run: pnpm install --frozen-lockfile
+        working-directory: web
+      - run: pnpm build
+        working-directory: web
+        env:
+          VITE_REPOSITORY_URL: ${{ github.server_url }}/${{ github.repository }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: web/dist
+      - uses: actions/deploy-pages@v4
+        id: deploy
