@@ -32,6 +32,10 @@ jobs:
         working-directory: web
         env:
           VITE_REPOSITORY_URL: ${{ github.server_url }}/${{ github.repository }}
+      - name: Refresh the share image from published scores
+        run: node scripts/refresh-share-card.mjs
+        working-directory: web
+        continue-on-error: true
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
