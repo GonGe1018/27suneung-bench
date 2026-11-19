@@ -11,10 +11,12 @@ import sys
 
 import requests
 
-from run_benchmark import prepare_exams, subject_group
+from run_benchmark import prepare_exams
 from . import cost_pilot as csat
 from . import run_budget
+from .export_web import area
 from .paths import CONFIGS, ROOT, resolve_local_path
+from .web_status import part_in_scope
 
 
 BASE = "https://openrouter.ai/api/v1"
@@ -23,6 +25,7 @@ ROUTES = {
     "qwen4-max": ("qwen/qwen4-max", "alibaba"),
     "glm-5.3-flashx": ("z-ai/glm-5.3-flashx", "z-ai/fp8"),
     "deepseek-v4.1-flash-1017": ("deepseek/deepseek-v4.1-flash-1017", "morph/fp8"),
+    "qwen3.8-flash-next": ("qwen/qwen3.8-flash-20260826", "alibaba/us-east-1"),
     "qwen3.8-27b": ("qwen/qwen3.8-27b", "wafer/fp8"),
     "muse-glimmer-30b": ("meta/muse-glimmer-30b", "modelrun/bf16"),
     "gemma-4-31b-it": ("google/gemma-4-31b-it", "coreweave/fp4"),
@@ -83,7 +86,7 @@ def generate(headers, model, effort, part, shared, metadata, limit, reserve, out
     with run_budget.record_submission(path):
         csat.write_json(path.with_suffix(".pending"), {"reservation_usd": str(reserve), **metadata})
         status, http = "transport_error", None
-        usage, record, stop_reason, answers = {}, {}, None, []
+        usage, record, stop_reason, completion, answers = {}, {}, None, None, []
         try:
             response = requests.post(
                 BASE + "/chat/completions", headers=headers,
@@ -97,8 +100,9 @@ def generate(headers, model, effort, part, shared, metadata, limit, reserve, out
             if response.ok and choices:
                 stop_reason = choices[0].get("finish_reason")
                 status = "invalid_answers"
+                completion = (choices[0].get("message") or {}).get("content")
                 try:
-                    value = json.loads(choices[0]["message"]["content"])["answers"]
+                    value = json.loads(completion)["answers"]
                     if isinstance(value, list) and len(value) == part.question_count and all(type(a) is int for a in value):
                         answers = value
                         status = "completed"
@@ -123,6 +127,8 @@ def generate(headers, model, effort, part, shared, metadata, limit, reserve, out
                       "output_tokens": usage.get("completion_tokens"),
                       "reasoning_tokens": (usage.get("completion_tokens_details") or {}).get("reasoning_tokens")},
         }
+        if status != "completed" and isinstance(completion, str):
+            row["raw_completion"] = completion
         if prior is not None:
             prior_cost = Decimal(str(prior["estimated_usd"]))
             row["prior_attempt"] = prior
@@ -135,14 +141,14 @@ def generate(headers, model, effort, part, shared, metadata, limit, reserve, out
 
 
 
-def retry_unanswered(headers, model, name, exam, output, year, budget):
+def retry_unanswered(headers, model, name, exam, output, year, budget, effort=None):
     if model not in ROUTES:
         raise ValueError("Unknown OpenRouter model")
     parts = [part for part in csat.exam_parts() if part.name == name]
     if len(parts) != 1:
         raise ValueError("Unknown exam bundle")
     part = parts[0]
-    with run_budget.locked_output(output / ".openrouter-retry"):
+    with run_budget.locked_output(output / ".openrouter-retry" / model / name):
         path = output / model / f"{name}.json"
         prior = json.loads(path.read_text(encoding="utf-8"))
         if (prior["status"] != "invalid_answers" or prior["answered"] or prior.get("prior_attempt")
@@ -170,7 +176,7 @@ def retry_unanswered(headers, model, name, exam, output, year, budget):
             raise ValueError(f"Manual retry would exceed the OpenRouter budget of USD {budget:.2f}")
         keys = csat.score_keys(exam, parts, allow_missing=True)
         print(f"Submitting one manual retry for {model}/{name}; additional USD {reserve:.2f} reserved.", flush=True)
-        generate(headers, model, prior["effort"], part, shared, metadata, limit, reserve, output, keys, prior)
+        generate(headers, model, effort or prior["effort"], part, shared, metadata, limit, reserve, output, keys, prior)
 
 
 def main():
@@ -178,7 +184,10 @@ def main():
     parser.add_argument("--budget-usd", type=run_budget.positive_usd, required=True)
     parser.add_argument("--key-stdin", action="store_true")
     parser.add_argument("--retry", nargs=2, metavar=("MODEL", "BUNDLE"))
+    parser.add_argument("--retry-effort", choices=("low", "medium", "high", "xhigh", "max"))
     args = parser.parse_args()
+    if args.retry_effort and not args.retry:
+        parser.error("--retry-effort requires --retry")
     key = sys.stdin.readline().strip() if args.key_stdin else os.environ.get("OPENROUTER_API_KEY")
     if not key and not args.key_stdin:
         key = getpass.getpass("OPENROUTER_API_KEY: ")
@@ -197,7 +206,7 @@ def main():
     exam = resolve_local_path(ROOT / config["exam_dir"])
     output = resolve_local_path(ROOT / config["output_dir"])
     if args.retry:
-        retry_unanswered(headers, *args.retry, exam, output, config["exam_year"], budget)
+        retry_unanswered(headers, *args.retry, exam, output, config["exam_year"], budget, args.retry_effort)
         return
     with run_budget.locked_output(output / ".openrouter"):
         parts = csat.exam_parts()
@@ -215,8 +224,7 @@ def main():
             limit = min(262_144, route["max_completion_tokens"])
             for part in parts:
                 name = part.name
-                if name not in prepared or (entry["scope"] == "science2" and subject_group(part) not in
-                                             {"korean", "math", "english", "science-2"}):
+                if name not in prepared or not part_in_scope(entry["scope"], area(part.subject)):
                     continue
                 shared, metadata = prepared[name]
                 path = output / model / f"{name}.json"

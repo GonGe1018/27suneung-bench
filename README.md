@@ -5,6 +5,7 @@
 
 | 응시 범위 | 문항 | 응시 예정 모델 · 추론 강도 |
 | --- | ---: | --- |
+| 국어 | 56 | Qwen3.8 Flash-Next · xhigh |
 | 국영수 | 147 | Gemini 4 Carbon · high<br>Gemini 4 Hydrogen · xhigh |
 | 국영수 + 과학탐구Ⅱ | 227 | Kimi K3.1 Pro · max<br>Qwen4 Max · xhigh<br>DeepSeek V4.1 Flash 1017 · max<br>GLM-5.3 FlashX · max |
 | 전체 영역 | 487 | GPT-6.2 Astra · max<br>GPT-6.2 Sol · max<br>Claude Fable 5.2 · max<br>Claude Opus 5.5 · max<br>Qwen3.8-27B · xhigh<br>Muse Glimmer 30B · xhigh<br>Gemma 4 31B IT · thinking on |

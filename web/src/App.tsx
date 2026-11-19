@@ -327,7 +327,7 @@ function ResultsTable({
                       <td className="secondary-cell">{r.count - r.answered}</td>
                       <td className="secondary-cell">{dollars(r.cost)}</td>
                       <td className="secondary-cell effort">
-                        {r.model.effort}
+                        {r.effort}
                       </td>
                     </>
                   ) : (
@@ -369,7 +369,7 @@ function ResultsTable({
                         </div>
                         <div>
                           <dt>추론 강도</dt>
-                          <dd>{r.model.effort}</dd>
+                          <dd>{r.effort}</dd>
                         </div>
                         <div>
                           <dt>추정 비용</dt>

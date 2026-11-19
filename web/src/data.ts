@@ -19,6 +19,7 @@ export type Area = keyof typeof areas;
 export type Provider = string;
 type Part = { label: string; area: Area; count: number };
 type Score = {
+  effort?: string;
   answered: number;
   correct: number;
   cost: number | null;
@@ -55,6 +56,7 @@ export type Dataset = {
 };
 export type Result = {
   id: string;
+  effort: string;
   model: Model;
   answered: number;
   correct: number;
@@ -119,6 +121,7 @@ export function measure(
     count,
     cost,
     billed,
+    effort: [...new Set(parts.map((part) => model.parts[part].effort ?? model.effort))].join(" / "),
     accuracy: answered ? (100 * correct) / answered : null,
     rank: null,
   };

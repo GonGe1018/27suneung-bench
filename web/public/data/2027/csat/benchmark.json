@@ -294,6 +294,19 @@
         }
       }
     },
+    "qwen3.8-flash-next": {
+      "name": "Qwen3.8 Flash-Next",
+      "short": "Qwen3.8 Flash-Next",
+      "provider": "Qwen",
+      "effort": "xhigh",
+      "scope": "korean",
+      "expectedParts": [
+        "korean-common",
+        "korean-speech",
+        "korean-language"
+      ],
+      "parts": {}
+    },
     "qwen3.8-27b": {
       "name": "Qwen3.8-27B",
       "short": "Qwen3.8-27B",
@@ -748,7 +761,7 @@
     }
   },
   "completion": {
-    "plannedBundles": 239,
+    "plannedBundles": 242,
     "scoredBundles": 39,
     "publishedBundles": 39
   },
@@ -757,7 +770,7 @@
       "readyParts": 3,
       "totalParts": 3,
       "scoredModels": 13,
-      "plannedModels": 13
+      "plannedModels": 14
     },
     "math": {
       "readyParts": 0,

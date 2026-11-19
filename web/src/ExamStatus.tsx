@@ -26,6 +26,7 @@ export function YearPicker({ year }: { year: number }) {
 }
 
 const groups = {
+  korean: "국어",
   all: "전체 영역",
   science2: "국영수와 과학탐구Ⅱ",
   core: "국영수",

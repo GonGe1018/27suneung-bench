@@ -37,6 +37,7 @@ const openRouterIds: Record<string, string> = {
   "gemma-4-31b-it": "google/gemma-4-31b-it",
   "kimi-k3.1-pro": "moonshotai/kimi-k3.1-pro",
   "qwen4-max": "qwen/qwen4-max",
+  "qwen3.8-flash-next": "qwen/qwen3.8-flash",
   "qwen3.8-27b": "qwen/qwen3.8-27b",
   "deepseek-v4.1-flash-1017": "deepseek/deepseek-v4.1-flash-1017",
   "glm-5.3-flashx": "z-ai/glm-5.3-flashx",

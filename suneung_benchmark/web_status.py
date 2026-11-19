@@ -31,6 +31,13 @@ def summarize_progress(parts, models, ready_parts, scored):
     return progress
 
 
+def part_in_scope(scope, area_name):
+    if scope == "korean":
+        return area_name == "korean"
+    return (scope == "all" or area_name in {"korean", "math", "english"}
+            or (scope == "science2" and area_name == "science2"))
+
+
 def build_snapshot(config, plan, papers, output, previous, released=False, finalize=False):
     definitions = exam_parts()
     parts = {p.name: {"label": p.label, "area": area(p.subject), "count": p.question_count} for p in definitions}
@@ -44,8 +51,7 @@ def build_snapshot(config, plan, papers, output, previous, released=False, final
     models = {}
     for key, m in roster.items():
         coverage = m["scope"]
-        expected = [k for k, p in parts.items() if coverage == "all" or p["area"] in ("korean", "math", "english")
-                    or (coverage == "science2" and p["area"] == "science2")]
+        expected = [k for k, p in parts.items() if part_in_scope(coverage, p["area"])]
         models[key] = {"name": m["name"], "short": m.get("short", m["name"]), "provider": m["provider"],
                        "effort": m.get("effort", "미정"), "scope": coverage, "expectedParts": expected, "parts": {}}
     scored, hashes = set(), {}
@@ -70,7 +76,11 @@ def build_snapshot(config, plan, papers, output, previous, released=False, final
                 if not digest or hashes.setdefault(part, digest) != digest:
                     raise ValueError(f"Different inputs for {part}")
                 cost = float(row["estimated_usd"]) if row["estimated_usd"] else None
-                models[key]["parts"][part] = {"answered": answered, "correct": correct, "cost": cost, "billedEstimate": cost}
+                score = {"answered": answered, "correct": correct, "cost": cost, "billedEstimate": cost}
+                effort = row.get("effort")
+                if effort and effort != models[key]["effort"]:
+                    score["effort"] = effort
+                models[key]["parts"][part] = score
                 scored.add((key, part))
     ready_parts = {
         part.name for part in definitions
