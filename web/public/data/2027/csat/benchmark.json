@@ -1673,6 +1673,18 @@
           "correct": 20,
           "cost": 0.482774,
           "billedEstimate": 0.482774
+        },
+        "earth-science-1": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 1.161764,
+          "billedEstimate": 1.161764
+        },
+        "social-culture": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.661264,
+          "billedEstimate": 0.661264
         }
       }
     },
@@ -1985,6 +1997,18 @@
           "correct": 20,
           "cost": 1.657448,
           "billedEstimate": 1.657448
+        },
+        "biology-2": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 2.434128,
+          "billedEstimate": 2.434128
+        },
+        "physics-1": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 2.71136,
+          "billedEstimate": 2.71136
         }
       }
     },
@@ -2101,10 +2125,10 @@
           "billedEstimate": 0.993916
         },
         "biology-2": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 1.384224,
-          "billedEstimate": 1.384224
+          "answered": 20,
+          "correct": 20,
+          "cost": 3.079748,
+          "billedEstimate": 3.079748
         },
         "earth-science-2": {
           "answered": 20,
@@ -2135,7 +2159,7 @@
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 257,
-    "publishedBundles": 257
+    "scoredBundles": 261,
+    "publishedBundles": 261
   }
 }
