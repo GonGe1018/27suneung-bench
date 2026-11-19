@@ -1,4 +1,4 @@
-[![2027학년도 수능 성적표](docs/assets/2027-scorecard.png)](https://gonge1018.github.io/27suneung-bench/)
+[![2027학년도 수능 국영수 성적표, 15개 모델의 정답률과 원점수](docs/assets/2027-scorecard.png)](https://gonge1018.github.io/27suneung-bench/?year=2027&scope=core)
 
 <details open>
 <summary><strong>2027학년도 성적표</strong></summary>
