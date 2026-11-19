@@ -306,10 +306,10 @@
           "billedEstimate": 0.004774374
         },
         "math-geometry": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 0.011396917,
-          "billedEstimate": 0.011396917
+          "answered": 8,
+          "correct": 8,
+          "cost": 0.018765394,
+          "billedEstimate": 0.018765394
         },
         "math-calculus": {
           "answered": 8,
