@@ -2225,10 +2225,10 @@
           "billedEstimate": 0.456992
         },
         "world-geography": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 1.03936,
-          "billedEstimate": 1.03936
+          "answered": 20,
+          "correct": 20,
+          "cost": 2.43438,
+          "billedEstimate": 2.43438
         },
         "earth-science-1": {
           "answered": 20,
