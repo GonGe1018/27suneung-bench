@@ -2231,10 +2231,11 @@
           "billedEstimate": 1.03936
         },
         "earth-science-1": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 2.637504,
-          "billedEstimate": 2.637504
+          "answered": 20,
+          "correct": 18,
+          "cost": 3.751248,
+          "billedEstimate": 3.751248,
+          "effort": "xhigh"
         },
         "politics-law": {
           "answered": 20,
