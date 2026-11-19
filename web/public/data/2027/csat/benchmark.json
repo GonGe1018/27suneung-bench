@@ -934,6 +934,24 @@
           "correct": 13,
           "cost": 0.0440631,
           "billedEstimate": 0.0440631
+        },
+        "biology-1": {
+          "answered": 20,
+          "correct": 14,
+          "cost": 0.0693003,
+          "billedEstimate": 0.0693003
+        },
+        "economics": {
+          "answered": 20,
+          "correct": 17,
+          "cost": 0.0845205,
+          "billedEstimate": 0.0845205
+        },
+        "ethics-thought": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 0.1393719,
+          "billedEstimate": 0.1393719
         }
       }
     },
@@ -1852,14 +1870,20 @@
           "correct": 20,
           "cost": 2.092072,
           "billedEstimate": 2.092072
+        },
+        "korean-geography": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 2.50106,
+          "billedEstimate": 2.50106
         }
       }
     }
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 211,
-    "publishedBundles": 211
+    "scoredBundles": 215,
+    "publishedBundles": 215
   },
   "progress": {
     "korean": {
@@ -1883,7 +1907,7 @@
     "social": {
       "readyParts": 9,
       "totalParts": 9,
-      "scoredModels": 3,
+      "scoredModels": 4,
       "plannedModels": 8
     },
     "science1": {
