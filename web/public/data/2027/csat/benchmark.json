@@ -1768,6 +1768,24 @@
           "correct": 19,
           "cost": 0.1034035,
           "billedEstimate": 0.1034035
+        },
+        "economics": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.121011,
+          "billedEstimate": 0.121011
+        },
+        "politics-law": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.153846,
+          "billedEstimate": 0.153846
+        },
+        "social-culture": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.137676,
+          "billedEstimate": 0.137676
         }
       }
     },
@@ -1984,14 +2002,20 @@
           "correct": 20,
           "cost": 1.04782,
           "billedEstimate": 1.04782
+        },
+        "chemistry-2": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.993916,
+          "billedEstimate": 0.993916
         }
       }
     }
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 233,
-    "publishedBundles": 233
+    "scoredBundles": 237,
+    "publishedBundles": 237
   },
   "progress": {
     "korean": {
@@ -2015,7 +2039,7 @@
     "social": {
       "readyParts": 9,
       "totalParts": 9,
-      "scoredModels": 4,
+      "scoredModels": 5,
       "plannedModels": 8
     },
     "science1": {
