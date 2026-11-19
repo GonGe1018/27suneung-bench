@@ -404,8 +404,9 @@
         "chemistry-2": {
           "answered": 0,
           "correct": 0,
-          "cost": 0.452145944,
-          "billedEstimate": 0.452145944
+          "cost": 0.588488856,
+          "billedEstimate": 0.588488856,
+          "effort": "high"
         },
         "physics-2": {
           "answered": 20,
@@ -500,10 +501,11 @@
           "effort": "low"
         },
         "physics-2": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 0.3513008,
-          "billedEstimate": 0.3513008
+          "answered": 20,
+          "correct": 11,
+          "cost": 0.4695187,
+          "billedEstimate": 0.4695187,
+          "effort": "low"
         },
         "earth-science-2": {
           "answered": 20,
@@ -1972,8 +1974,8 @@
         "life-ethics": {
           "answered": 0,
           "correct": 0,
-          "cost": 5.274984,
-          "billedEstimate": 5.274984
+          "cost": 10.549968,
+          "billedEstimate": 10.549968
         },
         "physics-2": {
           "answered": 20,
@@ -2052,6 +2054,12 @@
           "correct": 20,
           "cost": 1.232648,
           "billedEstimate": 1.232648
+        },
+        "earth-science-1": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 5.275008,
+          "billedEstimate": 5.275008
         }
       }
     },
@@ -2220,13 +2228,31 @@
           "correct": 0,
           "cost": 1.03936,
           "billedEstimate": 1.03936
+        },
+        "earth-science-1": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 2.637504,
+          "billedEstimate": 2.637504
+        },
+        "politics-law": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.713184,
+          "billedEstimate": 0.713184
+        },
+        "social-culture": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 1.133284,
+          "billedEstimate": 1.133284
         }
       }
     }
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 272,
-    "publishedBundles": 272
+    "scoredBundles": 276,
+    "publishedBundles": 276
   }
 }
