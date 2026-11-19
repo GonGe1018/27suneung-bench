@@ -782,6 +782,12 @@
             "kind": "multiple-choice",
             "count": 6
           }
+        },
+        "english": {
+          "answered": 45,
+          "correct": 32,
+          "cost": 0.002045946,
+          "billedEstimate": 0.002045946
         }
       }
     },
@@ -1222,8 +1228,8 @@
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 105,
-    "publishedBundles": 105
+    "scoredBundles": 106,
+    "publishedBundles": 106
   },
   "progress": {
     "korean": {
@@ -1239,9 +1245,9 @@
       "plannedModels": 15
     },
     "english": {
-      "readyParts": 0,
+      "readyParts": 1,
       "totalParts": 1,
-      "scoredModels": 0,
+      "scoredModels": 1,
       "plannedModels": 15
     },
     "social": {
