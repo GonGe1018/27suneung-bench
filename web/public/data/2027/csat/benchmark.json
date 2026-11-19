@@ -404,8 +404,8 @@
         "chemistry-2": {
           "answered": 0,
           "correct": 0,
-          "cost": 0.179488152,
-          "billedEstimate": 0.179488152
+          "cost": 0.452145944,
+          "billedEstimate": 0.452145944
         },
         "physics-2": {
           "answered": 20,
@@ -501,14 +501,14 @@
         "physics-2": {
           "answered": 0,
           "correct": 0,
-          "cost": 0.1756504,
-          "billedEstimate": 0.1756504
+          "cost": 0.3513008,
+          "billedEstimate": 0.3513008
         },
         "earth-science-2": {
           "answered": 0,
           "correct": 0,
-          "cost": 0.17565077,
-          "billedEstimate": 0.17565077
+          "cost": 0.35130154,
+          "billedEstimate": 0.35130154
         }
       }
     },
@@ -1458,10 +1458,10 @@
           "billedEstimate": 0.3890895
         },
         "korean-language": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 2.9456865,
-          "billedEstimate": 2.9456865
+          "answered": 11,
+          "correct": 10,
+          "cost": 3.457137,
+          "billedEstimate": 3.457137
         },
         "korean-speech": {
           "answered": 11,
@@ -1606,6 +1606,24 @@
           "correct": 20,
           "cost": 0.585234,
           "billedEstimate": 0.585234
+        },
+        "chemistry-1": {
+          "answered": 20,
+          "correct": 19,
+          "cost": 0.536664,
+          "billedEstimate": 0.536664
+        },
+        "chemistry-2": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.489624,
+          "billedEstimate": 0.489624
+        },
+        "earth-science-2": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.556444,
+          "billedEstimate": 0.556444
         }
       }
     },
@@ -2050,7 +2068,7 @@
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 243,
-    "publishedBundles": 243
+    "scoredBundles": 246,
+    "publishedBundles": 246
   }
 }
