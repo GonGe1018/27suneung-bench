@@ -86,13 +86,11 @@ def build_snapshot(config, plan, papers, output, previous, released=False, final
         state = "running"
     if complete or finalize or previous.get("state") == "complete":
         state = "complete"
-        # A public checkout without private receipts must keep already published results.
-        for key, record in previous.get("models", {}).items():
-            if key in models:
-                models[key]["parts"] = {**record["parts"], **models[key]["parts"]}
-    else:
-        for model in models.values():
-            model["parts"] = {}
+    # A public checkout without private receipts must keep already published results.
+    for key, record in previous.get("models", {}).items():
+        if key in models:
+            models[key]["parts"] = {**record["parts"], **models[key]["parts"]}
+    scored = {(key, part) for key, model in models.items() for part in model["parts"]}
     snapshot = {"year": config["exam_year"], "exam": "대학수학능력시험", "state": state, "parts": parts, "models": models}
     published = sum(
         sum(part in model["parts"] for part in model["expectedParts"])
@@ -100,7 +98,7 @@ def build_snapshot(config, plan, papers, output, previous, released=False, final
     )
     snapshot["completion"] = {
         "plannedBundles": sum(len(model["expectedParts"]) for model in models.values()),
-        "scoredBundles": published if state == "complete" else len(scored),
+        "scoredBundles": len(scored),
         "publishedBundles": published,
     }
     if state != "complete":

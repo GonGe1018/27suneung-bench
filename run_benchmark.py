@@ -275,7 +275,6 @@ def previous_jobs(jobs, output, prepared):
 def schedule(queue, prepared, clients, output, budget, exposure, provider_limit, priorities=None):
     in_flight = {}
     by_provider = Counter()
-    by_model = Counter()
     gemini_admitted = {job.model.model: threading.Event() for job, _, _ in queue
                        if job.model.provider == "gemini"}
     paused_models = set()
@@ -290,8 +289,6 @@ def schedule(queue, prepared, clients, output, budget, exposure, provider_limit,
                 if by_provider[provider] >= provider_limit:
                     continue
                 admitted = gemini_admitted.get(job.model.model)
-                if admitted is not None and by_model[job.model.model] and not admitted.is_set():
-                    continue
                 if admission is None and (provider in paused_providers or
                                           job.model.model in paused_models or exposure + amount > budget):
                     continue
@@ -303,14 +300,12 @@ def schedule(queue, prepared, clients, output, budget, exposure, provider_limit,
                 future = pool.submit(run_job, job, output, prepared[job.part.name], clients, amount, admission, admitted)
                 in_flight[future] = job, amount
                 by_provider[provider] += 1
-                by_model[job.model.model] += 1
             if not in_flight:
                 break
             done, _ = wait(in_flight, timeout=1 if queue else None, return_when=FIRST_COMPLETED)
             for future in done:
                 job, amount = in_flight.pop(future)
                 by_provider[job.model.provider] -= 1
-                by_model[job.model.model] -= 1
                 admitted = gemini_admitted.get(job.model.model)
                 label = f"{job.model.model}/{job.part.name}"
                 try:
@@ -336,17 +331,11 @@ def schedule(queue, prepared, clients, output, budget, exposure, provider_limit,
 def execute(jobs, prepared, output, budget, provider_limit, supplied_keys=None, priorities=None):
     ready = [job for job in jobs if job.part.name in prepared]
     known, pending = previous_jobs(ready, output, prepared)
-    ready_new = [job for job in ready if job not in known]
-    awaiting_inputs = [job for job in jobs if job.part.name not in prepared
-                       and not job.path(output).exists() and not job.path(output).with_suffix(".pending").exists()]
-    new = defer_lower_priority(ready_new, awaiting_inputs, priorities)
-    waiting_for_priority = len(ready_new) - len(new)
-    if waiting_for_priority:
-        print(f"Held {waiting_for_priority} lower-priority requests while higher-priority papers are missing.",
-              flush=True)
+    # Apply priorities to available papers so unpublished subjects cannot hold up a release.
+    new = [job for job in ready if job not in known]
     providers = dict.fromkeys(job.model.provider for job in new + [job for job, _, _ in pending])
     if not providers:
-        return waiting_for_priority
+        return 0
     with ExitStack() as stack:
         clients = {}
         for provider in providers:
@@ -400,7 +389,7 @@ def execute(jobs, prepared, output, budget, provider_limit, supplied_keys=None, 
         queue = pending + [(job, Decimal(reservations[job]["reserved_usd"]), None) for job in eligible]
         deferred = schedule(list(reversed(queue)), prepared, clients, output, budget, existing_cost, provider_limit,
                             priorities)
-        deferred += waiting_for_priority + len(priced) - len(eligible)
+        deferred += len(priced) - len(eligible)
         print(f"Deferred requests: {deferred}; input count failures: {len(count_failures)}.", flush=True)
         return deferred + len(count_failures)
 

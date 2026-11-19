@@ -427,7 +427,6 @@ export default function App({ data }: { data: Dataset }) {
   const readScope = () => {
     const value = new URLSearchParams(location.search).get("scope");
     if (value && partIds(data, value).length) return value;
-    if (data.state !== "complete") return "core";
     const candidates = [
       "core",
       "math",
@@ -454,17 +453,15 @@ export default function App({ data }: { data: Dataset }) {
     return () => window.removeEventListener("popstate", back);
   }, [data]);
   const parts = useMemo(() => partIds(data, scope), [data, scope]);
-  const rows = useMemo(
-    () => (pending ? [] : ranking(data, parts)),
-    [data, parts, pending],
-  );
+  const rows = useMemo(() => ranking(data, parts), [data, parts]);
+  const waitingForScores = pending && rows.length === 0;
   const publishedIds = new Set(rows.map((row) => row.id));
   const unpublished = Object.entries(data.models).filter(
     ([id, model]) => coversParts(model, parts) && !publishedIds.has(id),
   );
   if (pending) unpublished.sort(([, a], [, b]) => a.name.localeCompare(b.name));
-  const planned = pending ? unpublished : undefined;
-  const modelCount = pending
+  const planned = waitingForScores ? unpublished : undefined;
+  const modelCount = waitingForScores
     ? `${unpublished.length}개 모델`
     : unpublished.length
       ? `${rows.length}개 공개 · ${unpublished.length}개 예정`
@@ -596,7 +593,7 @@ export default function App({ data }: { data: Dataset }) {
         <AccuracyChart
           rows={rows}
           unpublished={unpublished}
-          pending={pending}
+          pending={waitingForScores}
           theme={theme}
         />
         <ResultsTable
@@ -605,11 +602,11 @@ export default function App({ data }: { data: Dataset }) {
           parts={parts}
           data={data}
           unpublished={unpublished}
-          pending={pending}
+          pending={waitingForScores}
         />
         {planned?.length || rows.length ? (
           <div className="chart-grid">
-            {pending ? (
+            {waitingForScores ? (
               <section className="analysis-plot" aria-labelledby="pending-plot-title">
                 <div className="card-heading">
                   <div>

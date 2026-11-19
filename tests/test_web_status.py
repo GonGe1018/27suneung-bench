@@ -31,18 +31,18 @@ class PublicExamStatusTest(unittest.TestCase):
                                      max_points=100, correct=part.question_count, answered=part.question_count,
                                      question_count=part.question_count, input_sha256="abc", estimated_usd=0.5))
 
-    def test_release_shows_running_without_partial_scores(self):
+    def test_release_publishes_partial_scores_while_running(self):
         self.assertEqual(self.snapshot()["state"], "awaiting")
         (self.root / "math-exam.pdf").touch()
         self.assertEqual(self.snapshot()["state"], "running")
         self.record(exam_parts()[:1])
         running = self.snapshot()
         self.assertEqual(running["state"], "running")
-        self.assertFalse(running["models"]["gpt-6.2-astra"]["parts"])
+        self.assertIn(exam_parts()[0].name, running["models"]["gpt-6.2-astra"]["parts"])
         self.assertEqual(running["completion"], {
             "plannedBundles": 33,
             "scoredBundles": 1,
-            "publishedBundles": 0,
+            "publishedBundles": 1,
         })
 
     def test_area_progress_counts_ready_papers_and_fully_scored_models(self):
@@ -66,7 +66,7 @@ class PublicExamStatusTest(unittest.TestCase):
             "plannedModels": 2,
         })
         self.assertEqual(snapshot["progress"]["english"]["readyParts"], 0)
-        self.assertEqual(snapshot["models"]["gpt-6.2-astra"]["parts"], {})
+        self.assertEqual(len(snapshot["models"]["gpt-6.2-astra"]["parts"]), len(math))
 
     def test_complete_publishes_scores_and_keeps_deferred_models(self):
         core = [p for p in exam_parts() if p.subject in {"korean", "math", "english"}]

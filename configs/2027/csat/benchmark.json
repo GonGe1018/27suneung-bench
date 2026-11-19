@@ -3,7 +3,7 @@
   "exam_dir": "exams/2027/csat",
   "output_dir": "results/2027/csat/benchmark",
   "generation_retries": 0,
-  "parallelism_per_provider": 4,
+  "parallelism_per_provider": 8,
   "subject_priority": ["math", "korean", "english", "science-2", "science-1", "social"],
   "models": [
     {"model": "gemini-4-carbon", "provider": "gemini", "effort": "high", "scope": "core", "max_output_tokens": 262144},

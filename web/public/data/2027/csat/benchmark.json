@@ -1,7 +1,7 @@
 {
   "year": 2027,
   "exam": "대학수학능력시험",
-  "state": "awaiting",
+  "state": "running",
   "parts": {
     "korean-common": {
       "label": "국어 공통",
@@ -357,7 +357,14 @@
         "math-geometry",
         "english"
       ],
-      "parts": {}
+      "parts": {
+        "korean-speech": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.216147,
+          "billedEstimate": 0.216147
+        }
+      }
     },
     "gpt-6.2-astra": {
       "name": "GPT-6.2 Astra",
@@ -392,7 +399,26 @@
         "biology-2",
         "earth-science-2"
       ],
-      "parts": {}
+      "parts": {
+        "korean-common": {
+          "answered": 34,
+          "correct": 34,
+          "cost": 1.264794,
+          "billedEstimate": 1.264794
+        },
+        "korean-language": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.616604,
+          "billedEstimate": 0.616604
+        },
+        "korean-speech": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.422364,
+          "billedEstimate": 0.422364
+        }
+      }
     },
     "gpt-6.2-sol": {
       "name": "GPT-6.2 Sol",
@@ -427,7 +453,26 @@
         "biology-2",
         "earth-science-2"
       ],
-      "parts": {}
+      "parts": {
+        "korean-common": {
+          "answered": 34,
+          "correct": 34,
+          "cost": 0.3312585,
+          "billedEstimate": 0.3312585
+        },
+        "korean-language": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.156311,
+          "billedEstimate": 0.156311
+        },
+        "korean-speech": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.144891,
+          "billedEstimate": 0.144891
+        }
+      }
     },
     "claude-fable-5-2": {
       "name": "Claude Fable 5.2",
@@ -462,7 +507,14 @@
         "biology-2",
         "earth-science-2"
       ],
-      "parts": {}
+      "parts": {
+        "korean-speech": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.570416,
+          "billedEstimate": 0.570416
+        }
+      }
     },
     "claude-opus-5-5": {
       "name": "Claude Opus 5.5",
@@ -497,19 +549,26 @@
         "biology-2",
         "earth-science-2"
       ],
-      "parts": {}
+      "parts": {
+        "korean-speech": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.374268,
+          "billedEstimate": 0.374268
+        }
+      }
     }
   },
   "completion": {
     "plannedBundles": 239,
-    "scoredBundles": 0,
-    "publishedBundles": 0
+    "scoredBundles": 9,
+    "publishedBundles": 9
   },
   "progress": {
     "korean": {
-      "readyParts": 0,
+      "readyParts": 3,
       "totalParts": 3,
-      "scoredModels": 0,
+      "scoredModels": 2,
       "plannedModels": 13
     },
     "math": {
