@@ -311,6 +311,12 @@
           "correct": 6,
           "cost": 0.00816929,
           "billedEstimate": 0.00816929
+        },
+        "korean-common": {
+          "answered": 34,
+          "correct": 28,
+          "cost": 0.02381803,
+          "billedEstimate": 0.02381803
         }
       }
     },
@@ -769,8 +775,8 @@
   },
   "completion": {
     "plannedBundles": 242,
-    "scoredBundles": 40,
-    "publishedBundles": 40
+    "scoredBundles": 41,
+    "publishedBundles": 41
   },
   "progress": {
     "korean": {
