@@ -12,7 +12,7 @@ pnpm dev
 
 첫 방문에는 다크 테마를 적용하고, 헤더에서 고른 테마는 다음 방문에도 적용한다. 기본 강조색은 블리츠크랭크의 황동색이다. 파비콘은 Riot Games [자산 사용 정책](https://www.riotgames.com/en/legal)에 따라 [블리츠크랭크 초상화](https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Blitzcrank.png)를 사용한다.
 
-모델명 옆의 로고는 [Lobe Icons](https://github.com/lobehub/lobe-icons)의 단색 SVG를 번들에 포함한다. [아이콘 라이선스](public/model-icons-LICENSE.txt)
+모델명 옆의 로고에는 Lobe Icons의 단색 SVG와 TypeSafe 공식 문서의 Jev 아이콘을 사용한다. [Lobe Icons](https://github.com/lobehub/lobe-icons) · [아이콘 라이선스](public/model-icons-LICENSE.txt) · [TypeSafe 문서](https://docs.typesafe.ai/models)
 
 ## 모서리 반경
 

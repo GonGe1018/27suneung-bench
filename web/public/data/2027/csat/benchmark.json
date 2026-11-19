@@ -696,7 +696,7 @@
       "short": "Jev 1.14",
       "provider": "TypeSafe",
       "effort": "—",
-      "scope": "korean-math",
+      "scope": "all",
       "expectedParts": [
         "korean-common",
         "korean-speech",
@@ -704,7 +704,25 @@
         "math-common",
         "math-statistics",
         "math-calculus",
-        "math-geometry"
+        "math-geometry",
+        "english",
+        "life-ethics",
+        "ethics-thought",
+        "korean-geography",
+        "world-geography",
+        "east-asia-history",
+        "world-history",
+        "economics",
+        "politics-law",
+        "social-culture",
+        "physics-1",
+        "chemistry-1",
+        "biology-1",
+        "earth-science-1",
+        "physics-2",
+        "chemistry-2",
+        "biology-2",
+        "earth-science-2"
       ],
       "parts": {
         "korean-common": {
@@ -1203,7 +1221,7 @@
     }
   },
   "completion": {
-    "plannedBundles": 258,
+    "plannedBundles": 276,
     "scoredBundles": 105,
     "publishedBundles": 105
   },
@@ -1224,25 +1242,25 @@
       "readyParts": 0,
       "totalParts": 1,
       "scoredModels": 0,
-      "plannedModels": 14
+      "plannedModels": 15
     },
     "social": {
       "readyParts": 0,
       "totalParts": 9,
       "scoredModels": 0,
-      "plannedModels": 7
+      "plannedModels": 8
     },
     "science1": {
       "readyParts": 0,
       "totalParts": 4,
       "scoredModels": 0,
-      "plannedModels": 7
+      "plannedModels": 8
     },
     "science2": {
       "readyParts": 0,
       "totalParts": 4,
       "scoredModels": 0,
-      "plannedModels": 12
+      "plannedModels": 13
     }
   }
 }

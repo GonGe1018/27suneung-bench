@@ -7,5 +7,5 @@
   {"id":"qwen3.8-27b","name":"Qwen3.8-27B","provider":"Qwen","scope":"all","effort":"xhigh"},
   {"id":"muse-glimmer-30b","name":"Muse Glimmer 30B","provider":"Muse","scope":"all","effort":"xhigh"},
   {"id":"gemma-4-31b-it","name":"Gemma 4 31B IT","provider":"Google","scope":"all","effort":"thinking on"},
-  {"id":"jev-1.14","name":"Jev 1.14","provider":"TypeSafe","scope":"korean-math","effort":"—"}
+  {"id":"jev-1.14","name":"Jev 1.14","provider":"TypeSafe","scope":"all","effort":"—"}
 ]

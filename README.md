@@ -8,6 +8,7 @@
 | 국영수 | 147 | Gemini 4 Carbon · high<br>Gemini 4 Hydrogen · xhigh |
 | 국영수 + 과학탐구Ⅱ | 227 | Kimi K3.1 Pro · max<br>Qwen4 Max · xhigh<br>DeepSeek V4.1 Flash 1017 · max<br>GLM-5.3 FlashX · max<br>Qwen3.8 Flash-Next · xhigh |
 | 전체 영역 | 487 | GPT-6.2 Astra · max<br>GPT-6.2 Sol · max<br>Claude Fable 5.2 · max<br>Claude Opus 5.5 · max<br>Qwen3.8-27B · xhigh<br>Muse Glimmer 30B · xhigh<br>Gemma 4 31B IT · thinking on |
+| 전체 영역 · 수학 객관식 | 474 | Jev 1.14 |
 
 [2027학년도 데이터](web/public/data/2027/csat/benchmark.json)
 

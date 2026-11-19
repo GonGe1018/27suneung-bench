@@ -7,6 +7,7 @@ import qwen from "./assets/model-icons/qwen.svg?inline";
 import deepseek from "./assets/model-icons/deepseek.svg?inline";
 import zai from "./assets/model-icons/zai.svg?inline";
 import muse from "./assets/model-icons/muse.svg?inline";
+import typesafe from "./assets/model-icons/typesafe.png?inline";
 
 const familyIcons: Record<string, string> = {
   gpt: openai,
@@ -18,6 +19,7 @@ const familyIcons: Record<string, string> = {
   deepseek,
   glm: zai,
   muse,
+  jev: typesafe,
 };
 
 export function getModelIcon(name: string): string | undefined {

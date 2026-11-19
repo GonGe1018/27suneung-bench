@@ -7,6 +7,7 @@ from tempfile import NamedTemporaryFile
 
 from .cost_pilot import exam_parts
 from .export_web import MODELS, ROOT, area
+from .jev_run import MODEL_ID as JEV_MODEL, public_scores as jev_scores
 
 
 def write_snapshot(target, data):
@@ -34,8 +35,6 @@ def summarize_progress(parts, models, ready_parts, scored):
 def part_in_scope(scope, area_name):
     if scope == "korean":
         return area_name == "korean"
-    if scope == "korean-math":
-        return area_name in {"korean", "math"}
     return (scope == "all" or area_name in {"korean", "math", "english"}
             or (scope == "science2" and area_name == "science2"))
 
@@ -84,6 +83,12 @@ def build_snapshot(config, plan, papers, output, previous, released=False, final
                     score["effort"] = effort
                 models[key]["parts"][part] = score
                 scored.add((key, part))
+    if JEV_MODEL in models:
+        jev = models[JEV_MODEL]
+        allowed = [part for part in definitions if part.name in jev["expectedParts"]]
+        for name, score in jev_scores(output.parent / JEV_MODEL, allowed):
+            jev["parts"][name] = score
+            scored.add((JEV_MODEL, name))
     ready_parts = {
         part.name for part in definitions
         if any((papers / f"{name}-exam.pdf").is_file() for name in (part.name, part.subject))

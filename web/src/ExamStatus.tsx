@@ -27,7 +27,6 @@ export function YearPicker({ year }: { year: number }) {
 
 const groups = {
   korean: "국어",
-  "korean-math": "국어·수학 객관식",
   all: "전체 영역",
   science2: "국영수와 과학탐구Ⅱ",
   core: "국영수",
@@ -223,9 +222,8 @@ export function ExamRoster({ data }: { data: Dataset }) {
             .filter(([, m]) => m.scope === scope)
             .sort(([, a], [, b]) => a.name.localeCompare(b.name));
           if (!group.length) return null;
-          const firstModel = group[0][1];
-          const questionCount = firstModel.expectedParts?.reduce(
-            (sum, key) => sum + (firstModel.parts[key]?.coverage?.count ?? data.parts[key].count),
+          const questionCount = group[0][1].expectedParts?.reduce(
+            (sum, key) => sum + data.parts[key].count,
             0,
           );
           return (
@@ -239,7 +237,13 @@ export function ExamRoster({ data }: { data: Dataset }) {
               <ul>
                 {group.map(([id, model]) => (
                   <li key={id}>
-                    <ModelName id={id} name={model.name} />
+                    <ModelName
+                      id={id}
+                      name={model.name}
+                      note={Object.values(model.parts).some((score) => score.coverage?.kind === "multiple-choice")
+                        ? "수학 객관식만"
+                        : undefined}
+                    />
                   </li>
                 ))}
               </ul>
