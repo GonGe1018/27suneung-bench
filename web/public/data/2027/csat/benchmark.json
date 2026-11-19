@@ -2020,14 +2020,26 @@
           "correct": 20,
           "cost": 1.567964,
           "billedEstimate": 1.567964
+        },
+        "chemistry-1": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.625696,
+          "billedEstimate": 0.625696
+        },
+        "physics-1": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 2.4198,
+          "billedEstimate": 2.4198
         }
       }
     }
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 239,
-    "publishedBundles": 239
+    "scoredBundles": 241,
+    "publishedBundles": 241
   },
   "progress": {
     "korean": {
