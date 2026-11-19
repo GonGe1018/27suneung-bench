@@ -247,9 +247,9 @@
         }
       }
     },
-    "glm-5.3": {
-      "name": "GLM-5.3",
-      "short": "GLM-5.3",
+    "glm-5.3-flashx": {
+      "name": "GLM-5.3 FlashX",
+      "short": "GLM-5.3 FlashX",
       "provider": "Z.ai",
       "effort": "max",
       "scope": "science2",

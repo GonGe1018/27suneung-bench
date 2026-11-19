@@ -39,7 +39,7 @@ const openRouterIds: Record<string, string> = {
   "qwen4-max": "qwen/qwen4-max",
   "qwen3.8-27b": "qwen/qwen3.8-27b",
   "deepseek-v4.1-flash-1017": "deepseek/deepseek-v4.1-flash-1017",
-  "glm-5.3": "z-ai/glm-5.3",
+  "glm-5.3-flashx": "z-ai/glm-5.3-flashx",
   "muse-glimmer-30b": "meta/muse-glimmer-30b",
 };
 

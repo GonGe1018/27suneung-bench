@@ -21,6 +21,7 @@ BASE = "https://openrouter.ai/api/v1"
 ROUTES = {
     "kimi-k3.1-pro": ("moonshotai/kimi-k3.1-pro", "wafer/us"),
     "qwen4-max": ("qwen/qwen4-max", "alibaba"),
+    "glm-5.3-flashx": ("z-ai/glm-5.3-flashx", "z-ai/fp8"),
     "deepseek-v4.1-flash-1017": ("deepseek/deepseek-v4.1-flash-1017", "morph/fp8"),
     "qwen3.8-27b": ("qwen/qwen3.8-27b", "wafer/fp8"),
     "muse-glimmer-30b": ("meta/muse-glimmer-30b", "modelrun/bf16"),
@@ -50,15 +51,18 @@ def request_body(model, effort, part, shared, limit):
     ]
     schema = csat.request_body(slug, part, shared, effort, limit)["text"]["format"]
     reasoning = {"enabled": True} if effort == "thinking on" else {"effort": effort}
+    response_format = {
+        "type": "json_schema",
+        "json_schema": {key: schema[key] for key in ("name", "schema", "strict")},
+    }
+    if model == "glm-5.3-flashx":
+        response_format = {"type": "json_object"}
     return {
         "model": slug,
         "messages": [{"role": "user", "content": content}],
         "reasoning": {**reasoning, "exclude": True},
         "max_tokens": limit,
-        "response_format": {
-            "type": "json_schema",
-            "json_schema": {key: schema[key] for key in ("name", "schema", "strict")},
-        },
+        "response_format": response_format,
         "provider": {"only": [tag], "allow_fallbacks": False, "require_parameters": True},
         "stream": False,
     }
@@ -201,8 +205,6 @@ def main():
         keys = csat.score_keys(exam, parts, allow_missing=True)
         with ThreadPoolExecutor(max_workers=len(ROUTES)) as pool:
             info = dict(zip(ROUTES, pool.map(endpoint, ROUTES)))
-        if any(m["id"] not in ROUTES for m in plan):
-            print("GLM-5.3 deferred: current endpoint accepts text only.", flush=True)
         jobs = []
         exposure = Decimal(0)
         for entry in plan:
