@@ -273,7 +273,14 @@
         "biology-2",
         "earth-science-2"
       ],
-      "parts": {}
+      "parts": {
+        "korean-speech": {
+          "answered": 11,
+          "correct": 8,
+          "cost": 0.15806577,
+          "billedEstimate": 0.15806577
+        }
+      }
     },
     "qwen3.8-27b": {
       "name": "Qwen3.8-27B",
@@ -730,8 +737,8 @@
   },
   "completion": {
     "plannedBundles": 239,
-    "scoredBundles": 36,
-    "publishedBundles": 36
+    "scoredBundles": 37,
+    "publishedBundles": 37
   },
   "progress": {
     "korean": {
