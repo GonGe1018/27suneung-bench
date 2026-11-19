@@ -1624,6 +1624,24 @@
           "correct": 20,
           "cost": 0.556444,
           "billedEstimate": 0.556444
+        },
+        "east-asia-history": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.452034,
+          "billedEstimate": 0.452034
+        },
+        "physics-1": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.630514,
+          "billedEstimate": 0.630514
+        },
+        "world-geography": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.487664,
+          "billedEstimate": 0.487664
         }
       }
     },
@@ -1918,6 +1936,18 @@
           "correct": 20,
           "cost": 1.4938,
           "billedEstimate": 1.4938
+        },
+        "chemistry-1": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 1.129952,
+          "billedEstimate": 1.129952
+        },
+        "chemistry-2": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 1.047912,
+          "billedEstimate": 1.047912
         }
       }
     },
@@ -2068,7 +2098,7 @@
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 246,
-    "publishedBundles": 246
+    "scoredBundles": 251,
+    "publishedBundles": 251
   }
 }
