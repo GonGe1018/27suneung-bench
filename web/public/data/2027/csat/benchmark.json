@@ -495,8 +495,9 @@
         "biology-2": {
           "answered": 0,
           "correct": 0,
-          "cost": 0.35130154,
-          "billedEstimate": 0.35130154
+          "cost": 0.52695231,
+          "billedEstimate": 0.52695231,
+          "effort": "high"
         },
         "physics-2": {
           "answered": 0,
@@ -2009,6 +2010,36 @@
           "correct": 20,
           "cost": 2.71136,
           "billedEstimate": 2.71136
+        },
+        "biology-1": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 2.420248,
+          "billedEstimate": 2.420248
+        },
+        "east-asia-history": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.577848,
+          "billedEstimate": 0.577848
+        },
+        "economics": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.841984,
+          "billedEstimate": 0.841984
+        },
+        "world-geography": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 1.56944,
+          "billedEstimate": 1.56944
+        },
+        "world-history": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.489712,
+          "billedEstimate": 0.489712
         }
       }
     },
@@ -2153,13 +2184,25 @@
           "correct": 20,
           "cost": 1.647784,
           "billedEstimate": 1.647784
+        },
+        "east-asia-history": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.466084,
+          "billedEstimate": 0.466084
+        },
+        "world-history": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.459276,
+          "billedEstimate": 0.459276
         }
       }
     }
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 261,
-    "publishedBundles": 261
+    "scoredBundles": 268,
+    "publishedBundles": 268
   }
 }
