@@ -568,6 +568,12 @@
           "correct": 45,
           "cost": 0.04518224,
           "billedEstimate": 0.04518224
+        },
+        "life-ethics": {
+          "answered": 20,
+          "correct": 14,
+          "cost": 0.05453,
+          "billedEstimate": 0.05453
         }
       }
     },
@@ -736,6 +742,12 @@
           "correct": 29,
           "cost": 0.00559024,
           "billedEstimate": 0.00559024
+        },
+        "ethics-thought": {
+          "answered": 20,
+          "correct": 3,
+          "cost": 0.00186388,
+          "billedEstimate": 0.00186388
         }
       }
     },
@@ -836,6 +848,54 @@
           "correct": 32,
           "cost": 0.002045946,
           "billedEstimate": 0.002045946
+        },
+        "life-ethics": {
+          "answered": 20,
+          "correct": 9,
+          "cost": 0.000928326,
+          "billedEstimate": 0.000928326
+        },
+        "ethics-thought": {
+          "answered": 20,
+          "correct": 5,
+          "cost": 0.000928536,
+          "billedEstimate": 0.000928536
+        },
+        "korean-geography": {
+          "answered": 20,
+          "correct": 8,
+          "cost": 0.000928536,
+          "billedEstimate": 0.000928536
+        },
+        "world-geography": {
+          "answered": 20,
+          "correct": 1,
+          "cost": 0.0009282,
+          "billedEstimate": 0.0009282
+        },
+        "east-asia-history": {
+          "answered": 20,
+          "correct": 0,
+          "cost": 0.000928242,
+          "billedEstimate": 0.000928242
+        },
+        "world-history": {
+          "answered": 20,
+          "correct": 7,
+          "cost": 0.000928326,
+          "billedEstimate": 0.000928326
+        },
+        "economics": {
+          "answered": 20,
+          "correct": 2,
+          "cost": 0.000928368,
+          "billedEstimate": 0.000928368
+        },
+        "politics-law": {
+          "answered": 20,
+          "correct": 5,
+          "cost": 0.000928158,
+          "billedEstimate": 0.000928158
         }
       }
     },
@@ -1312,8 +1372,8 @@
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 120,
-    "publishedBundles": 120
+    "scoredBundles": 130,
+    "publishedBundles": 130
   },
   "progress": {
     "korean": {
@@ -1335,19 +1395,19 @@
       "plannedModels": 15
     },
     "social": {
-      "readyParts": 0,
+      "readyParts": 9,
       "totalParts": 9,
       "scoredModels": 0,
       "plannedModels": 8
     },
     "science1": {
-      "readyParts": 0,
+      "readyParts": 4,
       "totalParts": 4,
       "scoredModels": 0,
       "plannedModels": 8
     },
     "science2": {
-      "readyParts": 0,
+      "readyParts": 1,
       "totalParts": 4,
       "scoredModels": 0,
       "plannedModels": 13
