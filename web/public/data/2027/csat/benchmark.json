@@ -404,8 +404,8 @@
         "chemistry-2": {
           "answered": 0,
           "correct": 0,
-          "cost": 0.042924056,
-          "billedEstimate": 0.042924056
+          "cost": 0.179488152,
+          "billedEstimate": 0.179488152
         },
         "physics-2": {
           "answered": 20,
@@ -598,6 +598,12 @@
           "correct": 8,
           "cost": 0.0148773,
           "billedEstimate": 0.0148773
+        },
+        "biology-2": {
+          "answered": 20,
+          "correct": 9,
+          "cost": 0.03877257,
+          "billedEstimate": 0.03877257
         }
       }
     },
@@ -2044,7 +2050,7 @@
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 242,
-    "publishedBundles": 242
+    "scoredBundles": 243,
+    "publishedBundles": 243
   }
 }
