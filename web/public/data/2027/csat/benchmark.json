@@ -305,7 +305,14 @@
         "korean-speech",
         "korean-language"
       ],
-      "parts": {}
+      "parts": {
+        "korean-speech": {
+          "answered": 11,
+          "correct": 6,
+          "cost": 0.00816929,
+          "billedEstimate": 0.00816929
+        }
+      }
     },
     "qwen3.8-27b": {
       "name": "Qwen3.8-27B",
@@ -762,8 +769,8 @@
   },
   "completion": {
     "plannedBundles": 242,
-    "scoredBundles": 39,
-    "publishedBundles": 39
+    "scoredBundles": 40,
+    "publishedBundles": 40
   },
   "progress": {
     "korean": {
