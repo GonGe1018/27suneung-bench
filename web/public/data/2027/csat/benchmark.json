@@ -495,8 +495,8 @@
         "biology-2": {
           "answered": 0,
           "correct": 0,
-          "cost": 0.17565077,
-          "billedEstimate": 0.17565077
+          "cost": 0.35130154,
+          "billedEstimate": 0.35130154
         },
         "physics-2": {
           "answered": 0,
@@ -966,10 +966,10 @@
           "billedEstimate": 0.1382388
         },
         "physics-1": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 0.1393746,
-          "billedEstimate": 0.1393746
+          "answered": 20,
+          "correct": 10,
+          "cost": 0.2641308,
+          "billedEstimate": 0.2641308
         }
       }
     },
