@@ -238,6 +238,12 @@
           "correct": 7,
           "cost": 0.029688555,
           "billedEstimate": 0.029688555
+        },
+        "korean-common": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 0.037042659,
+          "billedEstimate": 0.037042659
         }
       }
     },
@@ -308,6 +314,12 @@
           "correct": 7,
           "cost": 0.10395966,
           "billedEstimate": 0.10395966
+        },
+        "korean-common": {
+          "answered": 34,
+          "correct": 31,
+          "cost": 0.10081714,
+          "billedEstimate": 0.10081714
         }
       }
     },
@@ -706,14 +718,14 @@
   },
   "completion": {
     "plannedBundles": 239,
-    "scoredBundles": 32,
-    "publishedBundles": 32
+    "scoredBundles": 34,
+    "publishedBundles": 34
   },
   "progress": {
     "korean": {
       "readyParts": 3,
       "totalParts": 3,
-      "scoredModels": 8,
+      "scoredModels": 10,
       "plannedModels": 13
     },
     "math": {
