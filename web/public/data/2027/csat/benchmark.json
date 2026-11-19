@@ -234,10 +234,10 @@
       ],
       "parts": {
         "korean-common": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 0.037042659,
-          "billedEstimate": 0.037042659
+          "answered": 34,
+          "correct": 27,
+          "cost": 0.071114094,
+          "billedEstimate": 0.071114094
         },
         "korean-language": {
           "answered": 11,
