@@ -250,6 +250,12 @@
           "correct": 9,
           "cost": 0.041748004,
           "billedEstimate": 0.041748004
+        },
+        "math-statistics": {
+          "answered": 8,
+          "correct": 8,
+          "cost": 0.004774374,
+          "billedEstimate": 0.004774374
         }
       }
     },
@@ -293,6 +299,12 @@
           "cost": 0.29589728,
           "billedEstimate": 0.29589728,
           "effort": "high"
+        },
+        "math-statistics": {
+          "answered": 8,
+          "correct": 8,
+          "cost": 0.02892864,
+          "billedEstimate": 0.02892864
         }
       }
     },
@@ -624,6 +636,12 @@
           "correct": 11,
           "cost": 0.422364,
           "billedEstimate": 0.422364
+        },
+        "math-common": {
+          "answered": 22,
+          "correct": 22,
+          "cost": 0.743354,
+          "billedEstimate": 0.743354
         }
       }
     },
@@ -678,6 +696,12 @@
           "correct": 11,
           "cost": 0.144891,
           "billedEstimate": 0.144891
+        },
+        "math-common": {
+          "answered": 22,
+          "correct": 22,
+          "cost": 0.1935785,
+          "billedEstimate": 0.1935785
         }
       }
     },
@@ -792,8 +816,8 @@
   },
   "completion": {
     "plannedBundles": 251,
-    "scoredBundles": 42,
-    "publishedBundles": 42
+    "scoredBundles": 46,
+    "publishedBundles": 46
   },
   "progress": {
     "korean": {
