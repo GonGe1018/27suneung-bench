@@ -503,6 +503,12 @@
           "correct": 0,
           "cost": 0.1756504,
           "billedEstimate": 0.1756504
+        },
+        "earth-science-2": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 0.17565077,
+          "billedEstimate": 0.17565077
         }
       }
     },
@@ -1576,6 +1582,12 @@
           "correct": 20,
           "cost": 0.666074,
           "billedEstimate": 0.666074
+        },
+        "physics-2": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.585234,
+          "billedEstimate": 0.585234
         }
       }
     },
@@ -1678,6 +1690,36 @@
           "correct": 20,
           "cost": 0.255326,
           "billedEstimate": 0.255326
+        },
+        "biology-2": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.219111,
+          "billedEstimate": 0.219111
+        },
+        "chemistry-2": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.139736,
+          "billedEstimate": 0.139736
+        },
+        "earth-science-2": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.150671,
+          "billedEstimate": 0.150671
+        },
+        "physics-1": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.1498385,
+          "billedEstimate": 0.1498385
+        },
+        "physics-2": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.1417185,
+          "billedEstimate": 0.1417185
         }
       }
     },
@@ -1774,6 +1816,12 @@
           "correct": 20,
           "cost": 2.78496,
           "billedEstimate": 2.78496
+        },
+        "life-ethics": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 5.274984,
+          "billedEstimate": 5.274984
         }
       }
     },
@@ -1882,8 +1930,8 @@
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 215,
-    "publishedBundles": 215
+    "scoredBundles": 223,
+    "publishedBundles": 223
   },
   "progress": {
     "korean": {
@@ -1919,7 +1967,7 @@
     "science2": {
       "readyParts": 4,
       "totalParts": 4,
-      "scoredModels": 7,
+      "scoredModels": 9,
       "plannedModels": 13
     }
   }
