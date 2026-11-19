@@ -493,11 +493,11 @@
           "billedEstimate": 0.07829753
         },
         "biology-2": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 0.52695231,
-          "billedEstimate": 0.52695231,
-          "effort": "high"
+          "answered": 20,
+          "correct": 9,
+          "cost": 0.56849433,
+          "billedEstimate": 0.56849433,
+          "effort": "low"
         },
         "physics-2": {
           "answered": 0,
@@ -2040,6 +2040,18 @@
           "correct": 20,
           "cost": 0.489712,
           "billedEstimate": 0.489712
+        },
+        "politics-law": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 1.199808,
+          "billedEstimate": 1.199808
+        },
+        "social-culture": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 1.232648,
+          "billedEstimate": 1.232648
         }
       }
     },
@@ -2196,13 +2208,25 @@
           "correct": 20,
           "cost": 0.459276,
           "billedEstimate": 0.459276
+        },
+        "economics": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.456992,
+          "billedEstimate": 0.456992
+        },
+        "world-geography": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 1.03936,
+          "billedEstimate": 1.03936
         }
       }
     }
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 268,
-    "publishedBundles": 268
+    "scoredBundles": 272,
+    "publishedBundles": 272
   }
 }
