@@ -293,7 +293,14 @@
         "biology-2",
         "earth-science-2"
       ],
-      "parts": {}
+      "parts": {
+        "korean-speech": {
+          "answered": 11,
+          "correct": 8,
+          "cost": 0.0213645,
+          "billedEstimate": 0.0213645
+        }
+      }
     },
     "gemma-4-31b-it": {
       "name": "Gemma 4 31B IT",
@@ -340,6 +347,12 @@
           "correct": 2,
           "cost": 0.00317478,
           "billedEstimate": 0.00317478
+        },
+        "korean-language": {
+          "answered": 11,
+          "correct": 2,
+          "cost": 0.00408258,
+          "billedEstimate": 0.00408258
         }
       }
     },
@@ -365,6 +378,12 @@
           "correct": 11,
           "cost": 0.195526,
           "billedEstimate": 0.195526
+        },
+        "korean-language": {
+          "answered": 11,
+          "correct": 10,
+          "cost": 0.227644,
+          "billedEstimate": 0.227644
         }
       }
     },
@@ -606,14 +625,14 @@
   },
   "completion": {
     "plannedBundles": 239,
-    "scoredBundles": 16,
-    "publishedBundles": 16
+    "scoredBundles": 19,
+    "publishedBundles": 19
   },
   "progress": {
     "korean": {
       "readyParts": 3,
       "totalParts": 3,
-      "scoredModels": 2,
+      "scoredModels": 3,
       "plannedModels": 13
     },
     "math": {
