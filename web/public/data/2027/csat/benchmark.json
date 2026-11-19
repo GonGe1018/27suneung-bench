@@ -318,10 +318,10 @@
           "billedEstimate": 0.030404016
         },
         "math-common": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 0.034849947,
-          "billedEstimate": 0.034849947
+          "answered": 22,
+          "correct": 20,
+          "cost": 0.18660459,
+          "billedEstimate": 0.18660459
         }
       }
     },
