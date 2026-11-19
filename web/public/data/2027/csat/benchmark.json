@@ -151,12 +151,6 @@
         "earth-science-2"
       ],
       "parts": {
-        "korean-speech": {
-          "answered": 11,
-          "correct": 11,
-          "cost": 0.120577537,
-          "billedEstimate": 0.120577537
-        },
         "korean-common": {
           "answered": 34,
           "correct": 32,
@@ -168,6 +162,12 @@
           "correct": 11,
           "cost": 0.420076737,
           "billedEstimate": 0.420076737
+        },
+        "korean-speech": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.120577537,
+          "billedEstimate": 0.120577537
         }
       }
     },
@@ -192,17 +192,17 @@
         "earth-science-2"
       ],
       "parts": {
-        "korean-speech": {
-          "answered": 11,
-          "correct": 11,
-          "cost": 0.0862524,
-          "billedEstimate": 0.0862524
-        },
         "korean-language": {
           "answered": 11,
           "correct": 8,
           "cost": 0.094647075,
           "billedEstimate": 0.094647075
+        },
+        "korean-speech": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.0862524,
+          "billedEstimate": 0.0862524
         }
       }
     },
@@ -227,11 +227,11 @@
         "earth-science-2"
       ],
       "parts": {
-        "korean-speech": {
-          "answered": 11,
-          "correct": 9,
-          "cost": 0.041748004,
-          "billedEstimate": 0.041748004
+        "korean-common": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 0.037042659,
+          "billedEstimate": 0.037042659
         },
         "korean-language": {
           "answered": 11,
@@ -239,11 +239,11 @@
           "cost": 0.029688555,
           "billedEstimate": 0.029688555
         },
-        "korean-common": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 0.037042659,
-          "billedEstimate": 0.037042659
+        "korean-speech": {
+          "answered": 11,
+          "correct": 9,
+          "cost": 0.041748004,
+          "billedEstimate": 0.041748004
         }
       }
     },
@@ -303,11 +303,11 @@
         "earth-science-2"
       ],
       "parts": {
-        "korean-speech": {
-          "answered": 11,
-          "correct": 9,
-          "cost": 0.05998612,
-          "billedEstimate": 0.05998612
+        "korean-common": {
+          "answered": 34,
+          "correct": 31,
+          "cost": 0.10081714,
+          "billedEstimate": 0.10081714
         },
         "korean-language": {
           "answered": 11,
@@ -315,11 +315,11 @@
           "cost": 0.10395966,
           "billedEstimate": 0.10395966
         },
-        "korean-common": {
-          "answered": 34,
-          "correct": 31,
-          "cost": 0.10081714,
-          "billedEstimate": 0.10081714
+        "korean-speech": {
+          "answered": 11,
+          "correct": 9,
+          "cost": 0.05998612,
+          "billedEstimate": 0.05998612
         }
       }
     },
@@ -357,12 +357,6 @@
         "earth-science-2"
       ],
       "parts": {
-        "korean-speech": {
-          "answered": 11,
-          "correct": 8,
-          "cost": 0.0213645,
-          "billedEstimate": 0.0213645
-        },
         "korean-common": {
           "answered": 34,
           "correct": 25,
@@ -374,6 +368,12 @@
           "correct": 4,
           "cost": 0.0533166,
           "billedEstimate": 0.0533166
+        },
+        "korean-speech": {
+          "answered": 11,
+          "correct": 8,
+          "cost": 0.0213645,
+          "billedEstimate": 0.0213645
         }
       }
     },
@@ -417,17 +417,17 @@
           "cost": 0.00240514,
           "billedEstimate": 0.00240514
         },
-        "korean-speech": {
-          "answered": 11,
-          "correct": 2,
-          "cost": 0.00317478,
-          "billedEstimate": 0.00317478
-        },
         "korean-language": {
           "answered": 11,
           "correct": 2,
           "cost": 0.00408258,
           "billedEstimate": 0.00408258
+        },
+        "korean-speech": {
+          "answered": 11,
+          "correct": 2,
+          "cost": 0.00317478,
+          "billedEstimate": 0.00317478
         }
       }
     },
@@ -448,11 +448,11 @@
         "english"
       ],
       "parts": {
-        "korean-speech": {
-          "answered": 11,
-          "correct": 11,
-          "cost": 0.195526,
-          "billedEstimate": 0.195526
+        "korean-common": {
+          "answered": 34,
+          "correct": 34,
+          "cost": 0.589494,
+          "billedEstimate": 0.589494
         },
         "korean-language": {
           "answered": 11,
@@ -460,11 +460,11 @@
           "cost": 0.227644,
           "billedEstimate": 0.227644
         },
-        "korean-common": {
-          "answered": 34,
-          "correct": 34,
-          "cost": 0.589494,
-          "billedEstimate": 0.589494
+        "korean-speech": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.195526,
+          "billedEstimate": 0.195526
         }
       }
     },
@@ -485,17 +485,23 @@
         "english"
       ],
       "parts": {
-        "korean-speech": {
-          "answered": 11,
-          "correct": 11,
-          "cost": 0.216147,
-          "billedEstimate": 0.216147
-        },
         "korean-common": {
           "answered": 34,
           "correct": 34,
           "cost": 0.3890895,
           "billedEstimate": 0.3890895
+        },
+        "korean-language": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 2.9456865,
+          "billedEstimate": 2.9456865
+        },
+        "korean-speech": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.216147,
+          "billedEstimate": 0.216147
         }
       }
     },
@@ -641,11 +647,11 @@
         "earth-science-2"
       ],
       "parts": {
-        "korean-speech": {
-          "answered": 11,
-          "correct": 11,
-          "cost": 0.570416,
-          "billedEstimate": 0.570416
+        "korean-common": {
+          "answered": 34,
+          "correct": 34,
+          "cost": 1.579944,
+          "billedEstimate": 1.579944
         },
         "korean-language": {
           "answered": 11,
@@ -653,11 +659,11 @@
           "cost": 0.865776,
           "billedEstimate": 0.865776
         },
-        "korean-common": {
-          "answered": 34,
-          "correct": 34,
-          "cost": 1.579944,
-          "billedEstimate": 1.579944
+        "korean-speech": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.570416,
+          "billedEstimate": 0.570416
         }
       }
     },
@@ -695,11 +701,11 @@
         "earth-science-2"
       ],
       "parts": {
-        "korean-speech": {
-          "answered": 11,
-          "correct": 11,
-          "cost": 0.374268,
-          "billedEstimate": 0.374268
+        "korean-common": {
+          "answered": 34,
+          "correct": 34,
+          "cost": 1.011432,
+          "billedEstimate": 1.011432
         },
         "korean-language": {
           "answered": 11,
@@ -707,25 +713,25 @@
           "cost": 0.512668,
           "billedEstimate": 0.512668
         },
-        "korean-common": {
-          "answered": 34,
-          "correct": 34,
-          "cost": 1.011432,
-          "billedEstimate": 1.011432
+        "korean-speech": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.374268,
+          "billedEstimate": 0.374268
         }
       }
     }
   },
   "completion": {
     "plannedBundles": 239,
-    "scoredBundles": 34,
-    "publishedBundles": 34
+    "scoredBundles": 35,
+    "publishedBundles": 35
   },
   "progress": {
     "korean": {
       "readyParts": 3,
       "totalParts": 3,
-      "scoredModels": 10,
+      "scoredModels": 11,
       "plannedModels": 13
     },
     "math": {
