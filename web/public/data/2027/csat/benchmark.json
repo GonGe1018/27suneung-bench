@@ -2008,14 +2008,20 @@
           "correct": 20,
           "cost": 0.993916,
           "billedEstimate": 0.993916
+        },
+        "biology-2": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 1.384224,
+          "billedEstimate": 1.384224
         }
       }
     }
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 237,
-    "publishedBundles": 237
+    "scoredBundles": 238,
+    "publishedBundles": 238
   },
   "progress": {
     "korean": {
