@@ -383,6 +383,12 @@
           "correct": 7,
           "cost": 0.04013466,
           "billedEstimate": 0.04013466
+        },
+        "math-common": {
+          "answered": 22,
+          "correct": 21,
+          "cost": 0.15318186,
+          "billedEstimate": 0.15318186
         }
       }
     },
@@ -592,6 +598,18 @@
           "correct": 8,
           "cost": 0.0209892,
           "billedEstimate": 0.0209892
+        },
+        "math-calculus": {
+          "answered": 8,
+          "correct": 8,
+          "cost": 0.0373719,
+          "billedEstimate": 0.0373719
+        },
+        "math-common": {
+          "answered": 22,
+          "correct": 20,
+          "cost": 0.0808383,
+          "billedEstimate": 0.0808383
         }
       }
     },
@@ -658,6 +676,18 @@
           "correct": 8,
           "cost": 0.00517592,
           "billedEstimate": 0.00517592
+        },
+        "math-calculus": {
+          "answered": 8,
+          "correct": 5,
+          "cost": 0.00805868,
+          "billedEstimate": 0.00805868
+        },
+        "math-geometry": {
+          "answered": 8,
+          "correct": 5,
+          "cost": 0.00562962,
+          "billedEstimate": 0.00562962
         }
       }
     },
@@ -713,6 +743,12 @@
           "correct": 22,
           "cost": 0.507136,
           "billedEstimate": 0.507136
+        },
+        "math-geometry": {
+          "answered": 8,
+          "correct": 8,
+          "cost": 0.328966,
+          "billedEstimate": 0.328966
         }
       }
     },
@@ -996,6 +1032,18 @@
           "correct": 8,
           "cost": 0.432176,
           "billedEstimate": 0.432176
+        },
+        "math-calculus": {
+          "answered": 8,
+          "correct": 8,
+          "cost": 0.608192,
+          "billedEstimate": 0.608192
+        },
+        "math-geometry": {
+          "answered": 8,
+          "correct": 8,
+          "cost": 0.562304,
+          "billedEstimate": 0.562304
         }
       }
     },
@@ -1080,8 +1128,8 @@
   },
   "completion": {
     "plannedBundles": 251,
-    "scoredBundles": 90,
-    "publishedBundles": 90
+    "scoredBundles": 98,
+    "publishedBundles": 98
   },
   "progress": {
     "korean": {
@@ -1093,7 +1141,7 @@
     "math": {
       "readyParts": 4,
       "totalParts": 4,
-      "scoredModels": 9,
+      "scoredModels": 14,
       "plannedModels": 14
     },
     "english": {
