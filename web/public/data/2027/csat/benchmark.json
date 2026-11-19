@@ -245,6 +245,18 @@
           "correct": 8,
           "cost": 0.074774025,
           "billedEstimate": 0.074774025
+        },
+        "math-calculus": {
+          "answered": 8,
+          "correct": 8,
+          "cost": 0.088285875,
+          "billedEstimate": 0.088285875
+        },
+        "math-common": {
+          "answered": 22,
+          "correct": 22,
+          "cost": 0.14332935,
+          "billedEstimate": 0.14332935
         }
       }
     },
@@ -412,6 +424,12 @@
           "correct": 8,
           "cost": 0.00568818,
           "billedEstimate": 0.00568818
+        },
+        "math-common": {
+          "answered": 22,
+          "correct": 20,
+          "cost": 0.01454968,
+          "billedEstimate": 0.01454968
         }
       }
     },
@@ -484,6 +502,12 @@
           "correct": 8,
           "cost": 0.05065806,
           "billedEstimate": 0.05065806
+        },
+        "math-calculus": {
+          "answered": 8,
+          "correct": 6,
+          "cost": 0.0750252,
+          "billedEstimate": 0.0750252
         }
       }
     },
@@ -641,6 +665,12 @@
           "correct": 11,
           "cost": 0.195526,
           "billedEstimate": 0.195526
+        },
+        "math-statistics": {
+          "answered": 8,
+          "correct": 8,
+          "cost": 0.224108,
+          "billedEstimate": 0.224108
         }
       }
     },
@@ -690,6 +720,12 @@
           "correct": 8,
           "cost": 0.1980135,
           "billedEstimate": 0.1980135
+        },
+        "math-calculus": {
+          "answered": 8,
+          "correct": 8,
+          "cost": 0.261636,
+          "billedEstimate": 0.261636
         }
       }
     },
@@ -750,6 +786,12 @@
           "correct": 22,
           "cost": 0.743354,
           "billedEstimate": 0.743354
+        },
+        "math-statistics": {
+          "answered": 8,
+          "correct": 8,
+          "cost": 0.350284,
+          "billedEstimate": 0.350284
         }
       }
     },
@@ -882,6 +924,12 @@
           "correct": 11,
           "cost": 0.570416,
           "billedEstimate": 0.570416
+        },
+        "math-common": {
+          "answered": 22,
+          "correct": 22,
+          "cost": 1.325896,
+          "billedEstimate": 1.325896
         }
       }
     },
@@ -942,14 +990,26 @@
           "correct": 8,
           "cost": 0.237888,
           "billedEstimate": 0.237888
+        },
+        "math-calculus": {
+          "answered": 8,
+          "correct": 8,
+          "cost": 0.379996,
+          "billedEstimate": 0.379996
+        },
+        "math-common": {
+          "answered": 22,
+          "correct": 22,
+          "cost": 0.627348,
+          "billedEstimate": 0.627348
         }
       }
     }
   },
   "completion": {
     "plannedBundles": 251,
-    "scoredBundles": 68,
-    "publishedBundles": 68
+    "scoredBundles": 78,
+    "publishedBundles": 78
   },
   "progress": {
     "korean": {
@@ -961,7 +1021,7 @@
     "math": {
       "readyParts": 4,
       "totalParts": 4,
-      "scoredModels": 2,
+      "scoredModels": 4,
       "plannedModels": 14
     },
     "english": {
