@@ -2014,14 +2014,20 @@
           "correct": 0,
           "cost": 1.384224,
           "billedEstimate": 1.384224
+        },
+        "earth-science-2": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 1.567964,
+          "billedEstimate": 1.567964
         }
       }
     }
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 238,
-    "publishedBundles": 238
+    "scoredBundles": 239,
+    "publishedBundles": 239
   },
   "progress": {
     "korean": {
@@ -2057,7 +2063,7 @@
     "science2": {
       "readyParts": 4,
       "totalParts": 4,
-      "scoredModels": 9,
+      "scoredModels": 10,
       "plannedModels": 13
     }
   }
