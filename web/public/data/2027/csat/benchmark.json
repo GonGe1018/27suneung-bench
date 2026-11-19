@@ -402,11 +402,11 @@
           "billedEstimate": 0.032341595
         },
         "chemistry-2": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 0.588488856,
-          "billedEstimate": 0.588488856,
-          "effort": "high"
+          "answered": 20,
+          "correct": 14,
+          "cost": 0.619618792,
+          "billedEstimate": 0.619618792,
+          "effort": "low"
         },
         "physics-2": {
           "answered": 20,
@@ -1972,10 +1972,11 @@
           "billedEstimate": 2.78496
         },
         "life-ethics": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 10.549968,
-          "billedEstimate": 10.549968
+          "answered": 20,
+          "correct": 20,
+          "cost": 12.101672,
+          "billedEstimate": 12.101672,
+          "effort": "xhigh"
         },
         "physics-2": {
           "answered": 20,
