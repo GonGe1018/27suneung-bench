@@ -499,6 +499,15 @@ tbody tr:hover {
 .model-button svg {
   color: var(--muted);
 }
+.partial-result-button {
+  gap: 5px;
+  padding: 5px 0;
+  font-size: 14px;
+  color: var(--accent-ink);
+}
+.partial-result-button span {
+  font-variant-numeric: tabular-nums;
+}
 .turn {
   transform: rotate(90deg);
 }

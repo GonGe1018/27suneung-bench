@@ -201,6 +201,64 @@ function DeferredRow({
   );
 }
 
+function PartialResultRow({
+  id,
+  model,
+  parts,
+  data,
+  columns,
+  totalParts,
+}: {
+  id: string;
+  model: Model;
+  parts: string[];
+  data: Dataset;
+  columns: number;
+  totalParts: number;
+}) {
+  const [expanded, setExpanded] = useState(false);
+  const detailsId = `partial-results-${id}`;
+  return (
+    <>
+      <tr className="deferred">
+        <td className="rank-cell">—</td>
+        <td className="model-cell">
+          <ModelName id={id} name={model.name} />
+        </td>
+        <td colSpan={columns - 2}>
+          <button
+            className="partial-result-button"
+            aria-expanded={expanded}
+            aria-controls={detailsId}
+            aria-label={`${model.name} 부분 성적 ${parts.length}/${totalParts}묶음`}
+            onClick={() => setExpanded((open) => !open)}
+          >
+            부분 공개 <span>{parts.length}/{totalParts}</span>
+            <ChevronRight className={expanded ? "turn" : ""} size={15} />
+          </button>
+        </td>
+      </tr>
+      <tr className="detail-row" id={detailsId} hidden={!expanded}>
+        <td colSpan={columns}>
+          <dl className="detail-list">
+            {parts.map((part) => {
+              const score = model.parts[part];
+              return (
+                <div key={part}>
+                  <dt>{data.parts[part].label}</dt>
+                  <dd>
+                    {score.answered ? `${score.correct} / ${score.answered}` : "미응답"}
+                  </dd>
+                </div>
+              );
+            })}
+          </dl>
+        </td>
+      </tr>
+    </>
+  );
+}
+
 function ResultsTable({
   rows,
   data,
@@ -224,6 +282,7 @@ function ResultsTable({
   const areaKeys = (Object.keys(areas) as Area[]).filter((a) =>
     parts.some((p) => data.parts[p].area === a),
   );
+  const columns = view === "rank" ? 7 : 2 + areaKeys.length;
   return (
     <section className="records" aria-labelledby="results-title">
       <div className="records-head">
@@ -356,7 +415,7 @@ function ResultsTable({
                 </tr>
                 {expanded === r.id && (
                   <tr className="detail-row">
-                    <td colSpan={view === "rank" ? 7 : 2 + areaKeys.length}>
+                    <td colSpan={columns}>
                       <dl className="detail-list">
                         <div>
                           <dt>정답 / 응답</dt>
@@ -386,30 +445,44 @@ function ResultsTable({
                 )}
               </Fragment>
             ))}
-            {pending ? unpublished.map(([id, model]) => (
-              <tr className="pending-row" key={id}>
-                <td className="rank-cell">—</td>
-                <td className="model-cell">
-                  <ModelName id={id} name={model.name} />
-                </td>
-                {view === "rank" ? (
-                  <>
-                    <td>—</td>
-                    <td className="secondary-cell">—</td>
-                    <td className="secondary-cell">—</td>
-                    <td className="secondary-cell">—</td>
-                    <td className="secondary-cell effort">{model.effort}</td>
-                  </>
-                ) : areaKeys.map((area) => <td key={area}>—</td>)}
-              </tr>
-            )) : unpublished.map(([id, model]) => (
-              <DeferredRow
-                key={id}
-                id={id}
-                name={model.name}
-                columns={view === "rank" ? 7 : 2 + areaKeys.length}
-              />
-            ))}
+            {unpublished.map(([id, model]) => {
+              const availableParts = parts.filter((part) => model.parts[part]);
+              if (availableParts.length) {
+                return (
+                  <PartialResultRow
+                    key={id}
+                    id={id}
+                    model={model}
+                    parts={availableParts}
+                    data={data}
+                    columns={columns}
+                    totalParts={parts.length}
+                  />
+                );
+              }
+              if (!pending) {
+                return (
+                  <DeferredRow key={id} id={id} name={model.name} columns={columns} />
+                );
+              }
+              return (
+                <tr className="pending-row" key={id}>
+                  <td className="rank-cell">—</td>
+                  <td className="model-cell">
+                    <ModelName id={id} name={model.name} />
+                  </td>
+                  {view === "rank" ? (
+                    <>
+                      <td>—</td>
+                      <td className="secondary-cell">—</td>
+                      <td className="secondary-cell">—</td>
+                      <td className="secondary-cell">—</td>
+                      <td className="secondary-cell effort">{model.effort}</td>
+                    </>
+                  ) : areaKeys.map((area) => <td key={area}>—</td>)}
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
@@ -462,10 +535,18 @@ export default function App({ data }: { data: Dataset }) {
   );
   if (pending) unpublished.sort(([, a], [, b]) => a.name.localeCompare(b.name));
   const planned = waitingForScores ? unpublished : undefined;
+  const partialCount = unpublished.filter(([, model]) =>
+    parts.some((part) => model.parts[part]),
+  ).length;
+  const plannedCount = unpublished.length - partialCount;
   const modelCount = waitingForScores
     ? `${unpublished.length}개 모델`
     : unpublished.length
-      ? `${rows.length}개 공개 · ${unpublished.length}개 예정`
+      ? [
+          `${rows.length}개 공개`,
+          partialCount ? `${partialCount}개 부분 공개` : null,
+          plannedCount ? `${plannedCount}개 예정` : null,
+        ].filter(Boolean).join(" · ")
       : `${rows.length}개 모델`;
   const count = parts.reduce((n, k) => n + data.parts[k].count, 0);
   const name = scopeName(data, scope);
