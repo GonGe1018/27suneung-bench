@@ -930,8 +930,8 @@
           "billedEstimate": 0.0579423
         },
         "social-culture": {
-          "answered": 0,
-          "correct": 0,
+          "answered": 20,
+          "correct": 10,
           "cost": 0.0453255,
           "billedEstimate": 0.0453255
         },
@@ -958,6 +958,18 @@
           "correct": 0,
           "cost": 0.1393719,
           "billedEstimate": 0.1393719
+        },
+        "chemistry-1": {
+          "answered": 20,
+          "correct": 17,
+          "cost": 0.1382388,
+          "billedEstimate": 0.1382388
+        },
+        "physics-1": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 0.1393746,
+          "billedEstimate": 0.1393746
         }
       }
     },
@@ -1720,6 +1732,12 @@
           "correct": 20,
           "cost": 0.1417185,
           "billedEstimate": 0.1417185
+        },
+        "chemistry-1": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 0.144956,
+          "billedEstimate": 0.144956
         }
       }
     },
@@ -1822,6 +1840,12 @@
           "correct": 0,
           "cost": 5.274984,
           "billedEstimate": 5.274984
+        },
+        "physics-2": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 1.4938,
+          "billedEstimate": 1.4938
         }
       }
     },
@@ -1930,8 +1954,8 @@
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 223,
-    "publishedBundles": 223
+    "scoredBundles": 227,
+    "publishedBundles": 227
   },
   "progress": {
     "korean": {
@@ -1961,7 +1985,7 @@
     "science1": {
       "readyParts": 4,
       "totalParts": 4,
-      "scoredModels": 3,
+      "scoredModels": 4,
       "plannedModels": 8
     },
     "science2": {
