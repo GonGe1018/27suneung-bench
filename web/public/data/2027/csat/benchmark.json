@@ -2057,10 +2057,11 @@
           "billedEstimate": 1.232648
         },
         "earth-science-1": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 5.275008,
-          "billedEstimate": 5.275008
+          "answered": 20,
+          "correct": 20,
+          "cost": 11.531024,
+          "billedEstimate": 11.531024,
+          "effort": "high"
         }
       }
     },
