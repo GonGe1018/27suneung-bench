@@ -156,6 +156,12 @@
           "correct": 11,
           "cost": 0.120577537,
           "billedEstimate": 0.120577537
+        },
+        "korean-common": {
+          "answered": 34,
+          "correct": 32,
+          "cost": 0.283497492,
+          "billedEstimate": 0.283497492
         }
       }
     },
@@ -214,7 +220,14 @@
         "biology-2",
         "earth-science-2"
       ],
-      "parts": {}
+      "parts": {
+        "korean-speech": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 0.021217294,
+          "billedEstimate": 0.021217294
+        }
+      }
     },
     "glm-5.3": {
       "name": "GLM-5.3",
@@ -271,7 +284,14 @@
         "biology-2",
         "earth-science-2"
       ],
-      "parts": {}
+      "parts": {
+        "korean-speech": {
+          "answered": 11,
+          "correct": 9,
+          "cost": 0.05998612,
+          "billedEstimate": 0.05998612
+        }
+      }
     },
     "muse-glimmer-30b": {
       "name": "Muse Glimmer 30B",
@@ -656,8 +676,8 @@
   },
   "completion": {
     "plannedBundles": 239,
-    "scoredBundles": 24,
-    "publishedBundles": 24
+    "scoredBundles": 27,
+    "publishedBundles": 27
   },
   "progress": {
     "korean": {
