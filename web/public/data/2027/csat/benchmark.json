@@ -1,7 +1,7 @@
 {
   "year": 2027,
   "exam": "대학수학능력시험",
-  "state": "running",
+  "state": "complete",
   "parts": {
     "korean-common": {
       "label": "국어 공통",
@@ -2032,51 +2032,19 @@
           "correct": 20,
           "cost": 2.4198,
           "billedEstimate": 2.4198
+        },
+        "biology-1": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 1.647784,
+          "billedEstimate": 1.647784
         }
       }
     }
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 241,
-    "publishedBundles": 241
-  },
-  "progress": {
-    "korean": {
-      "readyParts": 3,
-      "totalParts": 3,
-      "scoredModels": 15,
-      "plannedModels": 15
-    },
-    "math": {
-      "readyParts": 4,
-      "totalParts": 4,
-      "scoredModels": 15,
-      "plannedModels": 15
-    },
-    "english": {
-      "readyParts": 1,
-      "totalParts": 1,
-      "scoredModels": 15,
-      "plannedModels": 15
-    },
-    "social": {
-      "readyParts": 9,
-      "totalParts": 9,
-      "scoredModels": 5,
-      "plannedModels": 8
-    },
-    "science1": {
-      "readyParts": 4,
-      "totalParts": 4,
-      "scoredModels": 5,
-      "plannedModels": 8
-    },
-    "science2": {
-      "readyParts": 4,
-      "totalParts": 4,
-      "scoredModels": 10,
-      "plannedModels": 13
-    }
+    "scoredBundles": 242,
+    "publishedBundles": 242
   }
 }
