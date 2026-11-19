@@ -179,7 +179,14 @@
         "biology-2",
         "earth-science-2"
       ],
-      "parts": {}
+      "parts": {
+        "korean-speech": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.0862524,
+          "billedEstimate": 0.0862524
+        }
+      }
     },
     "deepseek-v4.1-flash-1017": {
       "name": "DeepSeek V4.1 Flash 1017",
@@ -631,8 +638,8 @@
   },
   "completion": {
     "plannedBundles": 239,
-    "scoredBundles": 20,
-    "publishedBundles": 20
+    "scoredBundles": 21,
+    "publishedBundles": 21
   },
   "progress": {
     "korean": {
