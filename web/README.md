@@ -10,7 +10,7 @@ pnpm dev
 
 `pnpm build`는 타입을 검사하고 `dist/`를 만든다. GitHub Pages의 게시 소스를 GitHub Actions로 지정하면 `main`의 웹 변경을 배포한다. 결과 JSON과 글꼴을 함께 배포하므로 방문자의 브라우저는 모델 API를 호출하지 않는다. 푸터는 GitHub Pages 빌드에 전달된 현재 저장소를 가리킨다. 로컬에서는 `VITE_REPOSITORY_URL`로 저장소 주소를 지정할 수 있다.
 
-첫 방문에는 다크 테마를 적용하고, 헤더에서 고른 테마는 다음 방문에도 적용한다. 기본 강조색은 블리츠크랭크의 황동색이다. 파비콘은 Riot Games의 [블리츠크랭크 초상화](https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Blitzcrank.png)를 사용한다.
+첫 방문에는 다크 테마를 적용하고, 헤더에서 고른 테마는 다음 방문에도 적용한다. 기본 강조색은 블리츠크랭크의 황동색이다. 파비콘은 Riot Games [자산 사용 정책](https://www.riotgames.com/en/legal)에 따라 [블리츠크랭크 초상화](https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Blitzcrank.png)를 사용한다.
 
 모델명 옆의 로고는 [Lobe Icons](https://github.com/lobehub/lobe-icons)의 단색 SVG를 번들에 포함한다. [아이콘 라이선스](public/model-icons-LICENSE.txt)
 

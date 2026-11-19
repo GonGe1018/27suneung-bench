@@ -674,11 +674,6 @@ export default function App({ data }: { data: Dataset }) {
           </p>
           <p className="footer-contact">discord : neuro_sama</p>
         </div>
-        <p className="container footer-asset-credit">
-          이 사이트는 Riot Games의 Legal Jibber Jabber 정책에 따라 Riot Games 자산을 사용합니다.
-          Riot Games의 승인이나 후원을 받지 않았습니다.{" "}
-          <a href="https://www.riotgames.com/en/legal">자산 사용 정책</a>
-        </p>
       </footer>
       {method && (
         <MethodDialog year={data.year} close={() => setMethod(false)} />
