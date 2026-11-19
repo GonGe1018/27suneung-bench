@@ -216,6 +216,12 @@
           "correct": 19,
           "cost": 0.338720737,
           "billedEstimate": 0.338720737
+        },
+        "biology-2": {
+          "answered": 20,
+          "correct": 18,
+          "cost": 0.618111937,
+          "billedEstimate": 0.618111937
         }
       }
     },
@@ -394,6 +400,18 @@
           "correct": 9,
           "cost": 0.032341595,
           "billedEstimate": 0.032341595
+        },
+        "chemistry-2": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 0.042924056,
+          "billedEstimate": 0.042924056
+        },
+        "physics-2": {
+          "answered": 20,
+          "correct": 12,
+          "cost": 0.043205955,
+          "billedEstimate": 0.043205955
         }
       }
     },
@@ -473,6 +491,18 @@
           "correct": 19,
           "cost": 0.07829753,
           "billedEstimate": 0.07829753
+        },
+        "biology-2": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 0.17565077,
+          "billedEstimate": 0.17565077
+        },
+        "physics-2": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 0.1756504,
+          "billedEstimate": 0.1756504
         }
       }
     },
@@ -736,6 +766,18 @@
           "correct": 18,
           "cost": 0.06843168,
           "billedEstimate": 0.06843168
+        },
+        "east-asia-history": {
+          "answered": 20,
+          "correct": 13,
+          "cost": 0.22750934,
+          "billedEstimate": 0.22750934
+        },
+        "politics-law": {
+          "answered": 20,
+          "correct": 15,
+          "cost": 0.17027414,
+          "billedEstimate": 0.17027414
         }
       }
     },
@@ -844,6 +886,54 @@
           "correct": 11,
           "cost": 0.0666819,
           "billedEstimate": 0.0666819
+        },
+        "chemistry-2": {
+          "answered": 20,
+          "correct": 17,
+          "cost": 0.07854,
+          "billedEstimate": 0.07854
+        },
+        "earth-science-1": {
+          "answered": 20,
+          "correct": 7,
+          "cost": 0.0567591,
+          "billedEstimate": 0.0567591
+        },
+        "earth-science-2": {
+          "answered": 20,
+          "correct": 10,
+          "cost": 0.0611439,
+          "billedEstimate": 0.0611439
+        },
+        "east-asia-history": {
+          "answered": 20,
+          "correct": 11,
+          "cost": 0.0578127,
+          "billedEstimate": 0.0578127
+        },
+        "physics-2": {
+          "answered": 20,
+          "correct": 14,
+          "cost": 0.0946842,
+          "billedEstimate": 0.0946842
+        },
+        "politics-law": {
+          "answered": 20,
+          "correct": 13,
+          "cost": 0.0579423,
+          "billedEstimate": 0.0579423
+        },
+        "social-culture": {
+          "answered": 0,
+          "correct": 0,
+          "cost": 0.0453255,
+          "billedEstimate": 0.0453255
+        },
+        "world-geography": {
+          "answered": 20,
+          "correct": 13,
+          "cost": 0.0440631,
+          "billedEstimate": 0.0440631
         }
       }
     },
@@ -1660,6 +1750,12 @@
           "correct": 20,
           "cost": 1.412144,
           "billedEstimate": 1.412144
+        },
+        "korean-geography": {
+          "answered": 20,
+          "correct": 20,
+          "cost": 2.78496,
+          "billedEstimate": 2.78496
         }
       }
     },
@@ -1762,8 +1858,8 @@
   },
   "completion": {
     "plannedBundles": 276,
-    "scoredBundles": 195,
-    "publishedBundles": 195
+    "scoredBundles": 211,
+    "publishedBundles": 211
   },
   "progress": {
     "korean": {
@@ -1787,7 +1883,7 @@
     "social": {
       "readyParts": 9,
       "totalParts": 9,
-      "scoredModels": 2,
+      "scoredModels": 3,
       "plannedModels": 8
     },
     "science1": {
@@ -1799,7 +1895,7 @@
     "science2": {
       "readyParts": 4,
       "totalParts": 4,
-      "scoredModels": 4,
+      "scoredModels": 7,
       "plannedModels": 13
     }
   }
