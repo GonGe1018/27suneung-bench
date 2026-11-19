@@ -954,10 +954,10 @@
           "billedEstimate": 0.0845205
         },
         "ethics-thought": {
-          "answered": 0,
-          "correct": 0,
-          "cost": 0.1393719,
-          "billedEstimate": 0.1393719
+          "answered": 20,
+          "correct": 11,
+          "cost": 0.1747854,
+          "billedEstimate": 0.1747854
         },
         "chemistry-1": {
           "answered": 20,
