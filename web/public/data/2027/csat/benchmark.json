@@ -155,73 +155,121 @@
           "answered": 34,
           "correct": 32,
           "cost": 0.283497492,
-          "billedEstimate": 0.283497492
+          "billedEstimate": 0.283497492,
+          "points": {
+            "earned": 72,
+            "max": 76
+          }
         },
         "korean-language": {
           "answered": 11,
           "correct": 11,
           "cost": 0.420076737,
-          "billedEstimate": 0.420076737
+          "billedEstimate": 0.420076737,
+          "points": {
+            "earned": 24,
+            "max": 24
+          }
         },
         "korean-speech": {
           "answered": 11,
           "correct": 11,
           "cost": 0.120577537,
-          "billedEstimate": 0.120577537
+          "billedEstimate": 0.120577537,
+          "points": {
+            "earned": 24,
+            "max": 24
+          }
         },
         "math-calculus": {
           "answered": 8,
           "correct": 8,
           "cost": 0.132421578,
-          "billedEstimate": 0.132421578
+          "billedEstimate": 0.132421578,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-common": {
           "answered": 22,
           "correct": 22,
           "cost": 0.151300735,
-          "billedEstimate": 0.151300735
+          "billedEstimate": 0.151300735,
+          "points": {
+            "earned": 74,
+            "max": 74
+          }
         },
         "math-geometry": {
           "answered": 8,
           "correct": 8,
           "cost": 0.100538925,
-          "billedEstimate": 0.100538925
+          "billedEstimate": 0.100538925,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-statistics": {
           "answered": 8,
           "correct": 8,
           "cost": 0.093218337,
-          "billedEstimate": 0.093218337
+          "billedEstimate": 0.093218337,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "english": {
           "answered": 45,
           "correct": 45,
           "cost": 0.061313849,
-          "billedEstimate": 0.061313849
+          "billedEstimate": 0.061313849,
+          "points": {
+            "earned": 100,
+            "max": 100
+          }
         },
         "chemistry-2": {
           "answered": 20,
           "correct": 20,
           "cost": 0.216787684,
-          "billedEstimate": 0.216787684
+          "billedEstimate": 0.216787684,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "earth-science-2": {
           "answered": 20,
           "correct": 20,
           "cost": 0.356162337,
-          "billedEstimate": 0.356162337
+          "billedEstimate": 0.356162337,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "physics-2": {
           "answered": 20,
           "correct": 19,
           "cost": 0.338720737,
-          "billedEstimate": 0.338720737
+          "billedEstimate": 0.338720737,
+          "points": {
+            "earned": 47,
+            "max": 50
+          }
         },
         "biology-2": {
           "answered": 20,
           "correct": 18,
           "cost": 0.618111937,
-          "billedEstimate": 0.618111937
+          "billedEstimate": 0.618111937,
+          "points": {
+            "earned": 46,
+            "max": 50
+          }
         }
       }
     },
@@ -250,73 +298,121 @@
           "answered": 11,
           "correct": 8,
           "cost": 0.094647075,
-          "billedEstimate": 0.094647075
+          "billedEstimate": 0.094647075,
+          "points": {
+            "earned": 18,
+            "max": 24
+          }
         },
         "korean-speech": {
           "answered": 11,
           "correct": 11,
           "cost": 0.0862524,
-          "billedEstimate": 0.0862524
+          "billedEstimate": 0.0862524,
+          "points": {
+            "earned": 24,
+            "max": 24
+          }
         },
         "korean-common": {
           "answered": 34,
           "correct": 32,
           "cost": 0.365308725,
-          "billedEstimate": 0.365308725
+          "billedEstimate": 0.365308725,
+          "points": {
+            "earned": 72,
+            "max": 76
+          }
         },
         "math-geometry": {
           "answered": 8,
           "correct": 8,
           "cost": 0.08024745,
-          "billedEstimate": 0.08024745
+          "billedEstimate": 0.08024745,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-statistics": {
           "answered": 8,
           "correct": 8,
           "cost": 0.074774025,
-          "billedEstimate": 0.074774025
+          "billedEstimate": 0.074774025,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-calculus": {
           "answered": 8,
           "correct": 8,
           "cost": 0.088285875,
-          "billedEstimate": 0.088285875
+          "billedEstimate": 0.088285875,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-common": {
           "answered": 22,
           "correct": 22,
           "cost": 0.14332935,
-          "billedEstimate": 0.14332935
+          "billedEstimate": 0.14332935,
+          "points": {
+            "earned": 74,
+            "max": 74
+          }
         },
         "english": {
           "answered": 45,
           "correct": 45,
           "cost": 0.105274725,
-          "billedEstimate": 0.105274725
+          "billedEstimate": 0.105274725,
+          "points": {
+            "earned": 100,
+            "max": 100
+          }
         },
         "chemistry-2": {
           "answered": 20,
           "correct": 19,
           "cost": 0.1177335,
-          "billedEstimate": 0.1177335
+          "billedEstimate": 0.1177335,
+          "points": {
+            "earned": 47,
+            "max": 50
+          }
         },
         "biology-2": {
           "answered": 20,
           "correct": 16,
           "cost": 0.1434747,
-          "billedEstimate": 0.1434747
+          "billedEstimate": 0.1434747,
+          "points": {
+            "earned": 40,
+            "max": 50
+          }
         },
         "earth-science-2": {
           "answered": 20,
           "correct": 15,
           "cost": 0.110860725,
-          "billedEstimate": 0.110860725
+          "billedEstimate": 0.110860725,
+          "points": {
+            "earned": 38,
+            "max": 50
+          }
         },
         "physics-2": {
           "answered": 20,
           "correct": 17,
           "cost": 0.17679405,
-          "billedEstimate": 0.17679405
+          "billedEstimate": 0.17679405,
+          "points": {
+            "earned": 43,
+            "max": 50
+          }
         }
       }
     },
@@ -345,74 +441,122 @@
           "answered": 34,
           "correct": 27,
           "cost": 0.071114094,
-          "billedEstimate": 0.071114094
+          "billedEstimate": 0.071114094,
+          "points": {
+            "earned": 60,
+            "max": 76
+          }
         },
         "korean-language": {
           "answered": 11,
           "correct": 7,
           "cost": 0.029688555,
-          "billedEstimate": 0.029688555
+          "billedEstimate": 0.029688555,
+          "points": {
+            "earned": 15,
+            "max": 24
+          }
         },
         "korean-speech": {
           "answered": 11,
           "correct": 9,
           "cost": 0.041748004,
-          "billedEstimate": 0.041748004
+          "billedEstimate": 0.041748004,
+          "points": {
+            "earned": 19,
+            "max": 24
+          }
         },
         "math-statistics": {
           "answered": 8,
           "correct": 8,
           "cost": 0.004774374,
-          "billedEstimate": 0.004774374
+          "billedEstimate": 0.004774374,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-geometry": {
           "answered": 8,
           "correct": 8,
           "cost": 0.018765394,
-          "billedEstimate": 0.018765394
+          "billedEstimate": 0.018765394,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-calculus": {
           "answered": 8,
           "correct": 6,
           "cost": 0.030404016,
-          "billedEstimate": 0.030404016
+          "billedEstimate": 0.030404016,
+          "points": {
+            "earned": 19,
+            "max": 26
+          }
         },
         "math-common": {
           "answered": 22,
           "correct": 20,
           "cost": 0.18660459,
-          "billedEstimate": 0.18660459
+          "billedEstimate": 0.18660459,
+          "points": {
+            "earned": 67,
+            "max": 74
+          }
         },
         "english": {
           "answered": 45,
           "correct": 44,
           "cost": 0.007062352,
-          "billedEstimate": 0.007062352
+          "billedEstimate": 0.007062352,
+          "points": {
+            "earned": 98,
+            "max": 100
+          }
         },
         "biology-2": {
           "answered": 20,
           "correct": 12,
           "cost": 0.037792755,
-          "billedEstimate": 0.037792755
+          "billedEstimate": 0.037792755,
+          "points": {
+            "earned": 30,
+            "max": 50
+          }
         },
         "earth-science-2": {
           "answered": 20,
           "correct": 9,
           "cost": 0.032341595,
-          "billedEstimate": 0.032341595
+          "billedEstimate": 0.032341595,
+          "points": {
+            "earned": 24,
+            "max": 50
+          }
         },
         "chemistry-2": {
           "answered": 20,
           "correct": 14,
           "cost": 0.619618792,
           "billedEstimate": 0.619618792,
+          "points": {
+            "earned": 34,
+            "max": 50
+          },
           "effort": "low"
         },
         "physics-2": {
           "answered": 20,
           "correct": 12,
           "cost": 0.043205955,
-          "billedEstimate": 0.043205955
+          "billedEstimate": 0.043205955,
+          "points": {
+            "earned": 30,
+            "max": 50
+          }
         }
       }
     },
@@ -441,13 +585,21 @@
           "answered": 11,
           "correct": 8,
           "cost": 0.15806577,
-          "billedEstimate": 0.15806577
+          "billedEstimate": 0.15806577,
+          "points": {
+            "earned": 16,
+            "max": 24
+          }
         },
         "korean-common": {
           "answered": 34,
           "correct": 19,
           "cost": 0.36876039,
           "billedEstimate": 0.36876039,
+          "points": {
+            "earned": 41,
+            "max": 76
+          },
           "effort": "high"
         },
         "korean-language": {
@@ -455,49 +607,81 @@
           "correct": 6,
           "cost": 0.29589728,
           "billedEstimate": 0.29589728,
+          "points": {
+            "earned": 13,
+            "max": 24
+          },
           "effort": "high"
         },
         "math-statistics": {
           "answered": 8,
           "correct": 8,
           "cost": 0.02892864,
-          "billedEstimate": 0.02892864
+          "billedEstimate": 0.02892864,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-calculus": {
           "answered": 8,
           "correct": 7,
           "cost": 0.05331378,
-          "billedEstimate": 0.05331378
+          "billedEstimate": 0.05331378,
+          "points": {
+            "earned": 23,
+            "max": 26
+          }
         },
         "math-geometry": {
           "answered": 8,
           "correct": 7,
           "cost": 0.04013466,
-          "billedEstimate": 0.04013466
+          "billedEstimate": 0.04013466,
+          "points": {
+            "earned": 22,
+            "max": 26
+          }
         },
         "math-common": {
           "answered": 22,
           "correct": 21,
           "cost": 0.15318186,
-          "billedEstimate": 0.15318186
+          "billedEstimate": 0.15318186,
+          "points": {
+            "earned": 70,
+            "max": 74
+          }
         },
         "english": {
           "answered": 45,
           "correct": 45,
           "cost": 0.0559558,
-          "billedEstimate": 0.0559558
+          "billedEstimate": 0.0559558,
+          "points": {
+            "earned": 100,
+            "max": 100
+          }
         },
         "chemistry-2": {
           "answered": 20,
           "correct": 19,
           "cost": 0.07829753,
-          "billedEstimate": 0.07829753
+          "billedEstimate": 0.07829753,
+          "points": {
+            "earned": 47,
+            "max": 50
+          }
         },
         "biology-2": {
           "answered": 20,
           "correct": 9,
           "cost": 0.56849433,
           "billedEstimate": 0.56849433,
+          "points": {
+            "earned": 22,
+            "max": 50
+          },
           "effort": "low"
         },
         "physics-2": {
@@ -505,6 +689,10 @@
           "correct": 11,
           "cost": 0.4695187,
           "billedEstimate": 0.4695187,
+          "points": {
+            "earned": 26,
+            "max": 50
+          },
           "effort": "low"
         },
         "earth-science-2": {
@@ -512,6 +700,10 @@
           "correct": 13,
           "cost": 0.41418356,
           "billedEstimate": 0.41418356,
+          "points": {
+            "earned": 31,
+            "max": 50
+          },
           "effort": "high"
         }
       }
@@ -541,73 +733,121 @@
           "answered": 11,
           "correct": 6,
           "cost": 0.00816929,
-          "billedEstimate": 0.00816929
+          "billedEstimate": 0.00816929,
+          "points": {
+            "earned": 13,
+            "max": 24
+          }
         },
         "korean-common": {
           "answered": 34,
           "correct": 28,
           "cost": 0.02381803,
-          "billedEstimate": 0.02381803
+          "billedEstimate": 0.02381803,
+          "points": {
+            "earned": 64,
+            "max": 76
+          }
         },
         "korean-language": {
           "answered": 11,
           "correct": 3,
           "cost": 0.02501911,
-          "billedEstimate": 0.02501911
+          "billedEstimate": 0.02501911,
+          "points": {
+            "earned": 7,
+            "max": 24
+          }
         },
         "math-geometry": {
           "answered": 8,
           "correct": 7,
           "cost": 0.00655832,
-          "billedEstimate": 0.00655832
+          "billedEstimate": 0.00655832,
+          "points": {
+            "earned": 22,
+            "max": 26
+          }
         },
         "math-statistics": {
           "answered": 8,
           "correct": 8,
           "cost": 0.00568818,
-          "billedEstimate": 0.00568818
+          "billedEstimate": 0.00568818,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-common": {
           "answered": 22,
           "correct": 20,
           "cost": 0.01454968,
-          "billedEstimate": 0.01454968
+          "billedEstimate": 0.01454968,
+          "points": {
+            "earned": 66,
+            "max": 74
+          }
         },
         "math-calculus": {
           "answered": 8,
           "correct": 8,
           "cost": 0.0155585,
-          "billedEstimate": 0.0155585
+          "billedEstimate": 0.0155585,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "english": {
           "answered": 45,
           "correct": 45,
           "cost": 0.01239576,
-          "billedEstimate": 0.01239576
+          "billedEstimate": 0.01239576,
+          "points": {
+            "earned": 100,
+            "max": 100
+          }
         },
         "physics-2": {
           "answered": 20,
           "correct": 13,
           "cost": 0.01728746,
-          "billedEstimate": 0.01728746
+          "billedEstimate": 0.01728746,
+          "points": {
+            "earned": 32,
+            "max": 50
+          }
         },
         "chemistry-2": {
           "answered": 20,
           "correct": 18,
           "cost": 0.01827666,
-          "billedEstimate": 0.01827666
+          "billedEstimate": 0.01827666,
+          "points": {
+            "earned": 45,
+            "max": 50
+          }
         },
         "earth-science-2": {
           "answered": 20,
           "correct": 8,
           "cost": 0.0148773,
-          "billedEstimate": 0.0148773
+          "billedEstimate": 0.0148773,
+          "points": {
+            "earned": 19,
+            "max": 50
+          }
         },
         "biology-2": {
           "answered": 20,
           "correct": 9,
           "cost": 0.03877257,
-          "billedEstimate": 0.03877257
+          "billedEstimate": 0.03877257,
+          "points": {
+            "earned": 21,
+            "max": 50
+          }
         }
       }
     },
@@ -649,151 +889,251 @@
           "answered": 34,
           "correct": 31,
           "cost": 0.10081714,
-          "billedEstimate": 0.10081714
+          "billedEstimate": 0.10081714,
+          "points": {
+            "earned": 70,
+            "max": 76
+          }
         },
         "korean-language": {
           "answered": 11,
           "correct": 7,
           "cost": 0.10395966,
-          "billedEstimate": 0.10395966
+          "billedEstimate": 0.10395966,
+          "points": {
+            "earned": 16,
+            "max": 24
+          }
         },
         "korean-speech": {
           "answered": 11,
           "correct": 9,
           "cost": 0.05998612,
-          "billedEstimate": 0.05998612
+          "billedEstimate": 0.05998612,
+          "points": {
+            "earned": 19,
+            "max": 24
+          }
         },
         "math-common": {
           "answered": 22,
           "correct": 21,
           "cost": 0.04310268,
-          "billedEstimate": 0.04310268
+          "billedEstimate": 0.04310268,
+          "points": {
+            "earned": 70,
+            "max": 74
+          }
         },
         "math-geometry": {
           "answered": 8,
           "correct": 7,
           "cost": 0.02920794,
-          "billedEstimate": 0.02920794
+          "billedEstimate": 0.02920794,
+          "points": {
+            "earned": 22,
+            "max": 26
+          }
         },
         "math-statistics": {
           "answered": 8,
           "correct": 8,
           "cost": 0.05065806,
-          "billedEstimate": 0.05065806
+          "billedEstimate": 0.05065806,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-calculus": {
           "answered": 8,
           "correct": 6,
           "cost": 0.0750252,
-          "billedEstimate": 0.0750252
+          "billedEstimate": 0.0750252,
+          "points": {
+            "earned": 18,
+            "max": 26
+          }
         },
         "english": {
           "answered": 45,
           "correct": 45,
           "cost": 0.04518224,
-          "billedEstimate": 0.04518224
+          "billedEstimate": 0.04518224,
+          "points": {
+            "earned": 100,
+            "max": 100
+          }
         },
         "life-ethics": {
           "answered": 20,
           "correct": 14,
           "cost": 0.05453,
-          "billedEstimate": 0.05453
+          "billedEstimate": 0.05453,
+          "points": {
+            "earned": 35,
+            "max": 50
+          }
         },
         "ethics-thought": {
           "answered": 20,
           "correct": 12,
           "cost": 0.13008454,
-          "billedEstimate": 0.13008454
+          "billedEstimate": 0.13008454,
+          "points": {
+            "earned": 30,
+            "max": 50
+          }
         },
         "korean-geography": {
           "answered": 20,
           "correct": 12,
           "cost": 0.10884134,
-          "billedEstimate": 0.10884134
+          "billedEstimate": 0.10884134,
+          "points": {
+            "earned": 31,
+            "max": 50
+          }
         },
         "biology-2": {
           "answered": 20,
           "correct": 14,
           "cost": 0.094295,
-          "billedEstimate": 0.094295
+          "billedEstimate": 0.094295,
+          "points": {
+            "earned": 35,
+            "max": 50
+          }
         },
         "chemistry-2": {
           "answered": 20,
           "correct": 18,
           "cost": 0.10088834,
-          "billedEstimate": 0.10088834
+          "billedEstimate": 0.10088834,
+          "points": {
+            "earned": 44,
+            "max": 50
+          }
         },
         "physics-2": {
           "answered": 20,
           "correct": 16,
           "cost": 0.0980746,
-          "billedEstimate": 0.0980746
+          "billedEstimate": 0.0980746,
+          "points": {
+            "earned": 40,
+            "max": 50
+          }
         },
         "biology-1": {
           "answered": 20,
           "correct": 9,
           "cost": 0.0495602,
-          "billedEstimate": 0.0495602
+          "billedEstimate": 0.0495602,
+          "points": {
+            "earned": 23,
+            "max": 50
+          }
         },
         "chemistry-1": {
           "answered": 20,
           "correct": 8,
           "cost": 0.03368714,
-          "billedEstimate": 0.03368714
+          "billedEstimate": 0.03368714,
+          "points": {
+            "earned": 19,
+            "max": 50
+          }
         },
         "earth-science-2": {
           "answered": 20,
           "correct": 11,
           "cost": 0.0589476,
-          "billedEstimate": 0.0589476
+          "billedEstimate": 0.0589476,
+          "points": {
+            "earned": 28,
+            "max": 50
+          }
         },
         "physics-1": {
           "answered": 20,
           "correct": 10,
           "cost": 0.0987522,
-          "billedEstimate": 0.0987522
+          "billedEstimate": 0.0987522,
+          "points": {
+            "earned": 25,
+            "max": 50
+          }
         },
         "earth-science-1": {
           "answered": 20,
           "correct": 7,
           "cost": 0.0770536,
-          "billedEstimate": 0.0770536
+          "billedEstimate": 0.0770536,
+          "points": {
+            "earned": 18,
+            "max": 50
+          }
         },
         "economics": {
           "answered": 20,
           "correct": 19,
           "cost": 0.09128302,
-          "billedEstimate": 0.09128302
+          "billedEstimate": 0.09128302,
+          "points": {
+            "earned": 48,
+            "max": 50
+          }
         },
         "social-culture": {
           "answered": 20,
           "correct": 13,
           "cost": 0.05623274,
-          "billedEstimate": 0.05623274
+          "billedEstimate": 0.05623274,
+          "points": {
+            "earned": 33,
+            "max": 50
+          }
         },
         "world-geography": {
           "answered": 20,
           "correct": 15,
           "cost": 0.12019554,
-          "billedEstimate": 0.12019554
+          "billedEstimate": 0.12019554,
+          "points": {
+            "earned": 38,
+            "max": 50
+          }
         },
         "world-history": {
           "answered": 20,
           "correct": 18,
           "cost": 0.06843168,
-          "billedEstimate": 0.06843168
+          "billedEstimate": 0.06843168,
+          "points": {
+            "earned": 44,
+            "max": 50
+          }
         },
         "east-asia-history": {
           "answered": 20,
           "correct": 13,
           "cost": 0.22750934,
-          "billedEstimate": 0.22750934
+          "billedEstimate": 0.22750934,
+          "points": {
+            "earned": 30,
+            "max": 50
+          }
         },
         "politics-law": {
           "answered": 20,
           "correct": 15,
           "cost": 0.17027414,
-          "billedEstimate": 0.17027414
+          "billedEstimate": 0.17027414,
+          "points": {
+            "earned": 39,
+            "max": 50
+          }
         }
       }
     },
@@ -835,151 +1175,251 @@
           "answered": 34,
           "correct": 25,
           "cost": 0.0384735,
-          "billedEstimate": 0.0384735
+          "billedEstimate": 0.0384735,
+          "points": {
+            "earned": 57,
+            "max": 76
+          }
         },
         "korean-language": {
           "answered": 11,
           "correct": 4,
           "cost": 0.0533166,
-          "billedEstimate": 0.0533166
+          "billedEstimate": 0.0533166,
+          "points": {
+            "earned": 8,
+            "max": 24
+          }
         },
         "korean-speech": {
           "answered": 11,
           "correct": 8,
           "cost": 0.0213645,
-          "billedEstimate": 0.0213645
+          "billedEstimate": 0.0213645,
+          "points": {
+            "earned": 17,
+            "max": 24
+          }
         },
         "math-statistics": {
           "answered": 8,
           "correct": 8,
           "cost": 0.0243558,
-          "billedEstimate": 0.0243558
+          "billedEstimate": 0.0243558,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-geometry": {
           "answered": 8,
           "correct": 8,
           "cost": 0.0209892,
-          "billedEstimate": 0.0209892
+          "billedEstimate": 0.0209892,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-calculus": {
           "answered": 8,
           "correct": 8,
           "cost": 0.0373719,
-          "billedEstimate": 0.0373719
+          "billedEstimate": 0.0373719,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-common": {
           "answered": 22,
           "correct": 20,
           "cost": 0.0808383,
-          "billedEstimate": 0.0808383
+          "billedEstimate": 0.0808383,
+          "points": {
+            "earned": 66,
+            "max": 74
+          }
         },
         "english": {
           "answered": 45,
           "correct": 43,
           "cost": 0.0223686,
-          "billedEstimate": 0.0223686
+          "billedEstimate": 0.0223686,
+          "points": {
+            "earned": 95,
+            "max": 100
+          }
         },
         "life-ethics": {
           "answered": 20,
           "correct": 11,
           "cost": 0.017745,
-          "billedEstimate": 0.017745
+          "billedEstimate": 0.017745,
+          "points": {
+            "earned": 26,
+            "max": 50
+          }
         },
         "korean-geography": {
           "answered": 20,
           "correct": 12,
           "cost": 0.0454539,
-          "billedEstimate": 0.0454539
+          "billedEstimate": 0.0454539,
+          "points": {
+            "earned": 30,
+            "max": 50
+          }
         },
         "world-history": {
           "answered": 20,
           "correct": 10,
           "cost": 0.015444,
-          "billedEstimate": 0.015444
+          "billedEstimate": 0.015444,
+          "points": {
+            "earned": 26,
+            "max": 50
+          }
         },
         "biology-2": {
           "answered": 20,
           "correct": 11,
           "cost": 0.0666819,
-          "billedEstimate": 0.0666819
+          "billedEstimate": 0.0666819,
+          "points": {
+            "earned": 28,
+            "max": 50
+          }
         },
         "chemistry-2": {
           "answered": 20,
           "correct": 17,
           "cost": 0.07854,
-          "billedEstimate": 0.07854
+          "billedEstimate": 0.07854,
+          "points": {
+            "earned": 42,
+            "max": 50
+          }
         },
         "earth-science-1": {
           "answered": 20,
           "correct": 7,
           "cost": 0.0567591,
-          "billedEstimate": 0.0567591
+          "billedEstimate": 0.0567591,
+          "points": {
+            "earned": 17,
+            "max": 50
+          }
         },
         "earth-science-2": {
           "answered": 20,
           "correct": 10,
           "cost": 0.0611439,
-          "billedEstimate": 0.0611439
+          "billedEstimate": 0.0611439,
+          "points": {
+            "earned": 25,
+            "max": 50
+          }
         },
         "east-asia-history": {
           "answered": 20,
           "correct": 11,
           "cost": 0.0578127,
-          "billedEstimate": 0.0578127
+          "billedEstimate": 0.0578127,
+          "points": {
+            "earned": 25,
+            "max": 50
+          }
         },
         "physics-2": {
           "answered": 20,
           "correct": 14,
           "cost": 0.0946842,
-          "billedEstimate": 0.0946842
+          "billedEstimate": 0.0946842,
+          "points": {
+            "earned": 34,
+            "max": 50
+          }
         },
         "politics-law": {
           "answered": 20,
           "correct": 13,
           "cost": 0.0579423,
-          "billedEstimate": 0.0579423
+          "billedEstimate": 0.0579423,
+          "points": {
+            "earned": 32,
+            "max": 50
+          }
         },
         "social-culture": {
           "answered": 20,
           "correct": 10,
           "cost": 0.0453255,
-          "billedEstimate": 0.0453255
+          "billedEstimate": 0.0453255,
+          "points": {
+            "earned": 25,
+            "max": 50
+          }
         },
         "world-geography": {
           "answered": 20,
           "correct": 13,
           "cost": 0.0440631,
-          "billedEstimate": 0.0440631
+          "billedEstimate": 0.0440631,
+          "points": {
+            "earned": 35,
+            "max": 50
+          }
         },
         "biology-1": {
           "answered": 20,
           "correct": 14,
           "cost": 0.0693003,
-          "billedEstimate": 0.0693003
+          "billedEstimate": 0.0693003,
+          "points": {
+            "earned": 35,
+            "max": 50
+          }
         },
         "economics": {
           "answered": 20,
           "correct": 17,
           "cost": 0.0845205,
-          "billedEstimate": 0.0845205
+          "billedEstimate": 0.0845205,
+          "points": {
+            "earned": 41,
+            "max": 50
+          }
         },
         "ethics-thought": {
           "answered": 20,
           "correct": 11,
           "cost": 0.1747854,
-          "billedEstimate": 0.1747854
+          "billedEstimate": 0.1747854,
+          "points": {
+            "earned": 27,
+            "max": 50
+          }
         },
         "chemistry-1": {
           "answered": 20,
           "correct": 17,
           "cost": 0.1382388,
-          "billedEstimate": 0.1382388
+          "billedEstimate": 0.1382388,
+          "points": {
+            "earned": 43,
+            "max": 50
+          }
         },
         "physics-1": {
           "answered": 20,
           "correct": 10,
           "cost": 0.2641308,
-          "billedEstimate": 0.2641308
+          "billedEstimate": 0.2641308,
+          "points": {
+            "earned": 26,
+            "max": 50
+          }
         }
       }
     },
@@ -1021,151 +1461,251 @@
           "answered": 34,
           "correct": 6,
           "cost": 0.00240514,
-          "billedEstimate": 0.00240514
+          "billedEstimate": 0.00240514,
+          "points": {
+            "earned": 12,
+            "max": 76
+          }
         },
         "korean-language": {
           "answered": 11,
           "correct": 2,
           "cost": 0.00408258,
-          "billedEstimate": 0.00408258
+          "billedEstimate": 0.00408258,
+          "points": {
+            "earned": 5,
+            "max": 24
+          }
         },
         "korean-speech": {
           "answered": 11,
           "correct": 2,
           "cost": 0.00317478,
-          "billedEstimate": 0.00317478
+          "billedEstimate": 0.00317478,
+          "points": {
+            "earned": 4,
+            "max": 24
+          }
         },
         "math-common": {
           "answered": 22,
           "correct": 7,
           "cost": 0.00561822,
-          "billedEstimate": 0.00561822
+          "billedEstimate": 0.00561822,
+          "points": {
+            "earned": 22,
+            "max": 74
+          }
         },
         "math-statistics": {
           "answered": 8,
           "correct": 8,
           "cost": 0.00517592,
-          "billedEstimate": 0.00517592
+          "billedEstimate": 0.00517592,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-calculus": {
           "answered": 8,
           "correct": 5,
           "cost": 0.00805868,
-          "billedEstimate": 0.00805868
+          "billedEstimate": 0.00805868,
+          "points": {
+            "earned": 15,
+            "max": 26
+          }
         },
         "math-geometry": {
           "answered": 8,
           "correct": 5,
           "cost": 0.00562962,
-          "billedEstimate": 0.00562962
+          "billedEstimate": 0.00562962,
+          "points": {
+            "earned": 15,
+            "max": 26
+          }
         },
         "english": {
           "answered": 45,
           "correct": 29,
           "cost": 0.00559024,
-          "billedEstimate": 0.00559024
+          "billedEstimate": 0.00559024,
+          "points": {
+            "earned": 64,
+            "max": 100
+          }
         },
         "ethics-thought": {
           "answered": 20,
           "correct": 3,
           "cost": 0.00186388,
-          "billedEstimate": 0.00186388
+          "billedEstimate": 0.00186388,
+          "points": {
+            "earned": 8,
+            "max": 50
+          }
         },
         "korean-geography": {
           "answered": 20,
           "correct": 3,
           "cost": 0.0035614,
-          "billedEstimate": 0.0035614
+          "billedEstimate": 0.0035614,
+          "points": {
+            "earned": 7,
+            "max": 50
+          }
         },
         "life-ethics": {
           "answered": 20,
           "correct": 8,
           "cost": 0.0031943,
-          "billedEstimate": 0.0031943
+          "billedEstimate": 0.0031943,
+          "points": {
+            "earned": 21,
+            "max": 50
+          }
         },
         "biology-2": {
           "answered": 20,
           "correct": 3,
           "cost": 0.00301444,
-          "billedEstimate": 0.00301444
+          "billedEstimate": 0.00301444,
+          "points": {
+            "earned": 7,
+            "max": 50
+          }
         },
         "chemistry-2": {
           "answered": 20,
           "correct": 8,
           "cost": 0.00394074,
-          "billedEstimate": 0.00394074
+          "billedEstimate": 0.00394074,
+          "points": {
+            "earned": 20,
+            "max": 50
+          }
         },
         "earth-science-2": {
           "answered": 20,
           "correct": 4,
           "cost": 0.00252746,
-          "billedEstimate": 0.00252746
+          "billedEstimate": 0.00252746,
+          "points": {
+            "earned": 10,
+            "max": 50
+          }
         },
         "physics-2": {
           "answered": 20,
           "correct": 4,
           "cost": 0.0042839,
-          "billedEstimate": 0.0042839
+          "billedEstimate": 0.0042839,
+          "points": {
+            "earned": 9,
+            "max": 50
+          }
         },
         "earth-science-1": {
           "answered": 20,
           "correct": 4,
           "cost": 0.00202868,
-          "billedEstimate": 0.00202868
+          "billedEstimate": 0.00202868,
+          "points": {
+            "earned": 10,
+            "max": 50
+          }
         },
         "east-asia-history": {
           "answered": 20,
           "correct": 6,
           "cost": 0.00279922,
-          "billedEstimate": 0.00279922
+          "billedEstimate": 0.00279922,
+          "points": {
+            "earned": 16,
+            "max": 50
+          }
         },
         "physics-1": {
           "answered": 20,
           "correct": 2,
           "cost": 0.00376846,
-          "billedEstimate": 0.00376846
+          "billedEstimate": 0.00376846,
+          "points": {
+            "earned": 6,
+            "max": 50
+          }
         },
         "world-geography": {
           "answered": 20,
           "correct": 2,
           "cost": 0.00334618,
-          "billedEstimate": 0.00334618
+          "billedEstimate": 0.00334618,
+          "points": {
+            "earned": 4,
+            "max": 50
+          }
         },
         "biology-1": {
           "answered": 20,
           "correct": 6,
           "cost": 0.0036924,
-          "billedEstimate": 0.0036924
+          "billedEstimate": 0.0036924,
+          "points": {
+            "earned": 14,
+            "max": 50
+          }
         },
         "chemistry-1": {
           "answered": 20,
           "correct": 2,
           "cost": 0.00503418,
-          "billedEstimate": 0.00503418
+          "billedEstimate": 0.00503418,
+          "points": {
+            "earned": 6,
+            "max": 50
+          }
         },
         "economics": {
           "answered": 20,
           "correct": 8,
           "cost": 0.00341466,
-          "billedEstimate": 0.00341466
+          "billedEstimate": 0.00341466,
+          "points": {
+            "earned": 18,
+            "max": 50
+          }
         },
         "politics-law": {
           "answered": 20,
           "correct": 4,
           "cost": 0.0036141,
-          "billedEstimate": 0.0036141
+          "billedEstimate": 0.0036141,
+          "points": {
+            "earned": 10,
+            "max": 50
+          }
         },
         "social-culture": {
           "answered": 20,
           "correct": 4,
           "cost": 0.0036804,
-          "billedEstimate": 0.0036804
+          "billedEstimate": 0.0036804,
+          "points": {
+            "earned": 11,
+            "max": 50
+          }
         },
         "world-history": {
           "answered": 20,
           "correct": 5,
           "cost": 0.00349092,
-          "billedEstimate": 0.00349092
+          "billedEstimate": 0.00349092,
+          "points": {
+            "earned": 12,
+            "max": 50
+          }
         }
       }
     },
@@ -1207,25 +1747,41 @@
           "answered": 34,
           "correct": 18,
           "cost": 0.0025557,
-          "billedEstimate": 0.0025557
+          "billedEstimate": 0.0025557,
+          "points": {
+            "earned": 41,
+            "max": 76
+          }
         },
         "korean-speech": {
           "answered": 11,
           "correct": 0,
           "cost": 0.000857976,
-          "billedEstimate": 0.000857976
+          "billedEstimate": 0.000857976,
+          "points": {
+            "earned": 0,
+            "max": 24
+          }
         },
         "korean-language": {
           "answered": 11,
           "correct": 4,
           "cost": 0.000857892,
-          "billedEstimate": 0.000857892
+          "billedEstimate": 0.000857892,
+          "points": {
+            "earned": 9,
+            "max": 24
+          }
         },
         "math-common": {
           "answered": 15,
           "correct": 4,
           "cost": 0.001647828,
           "billedEstimate": 0.001647828,
+          "points": {
+            "earned": 11,
+            "max": 50
+          },
           "coverage": {
             "kind": "multiple-choice",
             "count": 15
@@ -1236,6 +1792,10 @@
           "correct": 2,
           "cost": 0.000818622,
           "billedEstimate": 0.000818622,
+          "points": {
+            "earned": 5,
+            "max": 18
+          },
           "coverage": {
             "kind": "multiple-choice",
             "count": 6
@@ -1246,6 +1806,10 @@
           "correct": 2,
           "cost": 0.000818874,
           "billedEstimate": 0.000818874,
+          "points": {
+            "earned": 5,
+            "max": 18
+          },
           "coverage": {
             "kind": "multiple-choice",
             "count": 6
@@ -1256,6 +1820,10 @@
           "correct": 2,
           "cost": 0.00081858,
           "billedEstimate": 0.00081858,
+          "points": {
+            "earned": 7,
+            "max": 18
+          },
           "coverage": {
             "kind": "multiple-choice",
             "count": 6
@@ -1265,109 +1833,181 @@
           "answered": 45,
           "correct": 32,
           "cost": 0.002045946,
-          "billedEstimate": 0.002045946
+          "billedEstimate": 0.002045946,
+          "points": {
+            "earned": 71,
+            "max": 100
+          }
         },
         "life-ethics": {
           "answered": 20,
           "correct": 9,
           "cost": 0.000928326,
-          "billedEstimate": 0.000928326
+          "billedEstimate": 0.000928326,
+          "points": {
+            "earned": 23,
+            "max": 50
+          }
         },
         "ethics-thought": {
           "answered": 20,
           "correct": 5,
           "cost": 0.000928536,
-          "billedEstimate": 0.000928536
+          "billedEstimate": 0.000928536,
+          "points": {
+            "earned": 12,
+            "max": 50
+          }
         },
         "korean-geography": {
           "answered": 20,
           "correct": 8,
           "cost": 0.000928536,
-          "billedEstimate": 0.000928536
+          "billedEstimate": 0.000928536,
+          "points": {
+            "earned": 21,
+            "max": 50
+          }
         },
         "world-geography": {
           "answered": 20,
           "correct": 1,
           "cost": 0.0009282,
-          "billedEstimate": 0.0009282
+          "billedEstimate": 0.0009282,
+          "points": {
+            "earned": 2,
+            "max": 50
+          }
         },
         "east-asia-history": {
           "answered": 20,
           "correct": 0,
           "cost": 0.000928242,
-          "billedEstimate": 0.000928242
+          "billedEstimate": 0.000928242,
+          "points": {
+            "earned": 0,
+            "max": 50
+          }
         },
         "world-history": {
           "answered": 20,
           "correct": 7,
           "cost": 0.000928326,
-          "billedEstimate": 0.000928326
+          "billedEstimate": 0.000928326,
+          "points": {
+            "earned": 18,
+            "max": 50
+          }
         },
         "economics": {
           "answered": 20,
           "correct": 2,
           "cost": 0.000928368,
-          "billedEstimate": 0.000928368
+          "billedEstimate": 0.000928368,
+          "points": {
+            "earned": 6,
+            "max": 50
+          }
         },
         "politics-law": {
           "answered": 20,
           "correct": 5,
           "cost": 0.000928158,
-          "billedEstimate": 0.000928158
+          "billedEstimate": 0.000928158,
+          "points": {
+            "earned": 13,
+            "max": 50
+          }
         },
         "social-culture": {
           "answered": 20,
           "correct": 2,
           "cost": 0.000928326,
-          "billedEstimate": 0.000928326
+          "billedEstimate": 0.000928326,
+          "points": {
+            "earned": 5,
+            "max": 50
+          }
         },
         "physics-1": {
           "answered": 20,
           "correct": 2,
           "cost": 0.000928326,
-          "billedEstimate": 0.000928326
+          "billedEstimate": 0.000928326,
+          "points": {
+            "earned": 5,
+            "max": 50
+          }
         },
         "chemistry-1": {
           "answered": 20,
           "correct": 5,
           "cost": 0.000928116,
-          "billedEstimate": 0.000928116
+          "billedEstimate": 0.000928116,
+          "points": {
+            "earned": 11,
+            "max": 50
+          }
         },
         "biology-1": {
           "answered": 20,
           "correct": 2,
           "cost": 0.000928116,
-          "billedEstimate": 0.000928116
+          "billedEstimate": 0.000928116,
+          "points": {
+            "earned": 6,
+            "max": 50
+          }
         },
         "earth-science-1": {
           "answered": 20,
           "correct": 2,
           "cost": 0.000928494,
-          "billedEstimate": 0.000928494
+          "billedEstimate": 0.000928494,
+          "points": {
+            "earned": 4,
+            "max": 50
+          }
         },
         "physics-2": {
           "answered": 20,
           "correct": 2,
           "cost": 0.00092841,
-          "billedEstimate": 0.00092841
+          "billedEstimate": 0.00092841,
+          "points": {
+            "earned": 5,
+            "max": 50
+          }
         },
         "chemistry-2": {
           "answered": 20,
           "correct": 8,
           "cost": 0.000928326,
-          "billedEstimate": 0.000928326
+          "billedEstimate": 0.000928326,
+          "points": {
+            "earned": 20,
+            "max": 50
+          }
         },
         "biology-2": {
           "answered": 20,
           "correct": 3,
           "cost": 0.000928242,
-          "billedEstimate": 0.000928242
+          "billedEstimate": 0.000928242,
+          "points": {
+            "earned": 7,
+            "max": 50
+          }
         },
         "earth-science-2": {
           "answered": 20,
           "correct": 2,
           "cost": 0.000928368,
-          "billedEstimate": 0.000928368
+          "billedEstimate": 0.000928368,
+          "points": {
+            "earned": 5,
+            "max": 50
+          }
         }
       }
     },
@@ -1392,49 +2032,81 @@
           "answered": 34,
           "correct": 34,
           "cost": 0.589494,
-          "billedEstimate": 0.589494
+          "billedEstimate": 0.589494,
+          "points": {
+            "earned": 76,
+            "max": 76
+          }
         },
         "korean-language": {
           "answered": 11,
           "correct": 10,
           "cost": 0.227644,
-          "billedEstimate": 0.227644
+          "billedEstimate": 0.227644,
+          "points": {
+            "earned": 22,
+            "max": 24
+          }
         },
         "korean-speech": {
           "answered": 11,
           "correct": 11,
           "cost": 0.195526,
-          "billedEstimate": 0.195526
+          "billedEstimate": 0.195526,
+          "points": {
+            "earned": 24,
+            "max": 24
+          }
         },
         "math-statistics": {
           "answered": 8,
           "correct": 8,
           "cost": 0.224108,
-          "billedEstimate": 0.224108
+          "billedEstimate": 0.224108,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-calculus": {
           "answered": 8,
           "correct": 8,
           "cost": 0.331568,
-          "billedEstimate": 0.331568
+          "billedEstimate": 0.331568,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-common": {
           "answered": 22,
           "correct": 22,
           "cost": 0.507136,
-          "billedEstimate": 0.507136
+          "billedEstimate": 0.507136,
+          "points": {
+            "earned": 74,
+            "max": 74
+          }
         },
         "math-geometry": {
           "answered": 8,
           "correct": 8,
           "cost": 0.328966,
-          "billedEstimate": 0.328966
+          "billedEstimate": 0.328966,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "english": {
           "answered": 45,
           "correct": 45,
           "cost": 0.206428,
-          "billedEstimate": 0.206428
+          "billedEstimate": 0.206428,
+          "points": {
+            "earned": 100,
+            "max": 100
+          }
         }
       }
     },
@@ -1459,49 +2131,81 @@
           "answered": 34,
           "correct": 34,
           "cost": 0.3890895,
-          "billedEstimate": 0.3890895
+          "billedEstimate": 0.3890895,
+          "points": {
+            "earned": 76,
+            "max": 76
+          }
         },
         "korean-language": {
           "answered": 11,
           "correct": 10,
           "cost": 3.457137,
-          "billedEstimate": 3.457137
+          "billedEstimate": 3.457137,
+          "points": {
+            "earned": 22,
+            "max": 24
+          }
         },
         "korean-speech": {
           "answered": 11,
           "correct": 11,
           "cost": 0.216147,
-          "billedEstimate": 0.216147
+          "billedEstimate": 0.216147,
+          "points": {
+            "earned": 24,
+            "max": 24
+          }
         },
         "math-common": {
           "answered": 22,
           "correct": 22,
           "cost": 0.360777,
-          "billedEstimate": 0.360777
+          "billedEstimate": 0.360777,
+          "points": {
+            "earned": 74,
+            "max": 74
+          }
         },
         "math-statistics": {
           "answered": 8,
           "correct": 8,
           "cost": 0.1980135,
-          "billedEstimate": 0.1980135
+          "billedEstimate": 0.1980135,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-calculus": {
           "answered": 8,
           "correct": 8,
           "cost": 0.261636,
-          "billedEstimate": 0.261636
+          "billedEstimate": 0.261636,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-geometry": {
           "answered": 8,
           "correct": 8,
           "cost": 0.2447895,
-          "billedEstimate": 0.2447895
+          "billedEstimate": 0.2447895,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "english": {
           "answered": 45,
           "correct": 45,
           "cost": 0.186561,
-          "billedEstimate": 0.186561
+          "billedEstimate": 0.186561,
+          "points": {
+            "earned": 100,
+            "max": 100
+          }
         }
       }
     },
@@ -1543,151 +2247,251 @@
           "answered": 34,
           "correct": 34,
           "cost": 1.264794,
-          "billedEstimate": 1.264794
+          "billedEstimate": 1.264794,
+          "points": {
+            "earned": 76,
+            "max": 76
+          }
         },
         "korean-language": {
           "answered": 11,
           "correct": 11,
           "cost": 0.616604,
-          "billedEstimate": 0.616604
+          "billedEstimate": 0.616604,
+          "points": {
+            "earned": 24,
+            "max": 24
+          }
         },
         "korean-speech": {
           "answered": 11,
           "correct": 11,
           "cost": 0.422364,
-          "billedEstimate": 0.422364
+          "billedEstimate": 0.422364,
+          "points": {
+            "earned": 24,
+            "max": 24
+          }
         },
         "math-common": {
           "answered": 22,
           "correct": 22,
           "cost": 0.743354,
-          "billedEstimate": 0.743354
+          "billedEstimate": 0.743354,
+          "points": {
+            "earned": 74,
+            "max": 74
+          }
         },
         "math-statistics": {
           "answered": 8,
           "correct": 8,
           "cost": 0.350284,
-          "billedEstimate": 0.350284
+          "billedEstimate": 0.350284,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-calculus": {
           "answered": 8,
           "correct": 8,
           "cost": 0.383664,
-          "billedEstimate": 0.383664
+          "billedEstimate": 0.383664,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-geometry": {
           "answered": 8,
           "correct": 8,
           "cost": 0.392734,
-          "billedEstimate": 0.392734
+          "billedEstimate": 0.392734,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "english": {
           "answered": 45,
           "correct": 45,
           "cost": 0.691914,
-          "billedEstimate": 0.691914
+          "billedEstimate": 0.691914,
+          "points": {
+            "earned": 100,
+            "max": 100
+          }
         },
         "ethics-thought": {
           "answered": 20,
           "correct": 20,
           "cost": 0.715124,
-          "billedEstimate": 0.715124
+          "billedEstimate": 0.715124,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "korean-geography": {
           "answered": 20,
           "correct": 20,
           "cost": 0.774824,
-          "billedEstimate": 0.774824
+          "billedEstimate": 0.774824,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "life-ethics": {
           "answered": 20,
           "correct": 20,
           "cost": 0.666074,
-          "billedEstimate": 0.666074
+          "billedEstimate": 0.666074,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "physics-2": {
           "answered": 20,
           "correct": 20,
           "cost": 0.585234,
-          "billedEstimate": 0.585234
+          "billedEstimate": 0.585234,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "chemistry-1": {
           "answered": 20,
           "correct": 19,
           "cost": 0.536664,
-          "billedEstimate": 0.536664
+          "billedEstimate": 0.536664,
+          "points": {
+            "earned": 47,
+            "max": 50
+          }
         },
         "chemistry-2": {
           "answered": 20,
           "correct": 20,
           "cost": 0.489624,
-          "billedEstimate": 0.489624
+          "billedEstimate": 0.489624,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "earth-science-2": {
           "answered": 20,
           "correct": 20,
           "cost": 0.556444,
-          "billedEstimate": 0.556444
+          "billedEstimate": 0.556444,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "east-asia-history": {
           "answered": 20,
           "correct": 20,
           "cost": 0.452034,
-          "billedEstimate": 0.452034
+          "billedEstimate": 0.452034,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "physics-1": {
           "answered": 20,
           "correct": 20,
           "cost": 0.630514,
-          "billedEstimate": 0.630514
+          "billedEstimate": 0.630514,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "world-geography": {
           "answered": 20,
           "correct": 20,
           "cost": 0.487664,
-          "billedEstimate": 0.487664
+          "billedEstimate": 0.487664,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "biology-1": {
           "answered": 20,
           "correct": 20,
           "cost": 0.839124,
-          "billedEstimate": 0.839124
+          "billedEstimate": 0.839124,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "biology-2": {
           "answered": 20,
           "correct": 20,
           "cost": 0.827524,
-          "billedEstimate": 0.827524
+          "billedEstimate": 0.827524,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "economics": {
           "answered": 20,
           "correct": 20,
           "cost": 0.437844,
-          "billedEstimate": 0.437844
+          "billedEstimate": 0.437844,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "politics-law": {
           "answered": 20,
           "correct": 20,
           "cost": 0.587984,
-          "billedEstimate": 0.587984
+          "billedEstimate": 0.587984,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "world-history": {
           "answered": 20,
           "correct": 20,
           "cost": 0.482774,
-          "billedEstimate": 0.482774
+          "billedEstimate": 0.482774,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "earth-science-1": {
           "answered": 20,
           "correct": 20,
           "cost": 1.161764,
-          "billedEstimate": 1.161764
+          "billedEstimate": 1.161764,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "social-culture": {
           "answered": 20,
           "correct": 20,
           "cost": 0.661264,
-          "billedEstimate": 0.661264
+          "billedEstimate": 0.661264,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         }
       }
     },
@@ -1729,151 +2533,251 @@
           "answered": 34,
           "correct": 34,
           "cost": 0.3312585,
-          "billedEstimate": 0.3312585
+          "billedEstimate": 0.3312585,
+          "points": {
+            "earned": 76,
+            "max": 76
+          }
         },
         "korean-language": {
           "answered": 11,
           "correct": 11,
           "cost": 0.156311,
-          "billedEstimate": 0.156311
+          "billedEstimate": 0.156311,
+          "points": {
+            "earned": 24,
+            "max": 24
+          }
         },
         "korean-speech": {
           "answered": 11,
           "correct": 11,
           "cost": 0.144891,
-          "billedEstimate": 0.144891
+          "billedEstimate": 0.144891,
+          "points": {
+            "earned": 24,
+            "max": 24
+          }
         },
         "math-common": {
           "answered": 22,
           "correct": 22,
           "cost": 0.1935785,
-          "billedEstimate": 0.1935785
+          "billedEstimate": 0.1935785,
+          "points": {
+            "earned": 74,
+            "max": 74
+          }
         },
         "math-calculus": {
           "answered": 8,
           "correct": 8,
           "cost": 0.098766,
-          "billedEstimate": 0.098766
+          "billedEstimate": 0.098766,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-geometry": {
           "answered": 8,
           "correct": 8,
           "cost": 0.0971335,
-          "billedEstimate": 0.0971335
+          "billedEstimate": 0.0971335,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-statistics": {
           "answered": 8,
           "correct": 8,
           "cost": 0.088701,
-          "billedEstimate": 0.088701
+          "billedEstimate": 0.088701,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "english": {
           "answered": 45,
           "correct": 45,
           "cost": 0.1754385,
-          "billedEstimate": 0.1754385
+          "billedEstimate": 0.1754385,
+          "points": {
+            "earned": 100,
+            "max": 100
+          }
         },
         "ethics-thought": {
           "answered": 20,
           "correct": 20,
           "cost": 0.151011,
-          "billedEstimate": 0.151011
+          "billedEstimate": 0.151011,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "life-ethics": {
           "answered": 20,
           "correct": 20,
           "cost": 0.1633085,
-          "billedEstimate": 0.1633085
+          "billedEstimate": 0.1633085,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "korean-geography": {
           "answered": 20,
           "correct": 20,
           "cost": 0.255326,
-          "billedEstimate": 0.255326
+          "billedEstimate": 0.255326,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "biology-2": {
           "answered": 20,
           "correct": 20,
           "cost": 0.219111,
-          "billedEstimate": 0.219111
+          "billedEstimate": 0.219111,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "chemistry-2": {
           "answered": 20,
           "correct": 20,
           "cost": 0.139736,
-          "billedEstimate": 0.139736
+          "billedEstimate": 0.139736,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "earth-science-2": {
           "answered": 20,
           "correct": 20,
           "cost": 0.150671,
-          "billedEstimate": 0.150671
+          "billedEstimate": 0.150671,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "physics-1": {
           "answered": 20,
           "correct": 20,
           "cost": 0.1498385,
-          "billedEstimate": 0.1498385
+          "billedEstimate": 0.1498385,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "physics-2": {
           "answered": 20,
           "correct": 20,
           "cost": 0.1417185,
-          "billedEstimate": 0.1417185
+          "billedEstimate": 0.1417185,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "chemistry-1": {
           "answered": 20,
           "correct": 20,
           "cost": 0.144956,
-          "billedEstimate": 0.144956
+          "billedEstimate": 0.144956,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "biology-1": {
           "answered": 20,
           "correct": 20,
           "cost": 0.172411,
-          "billedEstimate": 0.172411
+          "billedEstimate": 0.172411,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "earth-science-1": {
           "answered": 20,
           "correct": 19,
           "cost": 0.215071,
-          "billedEstimate": 0.215071
+          "billedEstimate": 0.215071,
+          "points": {
+            "earned": 47,
+            "max": 50
+          }
         },
         "east-asia-history": {
           "answered": 20,
           "correct": 20,
           "cost": 0.1225585,
-          "billedEstimate": 0.1225585
+          "billedEstimate": 0.1225585,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "world-geography": {
           "answered": 20,
           "correct": 20,
           "cost": 0.128756,
-          "billedEstimate": 0.128756
+          "billedEstimate": 0.128756,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "world-history": {
           "answered": 20,
           "correct": 19,
           "cost": 0.1034035,
-          "billedEstimate": 0.1034035
+          "billedEstimate": 0.1034035,
+          "points": {
+            "earned": 47,
+            "max": 50
+          }
         },
         "economics": {
           "answered": 20,
           "correct": 20,
           "cost": 0.121011,
-          "billedEstimate": 0.121011
+          "billedEstimate": 0.121011,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "politics-law": {
           "answered": 20,
           "correct": 20,
           "cost": 0.153846,
-          "billedEstimate": 0.153846
+          "billedEstimate": 0.153846,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "social-culture": {
           "answered": 20,
           "correct": 20,
           "cost": 0.137676,
-          "billedEstimate": 0.137676
+          "billedEstimate": 0.137676,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         }
       }
     },
@@ -1915,152 +2819,252 @@
           "answered": 34,
           "correct": 34,
           "cost": 1.579944,
-          "billedEstimate": 1.579944
+          "billedEstimate": 1.579944,
+          "points": {
+            "earned": 76,
+            "max": 76
+          }
         },
         "korean-language": {
           "answered": 11,
           "correct": 11,
           "cost": 0.865776,
-          "billedEstimate": 0.865776
+          "billedEstimate": 0.865776,
+          "points": {
+            "earned": 24,
+            "max": 24
+          }
         },
         "korean-speech": {
           "answered": 11,
           "correct": 11,
           "cost": 0.570416,
-          "billedEstimate": 0.570416
+          "billedEstimate": 0.570416,
+          "points": {
+            "earned": 24,
+            "max": 24
+          }
         },
         "math-common": {
           "answered": 22,
           "correct": 22,
           "cost": 1.325896,
-          "billedEstimate": 1.325896
+          "billedEstimate": 1.325896,
+          "points": {
+            "earned": 74,
+            "max": 74
+          }
         },
         "math-statistics": {
           "answered": 8,
           "correct": 8,
           "cost": 0.432176,
-          "billedEstimate": 0.432176
+          "billedEstimate": 0.432176,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-calculus": {
           "answered": 8,
           "correct": 8,
           "cost": 0.608192,
-          "billedEstimate": 0.608192
+          "billedEstimate": 0.608192,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-geometry": {
           "answered": 8,
           "correct": 8,
           "cost": 0.562304,
-          "billedEstimate": 0.562304
+          "billedEstimate": 0.562304,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "english": {
           "answered": 45,
           "correct": 45,
           "cost": 3.023632,
-          "billedEstimate": 3.023632
+          "billedEstimate": 3.023632,
+          "points": {
+            "earned": 100,
+            "max": 100
+          }
         },
         "ethics-thought": {
           "answered": 20,
           "correct": 20,
           "cost": 1.412144,
-          "billedEstimate": 1.412144
+          "billedEstimate": 1.412144,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "korean-geography": {
           "answered": 20,
           "correct": 20,
           "cost": 2.78496,
-          "billedEstimate": 2.78496
+          "billedEstimate": 2.78496,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "life-ethics": {
           "answered": 20,
           "correct": 20,
           "cost": 12.101672,
           "billedEstimate": 12.101672,
+          "points": {
+            "earned": 50,
+            "max": 50
+          },
           "effort": "xhigh"
         },
         "physics-2": {
           "answered": 20,
           "correct": 20,
           "cost": 1.4938,
-          "billedEstimate": 1.4938
+          "billedEstimate": 1.4938,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "chemistry-1": {
           "answered": 20,
           "correct": 20,
           "cost": 1.129952,
-          "billedEstimate": 1.129952
+          "billedEstimate": 1.129952,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "chemistry-2": {
           "answered": 20,
           "correct": 20,
           "cost": 1.047912,
-          "billedEstimate": 1.047912
+          "billedEstimate": 1.047912,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "earth-science-2": {
           "answered": 20,
           "correct": 20,
           "cost": 1.657448,
-          "billedEstimate": 1.657448
+          "billedEstimate": 1.657448,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "biology-2": {
           "answered": 20,
           "correct": 20,
           "cost": 2.434128,
-          "billedEstimate": 2.434128
+          "billedEstimate": 2.434128,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "physics-1": {
           "answered": 20,
           "correct": 20,
           "cost": 2.71136,
-          "billedEstimate": 2.71136
+          "billedEstimate": 2.71136,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "biology-1": {
           "answered": 20,
           "correct": 20,
           "cost": 2.420248,
-          "billedEstimate": 2.420248
+          "billedEstimate": 2.420248,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "east-asia-history": {
           "answered": 20,
           "correct": 20,
           "cost": 0.577848,
-          "billedEstimate": 0.577848
+          "billedEstimate": 0.577848,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "economics": {
           "answered": 20,
           "correct": 20,
           "cost": 0.841984,
-          "billedEstimate": 0.841984
+          "billedEstimate": 0.841984,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "world-geography": {
           "answered": 20,
           "correct": 20,
           "cost": 1.56944,
-          "billedEstimate": 1.56944
+          "billedEstimate": 1.56944,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "world-history": {
           "answered": 20,
           "correct": 20,
           "cost": 0.489712,
-          "billedEstimate": 0.489712
+          "billedEstimate": 0.489712,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "politics-law": {
           "answered": 20,
           "correct": 20,
           "cost": 1.199808,
-          "billedEstimate": 1.199808
+          "billedEstimate": 1.199808,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "social-culture": {
           "answered": 20,
           "correct": 20,
           "cost": 1.232648,
-          "billedEstimate": 1.232648
+          "billedEstimate": 1.232648,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "earth-science-1": {
           "answered": 20,
           "correct": 20,
           "cost": 11.531024,
           "billedEstimate": 11.531024,
+          "points": {
+            "earned": 50,
+            "max": 50
+          },
           "effort": "high"
         }
       }
@@ -2103,152 +3107,252 @@
           "answered": 34,
           "correct": 34,
           "cost": 1.011432,
-          "billedEstimate": 1.011432
+          "billedEstimate": 1.011432,
+          "points": {
+            "earned": 76,
+            "max": 76
+          }
         },
         "korean-language": {
           "answered": 11,
           "correct": 11,
           "cost": 0.512668,
-          "billedEstimate": 0.512668
+          "billedEstimate": 0.512668,
+          "points": {
+            "earned": 24,
+            "max": 24
+          }
         },
         "korean-speech": {
           "answered": 11,
           "correct": 11,
           "cost": 0.374268,
-          "billedEstimate": 0.374268
+          "billedEstimate": 0.374268,
+          "points": {
+            "earned": 24,
+            "max": 24
+          }
         },
         "math-statistics": {
           "answered": 8,
           "correct": 8,
           "cost": 0.237888,
-          "billedEstimate": 0.237888
+          "billedEstimate": 0.237888,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-calculus": {
           "answered": 8,
           "correct": 8,
           "cost": 0.379996,
-          "billedEstimate": 0.379996
+          "billedEstimate": 0.379996,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "math-common": {
           "answered": 22,
           "correct": 22,
           "cost": 0.627348,
-          "billedEstimate": 0.627348
+          "billedEstimate": 0.627348,
+          "points": {
+            "earned": 74,
+            "max": 74
+          }
         },
         "math-geometry": {
           "answered": 8,
           "correct": 8,
           "cost": 0.311512,
-          "billedEstimate": 0.311512
+          "billedEstimate": 0.311512,
+          "points": {
+            "earned": 26,
+            "max": 26
+          }
         },
         "english": {
           "answered": 45,
           "correct": 45,
           "cost": 0.343036,
-          "billedEstimate": 0.343036
+          "billedEstimate": 0.343036,
+          "points": {
+            "earned": 100,
+            "max": 100
+          }
         },
         "life-ethics": {
           "answered": 20,
           "correct": 20,
           "cost": 0.757252,
-          "billedEstimate": 0.757252
+          "billedEstimate": 0.757252,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "ethics-thought": {
           "answered": 20,
           "correct": 20,
           "cost": 2.092072,
-          "billedEstimate": 2.092072
+          "billedEstimate": 2.092072,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "korean-geography": {
           "answered": 20,
           "correct": 20,
           "cost": 2.50106,
-          "billedEstimate": 2.50106
+          "billedEstimate": 2.50106,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "physics-2": {
           "answered": 20,
           "correct": 20,
           "cost": 1.04782,
-          "billedEstimate": 1.04782
+          "billedEstimate": 1.04782,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "chemistry-2": {
           "answered": 20,
           "correct": 20,
           "cost": 0.993916,
-          "billedEstimate": 0.993916
+          "billedEstimate": 0.993916,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "biology-2": {
           "answered": 20,
           "correct": 20,
           "cost": 3.079748,
-          "billedEstimate": 3.079748
+          "billedEstimate": 3.079748,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "earth-science-2": {
           "answered": 20,
           "correct": 20,
           "cost": 1.567964,
-          "billedEstimate": 1.567964
+          "billedEstimate": 1.567964,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "chemistry-1": {
           "answered": 20,
           "correct": 20,
           "cost": 0.625696,
-          "billedEstimate": 0.625696
+          "billedEstimate": 0.625696,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "physics-1": {
           "answered": 20,
           "correct": 20,
           "cost": 2.4198,
-          "billedEstimate": 2.4198
+          "billedEstimate": 2.4198,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "biology-1": {
           "answered": 20,
           "correct": 20,
           "cost": 1.647784,
-          "billedEstimate": 1.647784
+          "billedEstimate": 1.647784,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "east-asia-history": {
           "answered": 20,
           "correct": 20,
           "cost": 0.466084,
-          "billedEstimate": 0.466084
+          "billedEstimate": 0.466084,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "world-history": {
           "answered": 20,
           "correct": 20,
           "cost": 0.459276,
-          "billedEstimate": 0.459276
+          "billedEstimate": 0.459276,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "economics": {
           "answered": 20,
           "correct": 20,
           "cost": 0.456992,
-          "billedEstimate": 0.456992
+          "billedEstimate": 0.456992,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "world-geography": {
           "answered": 20,
           "correct": 20,
           "cost": 2.43438,
-          "billedEstimate": 2.43438
+          "billedEstimate": 2.43438,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "earth-science-1": {
           "answered": 20,
           "correct": 18,
           "cost": 3.751248,
           "billedEstimate": 3.751248,
+          "points": {
+            "earned": 45,
+            "max": 50
+          },
           "effort": "xhigh"
         },
         "politics-law": {
           "answered": 20,
           "correct": 20,
           "cost": 0.713184,
-          "billedEstimate": 0.713184
+          "billedEstimate": 0.713184,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         },
         "social-culture": {
           "answered": 20,
           "correct": 20,
           "cost": 1.133284,
-          "billedEstimate": 1.133284
+          "billedEstimate": 1.133284,
+          "points": {
+            "earned": 50,
+            "max": 50
+          }
         }
       }
     }

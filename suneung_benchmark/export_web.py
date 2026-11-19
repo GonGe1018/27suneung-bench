@@ -1,4 +1,4 @@
-"""Publish only the scored counts and recorded cost estimates from local pilots."""
+"""Publish scores and recorded cost estimates from local pilots."""
 import csv
 import json
 from pathlib import Path
@@ -25,6 +25,16 @@ def area(subject):
     if subject.endswith("-2"):
         return "science2"
     return "social"
+
+
+def published_points(row):
+    maximum, earned = row.get("max_points"), row.get("raw_points")
+    if not maximum or earned is None or (earned == "" and int(row["answered"] or 0)):
+        return {}
+    maximum, earned = int(maximum), int(earned or 0)
+    if maximum <= 0 or not 0 <= earned <= maximum:
+        raise ValueError(f"Invalid points for {row['model']}/{row['part']}")
+    return {"points": {"earned": earned, "max": maximum}}
 
 
 def export():
@@ -56,7 +66,8 @@ def export():
                 paid = float(row["estimated_usd"]) if row["estimated_usd"] and not raw.get("billed_usage_unknown") else None
                 equivalent = raw.get("billing_price_equivalent_usd") if raw.get("billing_tier") == "free" else paid
                 record["parts"][part] = {"answered": answered, "correct": correct,
-                                         "cost": equivalent, "billedEstimate": paid}
+                                         "cost": equivalent, "billedEstimate": paid,
+                                         **published_points(row)}
     path = ROOT / "web/public/data/2026/csat/pilot.json"
     path.parent.mkdir(parents=True, exist_ok=True)
     data = {"year": 2026, "exam": "대학수학능력시험", "parts": parts, "models": models}

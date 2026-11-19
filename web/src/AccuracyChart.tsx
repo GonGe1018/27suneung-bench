@@ -4,7 +4,7 @@ import { ModelName } from "./ModelName";
 import type { Theme } from "./theme";
 import "./accuracy.css";
 
-type AccuracyMark = Pick<Result, "id" | "model" | "accuracy" | "coverageNote"> & {
+type AccuracyMark = Pick<Result, "id" | "model" | "accuracy" | "coverageNote" | "points"> & {
   answered?: number;
   count?: number;
 };
@@ -33,7 +33,8 @@ export function AccuracyChart({
       <header className="accuracy-heading">
         <h2 id="accuracy-title">모델별 정답률</h2>
         <p>
-          {pending ? "성적 공개 후 표시됩니다." : "미응답 제외"}
+          {pending ? "성적 공개 후 표시됩니다." : "정답률 미응답 제외"}
+          {marks.some((mark) => mark.points) && " · 원점수/만점"}
           {!pending && unpublished.length > 0 && " · 빗금은 진행 예정"}
         </p>
       </header>
@@ -45,7 +46,7 @@ export function AccuracyChart({
         </div>
         <div className="accuracy-scroll">
           <ol className="accuracy-series" role="list">
-            {marks.map(({ id, model, accuracy, answered, count, coverageNote }) => {
+            {marks.map(({ id, model, accuracy, answered, count, coverageNote, points }) => {
               const placeholder = accuracy === null;
               const style = {
                 "--score": (accuracy ?? 0) + "%",
@@ -67,9 +68,16 @@ export function AccuracyChart({
                     {placeholder ? "—" : percent(accuracy)}
                   </strong>
                   {answered !== undefined && (
-                    <span className="accuracy-coverage" title="응답 문항 / 전체 문항">
-                      {answered}/{count} 응답
-                    </span>
+                    <div className="accuracy-stats">
+                      {points && (
+                        <span className="accuracy-points" title="원점수 / 만점">
+                          {points.earned}/{points.max}점
+                        </span>
+                      )}
+                      <span className="accuracy-coverage" title="응답 문항 / 전체 문항">
+                        {answered}/{count} 응답
+                      </span>
+                    </div>
                   )}
                 </li>
               );

@@ -137,7 +137,10 @@ def public_scores(directory, parts):
         if not 0 <= correct <= answered <= len(grading):
             raise ValueError(f"Invalid Jev score for {part.name}")
         cost = receipt["cost_usd"]
-        score = {"answered": answered, "correct": correct, "cost": cost, "billedEstimate": cost}
+        points = {"earned": sum(row["points"] for row in grading if row["correct"]),
+                  "max": sum(row["points"] for row in grading)}
+        score = {"answered": answered, "correct": correct, "cost": cost,
+                 "billedEstimate": cost, "points": points}
         if part.subject == "math":
             score["coverage"] = {"kind": "multiple-choice", "count": len(grading)}
         yield part.name, score

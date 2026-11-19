@@ -18,11 +18,13 @@ export const areas = {
 export type Area = keyof typeof areas;
 export type Provider = string;
 type Part = { label: string; area: Area; count: number };
+type Points = { earned: number; max: number };
 type Score = {
   effort?: string;
   coverage?: { kind: "multiple-choice"; count: number };
   answered: number;
   correct: number;
+  points?: Points;
   cost: number | null;
   billedEstimate: number | null;
 };
@@ -62,6 +64,7 @@ export type Result = {
   answered: number;
   correct: number;
   count: number;
+  points?: Points;
   coverageNote?: string;
   cost: number | null;
   billed: number | null;
@@ -102,6 +105,7 @@ export function measure(
   let correct = 0,
     answered = 0,
     count = 0;
+  let points: Points | undefined = { earned: 0, max: 0 };
   let cost: number | null = 0,
     billed: number | null = 0;
   for (const part of parts) {
@@ -109,6 +113,12 @@ export function measure(
     correct += score.correct;
     answered += score.answered;
     count += score.coverage?.count ?? data.parts[part].count;
+    if (points && score.points) {
+      points.earned += score.points.earned;
+      points.max += score.points.max;
+    } else {
+      points = undefined;
+    }
     cost = cost === null || score.cost === null ? null : cost + score.cost;
     billed =
       billed === null || score.billedEstimate === null
@@ -121,6 +131,7 @@ export function measure(
     correct,
     answered,
     count,
+    points,
     coverageNote: parts.some((part) => model.parts[part].coverage?.kind === "multiple-choice")
       ? "객관식만"
       : undefined,

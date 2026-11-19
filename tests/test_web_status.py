@@ -21,14 +21,14 @@ class PublicExamStatusTest(unittest.TestCase):
         return build_snapshot(self.config, self.plan, self.root, self.root, previous or {}, **options)
 
     def record(self, parts):
-        fields = ("model", "part", "status", "max_points", "correct", "answered",
+        fields = ("model", "part", "status", "raw_points", "max_points", "correct", "answered",
                   "question_count", "input_sha256", "estimated_usd")
         with (self.root / "costs.csv").open("w", newline="", encoding="utf-8") as file:
             writer = csv.DictWriter(file, fields)
             writer.writeheader()
             for part in parts:
                 writer.writerow(dict(model="gpt-6.2-astra", part=part.name, status="completed",
-                                     max_points=100, correct=part.question_count, answered=part.question_count,
+                                     raw_points=100, max_points=100, correct=part.question_count, answered=part.question_count,
                                      question_count=part.question_count, input_sha256="abc", estimated_usd=0.5))
 
     def test_release_publishes_partial_scores_while_running(self):
@@ -38,7 +38,8 @@ class PublicExamStatusTest(unittest.TestCase):
         self.record(exam_parts()[:1])
         running = self.snapshot()
         self.assertEqual(running["state"], "running")
-        self.assertIn(exam_parts()[0].name, running["models"]["gpt-6.2-astra"]["parts"])
+        score = running["models"]["gpt-6.2-astra"]["parts"][exam_parts()[0].name]
+        self.assertEqual(score["points"], {"earned": 100, "max": 100})
         self.assertEqual(running["completion"], {
             "plannedBundles": 33,
             "scoredBundles": 1,

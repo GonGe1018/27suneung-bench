@@ -6,7 +6,7 @@ from pathlib import Path
 from tempfile import NamedTemporaryFile
 
 from .cost_pilot import exam_parts
-from .export_web import MODELS, ROOT, area
+from .export_web import MODELS, ROOT, area, published_points
 from .jev_run import MODEL_ID as JEV_MODEL, public_scores as jev_scores
 
 
@@ -77,7 +77,8 @@ def build_snapshot(config, plan, papers, output, previous, released=False, final
                 if not digest or hashes.setdefault(part, digest) != digest:
                     raise ValueError(f"Different inputs for {part}")
                 cost = float(row["estimated_usd"]) if row["estimated_usd"] else None
-                score = {"answered": answered, "correct": correct, "cost": cost, "billedEstimate": cost}
+                score = {"answered": answered, "correct": correct, "cost": cost,
+                         "billedEstimate": cost, **published_points(row)}
                 effort = row.get("effort")
                 if effort and effort != models[key]["effort"]:
                     score["effort"] = effort

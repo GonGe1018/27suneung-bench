@@ -84,6 +84,12 @@ function MethodDialog({ close, year }: { close: () => void; year: number }) {
             수 ÷ 응답 수이며 동점은 공동 순위입니다. 응답이 하나도 없으면 순위를
             부여하지 않습니다.
           </dd>
+          <dt>원점수와 만점</dt>
+          <dd>
+            맞힌 문항의 배점을 더해 원점수를 계산합니다. 만점은 해당 모델의 응시
+            범위 전체 배점입니다.{" "}
+            {year === 2027 && "Jev의 수학 점수는 객관식 기준입니다."}
+          </dd>
           <dt>추정 비용</dt>
           <dd>
             각 실행에 기록한 달러 추정치에 재시도 비용을 포함합니다. 무료 호출은
@@ -427,6 +433,12 @@ function ResultsTable({
                           <dt>미응답</dt>
                           <dd>{r.count - r.answered}문항</dd>
                         </div>
+                        {r.points && (
+                          <div>
+                            <dt>원점수 / 만점</dt>
+                            <dd>{r.points.earned} / {r.points.max}점</dd>
+                          </div>
+                        )}
                         <div>
                           <dt>추론 강도</dt>
                           <dd>{r.effort}</dd>

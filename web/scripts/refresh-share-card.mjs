@@ -35,11 +35,11 @@ const styles = `
     line-height: 1.15;
   }
   .accuracy-mark .model-icon { width: 23px; height: 23px; }
-  .accuracy-value { font-size: 25px; font-weight: 780; }
-  .accuracy-coverage { font-size: 14px; }
+  .accuracy-value { font-size: 18px; }
+  .accuracy-stats { font-size: 14px; }
   .accuracy-series:has(> :nth-child(10)) .model-name { font-size: 15px; }
-  .accuracy-series:has(> :nth-child(10)) .accuracy-value { font-size: 17px; }
-  .accuracy-series:has(> :nth-child(10)) .accuracy-coverage { font-size: 12px; }
+  .accuracy-series:has(> :nth-child(10)) .accuracy-value { font-size: 13px; }
+  .accuracy-series:has(> :nth-child(10)) .accuracy-stats { font-size: 12px; }
 `;
 
 const indexPath = resolve(output, "index.html");
