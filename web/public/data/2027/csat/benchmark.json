@@ -150,7 +150,14 @@
         "biology-2",
         "earth-science-2"
       ],
-      "parts": {}
+      "parts": {
+        "korean-speech": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.120577537,
+          "billedEstimate": 0.120577537
+        }
+      }
     },
     "qwen4-max": {
       "name": "Qwen4 Max",
@@ -321,7 +328,20 @@
         "biology-2",
         "earth-science-2"
       ],
-      "parts": {}
+      "parts": {
+        "korean-common": {
+          "answered": 34,
+          "correct": 6,
+          "cost": 0.00240514,
+          "billedEstimate": 0.00240514
+        },
+        "korean-speech": {
+          "answered": 11,
+          "correct": 2,
+          "cost": 0.00317478,
+          "billedEstimate": 0.00317478
+        }
+      }
     },
     "gemini-4-carbon": {
       "name": "Gemini 4 Carbon",
@@ -339,7 +359,14 @@
         "math-geometry",
         "english"
       ],
-      "parts": {}
+      "parts": {
+        "korean-speech": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.195526,
+          "billedEstimate": 0.195526
+        }
+      }
     },
     "gemini-4-hydrogen": {
       "name": "Gemini 4 Hydrogen",
@@ -363,6 +390,12 @@
           "correct": 11,
           "cost": 0.216147,
           "billedEstimate": 0.216147
+        },
+        "korean-common": {
+          "answered": 34,
+          "correct": 34,
+          "cost": 0.3890895,
+          "billedEstimate": 0.3890895
         }
       }
     },
@@ -513,6 +546,12 @@
           "correct": 11,
           "cost": 0.570416,
           "billedEstimate": 0.570416
+        },
+        "korean-language": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.865776,
+          "billedEstimate": 0.865776
         }
       }
     },
@@ -555,14 +594,20 @@
           "correct": 11,
           "cost": 0.374268,
           "billedEstimate": 0.374268
+        },
+        "korean-language": {
+          "answered": 11,
+          "correct": 11,
+          "cost": 0.512668,
+          "billedEstimate": 0.512668
         }
       }
     }
   },
   "completion": {
     "plannedBundles": 239,
-    "scoredBundles": 9,
-    "publishedBundles": 9
+    "scoredBundles": 16,
+    "publishedBundles": 16
   },
   "progress": {
     "korean": {
